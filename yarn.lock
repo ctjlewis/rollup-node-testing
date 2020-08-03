@@ -610,6 +610,13 @@ ava@^3.11.1:
     write-file-atomic "^3.0.3"
     yargs "^15.4.1"
 
+await-shell@^1.26.0:
+  version "1.26.0"
+  resolved "https://registry.yarnpkg.com/await-shell/-/await-shell-1.26.0.tgz#235ceed8ce221338e869e016798187d9b5da7428"
+  integrity sha512-/hYnhBz7puiFgKHQ4kptPgafsUFzTSRO72AbKHo5cGuhio/qXvGl2pfp5sbSmGIjvvA1PQeLI3dtJtB5iKb2Xw==
+  dependencies:
+    ora "^4.0.4"
+
 aws-sdk@^2.725.0:
   version "2.725.0"
   resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.725.0.tgz#287ef3b55aa66f10c88671ec62300e96015aaf6a"
@@ -3254,7 +3261,7 @@ onetime@^5.1.0:
   dependencies:
     mimic-fn "^2.1.0"
 
-ora@^4.0.5:
+ora@^4.0.4, ora@^4.0.5:
   version "4.0.5"
   resolved "https://registry.yarnpkg.com/ora/-/ora-4.0.5.tgz#7410b5cc2d99fa637fd5099bbb9f02bfbb5a361e"
   integrity sha512-jCDgm9DqvRcNIAEv2wZPrh7E5PcQiDUnbnWbAfu4NGAE2ZNqPFbDixmWldy1YG2QfLeQhuiu6/h5VRrk6cG50w==

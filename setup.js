@@ -6,10 +6,21 @@
 
 import fs from 'fs';
 
-const TEST_TEMPLATE = `
-import test from 'ava';
+const getImportTemplate = (dependency) => {
+  const ecmaSafe = /[a-z]+/i.exec(dependency)[0];
+  return `import ${ecmaSafe} from '${dependency}';`;
+};
 
-test('Testing the test process', (t) => {
+const getTestTemplate = (filename) => `
+import test from 'ava';
+import shell from 'await-shell';
+
+test('Executing bundle for ${filename} should not throw', async (t) => {
+  try {
+    await shell('node ./bundles/${filename}');
+  } catch (e) {
+    return t.fail(e);
+  }
   t.pass();
 });
 `;
@@ -18,10 +29,31 @@ test('Testing the test process', (t) => {
   const dependencies = fs.readFileSync('./packages.txt', 'utf-8').split(' ');
   await Promise.all(
     dependencies.map(
-      dependency => fs.promises.writeFile(
-        `./test/${dependency.replace('/', '-')}.js`,
-        TEST_TEMPLATE
-      )
+      async (dependency) => {
+        const filename = dependency.replace('/', '-') + '.js';
+
+        /**
+         * Write import files that Rollup will bundle.
+         */
+        await fs.promises.writeFile(
+          `./imports/${filename}`,
+          getImportTemplate(dependency)
+        );
+
+        /** 
+         * Write output bundles with Rollup.
+         */
+        /** TODO: Add. */
+
+        /**
+         * Write AVA tests, which will read compiled bundles and verify there
+         * are no errors.
+         */
+        return await fs.promises.writeFile(
+          `./test/${filename}`,
+          getTestTemplate(filename)
+        );
+      }
     )
   );
 })();
