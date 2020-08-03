@@ -1,0 +1,1 @@
+import babel from 'babel-loader';

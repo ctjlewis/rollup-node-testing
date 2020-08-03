@@ -1,0 +1,1 @@
+import object from 'object-assign';

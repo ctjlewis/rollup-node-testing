@@ -1,0 +1,1 @@
+import ejs from 'ejs';

@@ -31,4 +31,23 @@ const EXPORTS = fs.readdirSync('./imports').map(
   })
 );
 
-export default EXPORTS;
+export default {
+  // ESM entry
+  input: `./imports/gulp.js`,
+  // ESM output
+  output: {
+    file: `./bundles/gulp.js`,
+    format: 'esm'
+  },
+  // plugin suite
+  plugins: [
+    cjs({
+      extensions: ['.js', '.cjs'],
+    }),
+    json(),
+    resolve({
+      extensions: ['.js', '.cjs', '.mjs', '.json', '.node'],
+      preferBuiltins: true,
+    }),
+  ],
+};

@@ -27059,6 +27059,159 @@ function merge$1(dest, src, redefine) {
   return dest
 }
 
+/**
+ * Helpers.
+ */
+
+var s$1 = 1000;
+var m$1 = s$1 * 60;
+var h$1 = m$1 * 60;
+var d$1 = h$1 * 24;
+var y$1 = d$1 * 365.25;
+
+/**
+ * Parse or format the given `val`.
+ *
+ * Options:
+ *
+ *  - `long` verbose formatting [false]
+ *
+ * @param {String|Number} val
+ * @param {Object} [options]
+ * @throws {Error} throw an error if val is not a non-empty string or a number
+ * @return {String|Number}
+ * @api public
+ */
+
+var ms$1 = function(val, options) {
+  options = options || {};
+  var type = typeof val;
+  if (type === 'string' && val.length > 0) {
+    return parse$5(val);
+  } else if (type === 'number' && isNaN(val) === false) {
+    return options.long ? fmtLong$1(val) : fmtShort$1(val);
+  }
+  throw new Error(
+    'val is not a non-empty string or a valid number. val=' +
+      JSON.stringify(val)
+  );
+};
+
+/**
+ * Parse the given `str` and return milliseconds.
+ *
+ * @param {String} str
+ * @return {Number}
+ * @api private
+ */
+
+function parse$5(str) {
+  str = String(str);
+  if (str.length > 100) {
+    return;
+  }
+  var match = /^((?:\d+)?\.?\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|years?|yrs?|y)?$/i.exec(
+    str
+  );
+  if (!match) {
+    return;
+  }
+  var n = parseFloat(match[1]);
+  var type = (match[2] || 'ms').toLowerCase();
+  switch (type) {
+    case 'years':
+    case 'year':
+    case 'yrs':
+    case 'yr':
+    case 'y':
+      return n * y$1;
+    case 'days':
+    case 'day':
+    case 'd':
+      return n * d$1;
+    case 'hours':
+    case 'hour':
+    case 'hrs':
+    case 'hr':
+    case 'h':
+      return n * h$1;
+    case 'minutes':
+    case 'minute':
+    case 'mins':
+    case 'min':
+    case 'm':
+      return n * m$1;
+    case 'seconds':
+    case 'second':
+    case 'secs':
+    case 'sec':
+    case 's':
+      return n * s$1;
+    case 'milliseconds':
+    case 'millisecond':
+    case 'msecs':
+    case 'msec':
+    case 'ms':
+      return n;
+    default:
+      return undefined;
+  }
+}
+
+/**
+ * Short format for `ms`.
+ *
+ * @param {Number} ms
+ * @return {String}
+ * @api private
+ */
+
+function fmtShort$1(ms) {
+  if (ms >= d$1) {
+    return Math.round(ms / d$1) + 'd';
+  }
+  if (ms >= h$1) {
+    return Math.round(ms / h$1) + 'h';
+  }
+  if (ms >= m$1) {
+    return Math.round(ms / m$1) + 'm';
+  }
+  if (ms >= s$1) {
+    return Math.round(ms / s$1) + 's';
+  }
+  return ms + 'ms';
+}
+
+/**
+ * Long format for `ms`.
+ *
+ * @param {Number} ms
+ * @return {String}
+ * @api private
+ */
+
+function fmtLong$1(ms) {
+  return plural$1(ms, d$1, 'day') ||
+    plural$1(ms, h$1, 'hour') ||
+    plural$1(ms, m$1, 'minute') ||
+    plural$1(ms, s$1, 'second') ||
+    ms + ' ms';
+}
+
+/**
+ * Pluralization helper.
+ */
+
+function plural$1(ms, n, name) {
+  if (ms < n) {
+    return;
+  }
+  if (ms < n * 1.5) {
+    return Math.floor(ms / n) + ' ' + name;
+  }
+  return Math.ceil(ms / n) + ' ' + name + 's';
+}
+
 var debug$5 = createCommonjsModule(function (module, exports) {
 /**
  * This is the common logic for both the Node.js and web browser
@@ -27072,7 +27225,7 @@ exports.coerce = coerce;
 exports.disable = disable;
 exports.enable = enable;
 exports.enabled = enabled;
-exports.humanize = ms;
+exports.humanize = ms$1;
 
 /**
  * The currently active debug mode names, and names to skip.
@@ -27857,7 +28010,7 @@ function escapeHtml(string) {
  */
 
 
-var parse$5 = url.parse;
+var parse$6 = url.parse;
 var Url = url.Url;
 
 /**
@@ -27936,7 +28089,7 @@ function originalurl (req) {
 
 function fastparse (str) {
   if (typeof str !== 'string' || str.charCodeAt(0) !== 0x2f /* / */) {
-    return parse$5(str)
+    return parse$6(str)
   }
 
   var pathname = str;
@@ -27963,7 +28116,7 @@ function fastparse (str) {
       case 0x23: /* #  */
       case 0xa0:
       case 0xfeff:
-        return parse$5(str)
+        return parse$6(str)
     }
   }
 
@@ -28324,6 +28477,159 @@ function setHeaders (res, headers) {
   }
 }
 
+/**
+ * Helpers.
+ */
+
+var s$2 = 1000;
+var m$2 = s$2 * 60;
+var h$2 = m$2 * 60;
+var d$2 = h$2 * 24;
+var y$2 = d$2 * 365.25;
+
+/**
+ * Parse or format the given `val`.
+ *
+ * Options:
+ *
+ *  - `long` verbose formatting [false]
+ *
+ * @param {String|Number} val
+ * @param {Object} [options]
+ * @throws {Error} throw an error if val is not a non-empty string or a number
+ * @return {String|Number}
+ * @api public
+ */
+
+var ms$2 = function(val, options) {
+  options = options || {};
+  var type = typeof val;
+  if (type === 'string' && val.length > 0) {
+    return parse$7(val);
+  } else if (type === 'number' && isNaN(val) === false) {
+    return options.long ? fmtLong$2(val) : fmtShort$2(val);
+  }
+  throw new Error(
+    'val is not a non-empty string or a valid number. val=' +
+      JSON.stringify(val)
+  );
+};
+
+/**
+ * Parse the given `str` and return milliseconds.
+ *
+ * @param {String} str
+ * @return {Number}
+ * @api private
+ */
+
+function parse$7(str) {
+  str = String(str);
+  if (str.length > 100) {
+    return;
+  }
+  var match = /^((?:\d+)?\.?\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|years?|yrs?|y)?$/i.exec(
+    str
+  );
+  if (!match) {
+    return;
+  }
+  var n = parseFloat(match[1]);
+  var type = (match[2] || 'ms').toLowerCase();
+  switch (type) {
+    case 'years':
+    case 'year':
+    case 'yrs':
+    case 'yr':
+    case 'y':
+      return n * y$2;
+    case 'days':
+    case 'day':
+    case 'd':
+      return n * d$2;
+    case 'hours':
+    case 'hour':
+    case 'hrs':
+    case 'hr':
+    case 'h':
+      return n * h$2;
+    case 'minutes':
+    case 'minute':
+    case 'mins':
+    case 'min':
+    case 'm':
+      return n * m$2;
+    case 'seconds':
+    case 'second':
+    case 'secs':
+    case 'sec':
+    case 's':
+      return n * s$2;
+    case 'milliseconds':
+    case 'millisecond':
+    case 'msecs':
+    case 'msec':
+    case 'ms':
+      return n;
+    default:
+      return undefined;
+  }
+}
+
+/**
+ * Short format for `ms`.
+ *
+ * @param {Number} ms
+ * @return {String}
+ * @api private
+ */
+
+function fmtShort$2(ms) {
+  if (ms >= d$2) {
+    return Math.round(ms / d$2) + 'd';
+  }
+  if (ms >= h$2) {
+    return Math.round(ms / h$2) + 'h';
+  }
+  if (ms >= m$2) {
+    return Math.round(ms / m$2) + 'm';
+  }
+  if (ms >= s$2) {
+    return Math.round(ms / s$2) + 's';
+  }
+  return ms + 'ms';
+}
+
+/**
+ * Long format for `ms`.
+ *
+ * @param {Number} ms
+ * @return {String}
+ * @api private
+ */
+
+function fmtLong$2(ms) {
+  return plural$2(ms, d$2, 'day') ||
+    plural$2(ms, h$2, 'hour') ||
+    plural$2(ms, m$2, 'minute') ||
+    plural$2(ms, s$2, 'second') ||
+    ms + ' ms';
+}
+
+/**
+ * Pluralization helper.
+ */
+
+function plural$2(ms, n, name) {
+  if (ms < n) {
+    return;
+  }
+  if (ms < n * 1.5) {
+    return Math.floor(ms / n) + ' ' + name;
+  }
+  return Math.ceil(ms / n) + ' ' + name + 's';
+}
+
 var debug$7 = createCommonjsModule(function (module, exports) {
 /**
  * This is the common logic for both the Node.js and web browser
@@ -28337,7 +28643,7 @@ exports.coerce = coerce;
 exports.disable = disable;
 exports.enable = enable;
 exports.enabled = enabled;
-exports.humanize = ms;
+exports.humanize = ms$2;
 
 /**
  * The currently active debug mode names, and names to skip.
@@ -30332,6 +30638,763 @@ var init = {
 	init: init_1
 };
 
+var has$3 = Object.prototype.hasOwnProperty;
+var isArray$2 = Array.isArray;
+
+var hexTable$1 = (function () {
+    var array = [];
+    for (var i = 0; i < 256; ++i) {
+        array.push('%' + ((i < 16 ? '0' : '') + i.toString(16)).toUpperCase());
+    }
+
+    return array;
+}());
+
+var compactQueue$1 = function compactQueue(queue) {
+    while (queue.length > 1) {
+        var item = queue.pop();
+        var obj = item.obj[item.prop];
+
+        if (isArray$2(obj)) {
+            var compacted = [];
+
+            for (var j = 0; j < obj.length; ++j) {
+                if (typeof obj[j] !== 'undefined') {
+                    compacted.push(obj[j]);
+                }
+            }
+
+            item.obj[item.prop] = compacted;
+        }
+    }
+};
+
+var arrayToObject$1 = function arrayToObject(source, options) {
+    var obj = options && options.plainObjects ? Object.create(null) : {};
+    for (var i = 0; i < source.length; ++i) {
+        if (typeof source[i] !== 'undefined') {
+            obj[i] = source[i];
+        }
+    }
+
+    return obj;
+};
+
+var merge$2 = function merge(target, source, options) {
+    if (!source) {
+        return target;
+    }
+
+    if (typeof source !== 'object') {
+        if (isArray$2(target)) {
+            target.push(source);
+        } else if (target && typeof target === 'object') {
+            if ((options && (options.plainObjects || options.allowPrototypes)) || !has$3.call(Object.prototype, source)) {
+                target[source] = true;
+            }
+        } else {
+            return [target, source];
+        }
+
+        return target;
+    }
+
+    if (!target || typeof target !== 'object') {
+        return [target].concat(source);
+    }
+
+    var mergeTarget = target;
+    if (isArray$2(target) && !isArray$2(source)) {
+        mergeTarget = arrayToObject$1(target, options);
+    }
+
+    if (isArray$2(target) && isArray$2(source)) {
+        source.forEach(function (item, i) {
+            if (has$3.call(target, i)) {
+                var targetItem = target[i];
+                if (targetItem && typeof targetItem === 'object' && item && typeof item === 'object') {
+                    target[i] = merge(targetItem, item, options);
+                } else {
+                    target.push(item);
+                }
+            } else {
+                target[i] = item;
+            }
+        });
+        return target;
+    }
+
+    return Object.keys(source).reduce(function (acc, key) {
+        var value = source[key];
+
+        if (has$3.call(acc, key)) {
+            acc[key] = merge(acc[key], value, options);
+        } else {
+            acc[key] = value;
+        }
+        return acc;
+    }, mergeTarget);
+};
+
+var assign$1 = function assignSingleSource(target, source) {
+    return Object.keys(source).reduce(function (acc, key) {
+        acc[key] = source[key];
+        return acc;
+    }, target);
+};
+
+var decode$1 = function (str, decoder, charset) {
+    var strWithoutPlus = str.replace(/\+/g, ' ');
+    if (charset === 'iso-8859-1') {
+        // unescape never throws, no try...catch needed:
+        return strWithoutPlus.replace(/%[0-9a-f]{2}/gi, unescape);
+    }
+    // utf-8
+    try {
+        return decodeURIComponent(strWithoutPlus);
+    } catch (e) {
+        return strWithoutPlus;
+    }
+};
+
+var encode$1 = function encode(str, defaultEncoder, charset) {
+    // This code was originally written by Brian White (mscdex) for the io.js core querystring library.
+    // It has been adapted here for stricter adherence to RFC 3986
+    if (str.length === 0) {
+        return str;
+    }
+
+    var string = typeof str === 'string' ? str : String(str);
+
+    if (charset === 'iso-8859-1') {
+        return escape(string).replace(/%u[0-9a-f]{4}/gi, function ($0) {
+            return '%26%23' + parseInt($0.slice(2), 16) + '%3B';
+        });
+    }
+
+    var out = '';
+    for (var i = 0; i < string.length; ++i) {
+        var c = string.charCodeAt(i);
+
+        if (
+            c === 0x2D // -
+            || c === 0x2E // .
+            || c === 0x5F // _
+            || c === 0x7E // ~
+            || (c >= 0x30 && c <= 0x39) // 0-9
+            || (c >= 0x41 && c <= 0x5A) // a-z
+            || (c >= 0x61 && c <= 0x7A) // A-Z
+        ) {
+            out += string.charAt(i);
+            continue;
+        }
+
+        if (c < 0x80) {
+            out = out + hexTable$1[c];
+            continue;
+        }
+
+        if (c < 0x800) {
+            out = out + (hexTable$1[0xC0 | (c >> 6)] + hexTable$1[0x80 | (c & 0x3F)]);
+            continue;
+        }
+
+        if (c < 0xD800 || c >= 0xE000) {
+            out = out + (hexTable$1[0xE0 | (c >> 12)] + hexTable$1[0x80 | ((c >> 6) & 0x3F)] + hexTable$1[0x80 | (c & 0x3F)]);
+            continue;
+        }
+
+        i += 1;
+        c = 0x10000 + (((c & 0x3FF) << 10) | (string.charCodeAt(i) & 0x3FF));
+        out += hexTable$1[0xF0 | (c >> 18)]
+            + hexTable$1[0x80 | ((c >> 12) & 0x3F)]
+            + hexTable$1[0x80 | ((c >> 6) & 0x3F)]
+            + hexTable$1[0x80 | (c & 0x3F)];
+    }
+
+    return out;
+};
+
+var compact$1 = function compact(value) {
+    var queue = [{ obj: { o: value }, prop: 'o' }];
+    var refs = [];
+
+    for (var i = 0; i < queue.length; ++i) {
+        var item = queue[i];
+        var obj = item.obj[item.prop];
+
+        var keys = Object.keys(obj);
+        for (var j = 0; j < keys.length; ++j) {
+            var key = keys[j];
+            var val = obj[key];
+            if (typeof val === 'object' && val !== null && refs.indexOf(val) === -1) {
+                queue.push({ obj: obj, prop: key });
+                refs.push(val);
+            }
+        }
+    }
+
+    compactQueue$1(queue);
+
+    return value;
+};
+
+var isRegExp$1 = function isRegExp(obj) {
+    return Object.prototype.toString.call(obj) === '[object RegExp]';
+};
+
+var isBuffer$1 = function isBuffer(obj) {
+    if (!obj || typeof obj !== 'object') {
+        return false;
+    }
+
+    return !!(obj.constructor && obj.constructor.isBuffer && obj.constructor.isBuffer(obj));
+};
+
+var combine$1 = function combine(a, b) {
+    return [].concat(a, b);
+};
+
+var utils$1 = {
+    arrayToObject: arrayToObject$1,
+    assign: assign$1,
+    combine: combine$1,
+    compact: compact$1,
+    decode: decode$1,
+    encode: encode$1,
+    isBuffer: isBuffer$1,
+    isRegExp: isRegExp$1,
+    merge: merge$2
+};
+
+var replace$1 = String.prototype.replace;
+var percentTwenties$1 = /%20/g;
+
+var formats$1 = {
+    'default': 'RFC3986',
+    formatters: {
+        RFC1738: function (value) {
+            return replace$1.call(value, percentTwenties$1, '+');
+        },
+        RFC3986: function (value) {
+            return value;
+        }
+    },
+    RFC1738: 'RFC1738',
+    RFC3986: 'RFC3986'
+};
+
+var has$4 = Object.prototype.hasOwnProperty;
+
+var arrayPrefixGenerators$1 = {
+    brackets: function brackets(prefix) { // eslint-disable-line func-name-matching
+        return prefix + '[]';
+    },
+    comma: 'comma',
+    indices: function indices(prefix, key) { // eslint-disable-line func-name-matching
+        return prefix + '[' + key + ']';
+    },
+    repeat: function repeat(prefix) { // eslint-disable-line func-name-matching
+        return prefix;
+    }
+};
+
+var isArray$3 = Array.isArray;
+var push$1 = Array.prototype.push;
+var pushToArray$1 = function (arr, valueOrArray) {
+    push$1.apply(arr, isArray$3(valueOrArray) ? valueOrArray : [valueOrArray]);
+};
+
+var toISO$1 = Date.prototype.toISOString;
+
+var defaults$2 = {
+    addQueryPrefix: false,
+    allowDots: false,
+    charset: 'utf-8',
+    charsetSentinel: false,
+    delimiter: '&',
+    encode: true,
+    encoder: utils$1.encode,
+    encodeValuesOnly: false,
+    formatter: formats$1.formatters[formats$1['default']],
+    // deprecated
+    indices: false,
+    serializeDate: function serializeDate(date) { // eslint-disable-line func-name-matching
+        return toISO$1.call(date);
+    },
+    skipNulls: false,
+    strictNullHandling: false
+};
+
+var stringify$1 = function stringify( // eslint-disable-line func-name-matching
+    object,
+    prefix,
+    generateArrayPrefix,
+    strictNullHandling,
+    skipNulls,
+    encoder,
+    filter,
+    sort,
+    allowDots,
+    serializeDate,
+    formatter,
+    encodeValuesOnly,
+    charset
+) {
+    var obj = object;
+    if (typeof filter === 'function') {
+        obj = filter(prefix, obj);
+    } else if (obj instanceof Date) {
+        obj = serializeDate(obj);
+    } else if (generateArrayPrefix === 'comma' && isArray$3(obj)) {
+        obj = obj.join(',');
+    }
+
+    if (obj === null) {
+        if (strictNullHandling) {
+            return encoder && !encodeValuesOnly ? encoder(prefix, defaults$2.encoder, charset) : prefix;
+        }
+
+        obj = '';
+    }
+
+    if (typeof obj === 'string' || typeof obj === 'number' || typeof obj === 'boolean' || utils$1.isBuffer(obj)) {
+        if (encoder) {
+            var keyValue = encodeValuesOnly ? prefix : encoder(prefix, defaults$2.encoder, charset);
+            return [formatter(keyValue) + '=' + formatter(encoder(obj, defaults$2.encoder, charset))];
+        }
+        return [formatter(prefix) + '=' + formatter(String(obj))];
+    }
+
+    var values = [];
+
+    if (typeof obj === 'undefined') {
+        return values;
+    }
+
+    var objKeys;
+    if (isArray$3(filter)) {
+        objKeys = filter;
+    } else {
+        var keys = Object.keys(obj);
+        objKeys = sort ? keys.sort(sort) : keys;
+    }
+
+    for (var i = 0; i < objKeys.length; ++i) {
+        var key = objKeys[i];
+
+        if (skipNulls && obj[key] === null) {
+            continue;
+        }
+
+        if (isArray$3(obj)) {
+            pushToArray$1(values, stringify(
+                obj[key],
+                typeof generateArrayPrefix === 'function' ? generateArrayPrefix(prefix, key) : prefix,
+                generateArrayPrefix,
+                strictNullHandling,
+                skipNulls,
+                encoder,
+                filter,
+                sort,
+                allowDots,
+                serializeDate,
+                formatter,
+                encodeValuesOnly,
+                charset
+            ));
+        } else {
+            pushToArray$1(values, stringify(
+                obj[key],
+                prefix + (allowDots ? '.' + key : '[' + key + ']'),
+                generateArrayPrefix,
+                strictNullHandling,
+                skipNulls,
+                encoder,
+                filter,
+                sort,
+                allowDots,
+                serializeDate,
+                formatter,
+                encodeValuesOnly,
+                charset
+            ));
+        }
+    }
+
+    return values;
+};
+
+var normalizeStringifyOptions$1 = function normalizeStringifyOptions(opts) {
+    if (!opts) {
+        return defaults$2;
+    }
+
+    if (opts.encoder !== null && opts.encoder !== undefined && typeof opts.encoder !== 'function') {
+        throw new TypeError('Encoder has to be a function.');
+    }
+
+    var charset = opts.charset || defaults$2.charset;
+    if (typeof opts.charset !== 'undefined' && opts.charset !== 'utf-8' && opts.charset !== 'iso-8859-1') {
+        throw new TypeError('The charset option must be either utf-8, iso-8859-1, or undefined');
+    }
+
+    var format = formats$1['default'];
+    if (typeof opts.format !== 'undefined') {
+        if (!has$4.call(formats$1.formatters, opts.format)) {
+            throw new TypeError('Unknown format option provided.');
+        }
+        format = opts.format;
+    }
+    var formatter = formats$1.formatters[format];
+
+    var filter = defaults$2.filter;
+    if (typeof opts.filter === 'function' || isArray$3(opts.filter)) {
+        filter = opts.filter;
+    }
+
+    return {
+        addQueryPrefix: typeof opts.addQueryPrefix === 'boolean' ? opts.addQueryPrefix : defaults$2.addQueryPrefix,
+        allowDots: typeof opts.allowDots === 'undefined' ? defaults$2.allowDots : !!opts.allowDots,
+        charset: charset,
+        charsetSentinel: typeof opts.charsetSentinel === 'boolean' ? opts.charsetSentinel : defaults$2.charsetSentinel,
+        delimiter: typeof opts.delimiter === 'undefined' ? defaults$2.delimiter : opts.delimiter,
+        encode: typeof opts.encode === 'boolean' ? opts.encode : defaults$2.encode,
+        encoder: typeof opts.encoder === 'function' ? opts.encoder : defaults$2.encoder,
+        encodeValuesOnly: typeof opts.encodeValuesOnly === 'boolean' ? opts.encodeValuesOnly : defaults$2.encodeValuesOnly,
+        filter: filter,
+        formatter: formatter,
+        serializeDate: typeof opts.serializeDate === 'function' ? opts.serializeDate : defaults$2.serializeDate,
+        skipNulls: typeof opts.skipNulls === 'boolean' ? opts.skipNulls : defaults$2.skipNulls,
+        sort: typeof opts.sort === 'function' ? opts.sort : null,
+        strictNullHandling: typeof opts.strictNullHandling === 'boolean' ? opts.strictNullHandling : defaults$2.strictNullHandling
+    };
+};
+
+var stringify_1$1 = function (object, opts) {
+    var obj = object;
+    var options = normalizeStringifyOptions$1(opts);
+
+    var objKeys;
+    var filter;
+
+    if (typeof options.filter === 'function') {
+        filter = options.filter;
+        obj = filter('', obj);
+    } else if (isArray$3(options.filter)) {
+        filter = options.filter;
+        objKeys = filter;
+    }
+
+    var keys = [];
+
+    if (typeof obj !== 'object' || obj === null) {
+        return '';
+    }
+
+    var arrayFormat;
+    if (opts && opts.arrayFormat in arrayPrefixGenerators$1) {
+        arrayFormat = opts.arrayFormat;
+    } else if (opts && 'indices' in opts) {
+        arrayFormat = opts.indices ? 'indices' : 'repeat';
+    } else {
+        arrayFormat = 'indices';
+    }
+
+    var generateArrayPrefix = arrayPrefixGenerators$1[arrayFormat];
+
+    if (!objKeys) {
+        objKeys = Object.keys(obj);
+    }
+
+    if (options.sort) {
+        objKeys.sort(options.sort);
+    }
+
+    for (var i = 0; i < objKeys.length; ++i) {
+        var key = objKeys[i];
+
+        if (options.skipNulls && obj[key] === null) {
+            continue;
+        }
+        pushToArray$1(keys, stringify$1(
+            obj[key],
+            key,
+            generateArrayPrefix,
+            options.strictNullHandling,
+            options.skipNulls,
+            options.encode ? options.encoder : null,
+            options.filter,
+            options.sort,
+            options.allowDots,
+            options.serializeDate,
+            options.formatter,
+            options.encodeValuesOnly,
+            options.charset
+        ));
+    }
+
+    var joined = keys.join(options.delimiter);
+    var prefix = options.addQueryPrefix === true ? '?' : '';
+
+    if (options.charsetSentinel) {
+        if (options.charset === 'iso-8859-1') {
+            // encodeURIComponent('&#10003;'), the "numeric entity" representation of a checkmark
+            prefix += 'utf8=%26%2310003%3B&';
+        } else {
+            // encodeURIComponent('✓')
+            prefix += 'utf8=%E2%9C%93&';
+        }
+    }
+
+    return joined.length > 0 ? prefix + joined : '';
+};
+
+var has$5 = Object.prototype.hasOwnProperty;
+
+var defaults$3 = {
+    allowDots: false,
+    allowPrototypes: false,
+    arrayLimit: 20,
+    charset: 'utf-8',
+    charsetSentinel: false,
+    comma: false,
+    decoder: utils$1.decode,
+    delimiter: '&',
+    depth: 5,
+    ignoreQueryPrefix: false,
+    interpretNumericEntities: false,
+    parameterLimit: 1000,
+    parseArrays: true,
+    plainObjects: false,
+    strictNullHandling: false
+};
+
+var interpretNumericEntities$1 = function (str) {
+    return str.replace(/&#(\d+);/g, function ($0, numberStr) {
+        return String.fromCharCode(parseInt(numberStr, 10));
+    });
+};
+
+// This is what browsers will submit when the ✓ character occurs in an
+// application/x-www-form-urlencoded body and the encoding of the page containing
+// the form is iso-8859-1, or when the submitted form has an accept-charset
+// attribute of iso-8859-1. Presumably also with other charsets that do not contain
+// the ✓ character, such as us-ascii.
+var isoSentinel$1 = 'utf8=%26%2310003%3B'; // encodeURIComponent('&#10003;')
+
+// These are the percent-encoded utf-8 octets representing a checkmark, indicating that the request actually is utf-8 encoded.
+var charsetSentinel$1 = 'utf8=%E2%9C%93'; // encodeURIComponent('✓')
+
+var parseValues$1 = function parseQueryStringValues(str, options) {
+    var obj = {};
+    var cleanStr = options.ignoreQueryPrefix ? str.replace(/^\?/, '') : str;
+    var limit = options.parameterLimit === Infinity ? undefined : options.parameterLimit;
+    var parts = cleanStr.split(options.delimiter, limit);
+    var skipIndex = -1; // Keep track of where the utf8 sentinel was found
+    var i;
+
+    var charset = options.charset;
+    if (options.charsetSentinel) {
+        for (i = 0; i < parts.length; ++i) {
+            if (parts[i].indexOf('utf8=') === 0) {
+                if (parts[i] === charsetSentinel$1) {
+                    charset = 'utf-8';
+                } else if (parts[i] === isoSentinel$1) {
+                    charset = 'iso-8859-1';
+                }
+                skipIndex = i;
+                i = parts.length; // The eslint settings do not allow break;
+            }
+        }
+    }
+
+    for (i = 0; i < parts.length; ++i) {
+        if (i === skipIndex) {
+            continue;
+        }
+        var part = parts[i];
+
+        var bracketEqualsPos = part.indexOf(']=');
+        var pos = bracketEqualsPos === -1 ? part.indexOf('=') : bracketEqualsPos + 1;
+
+        var key, val;
+        if (pos === -1) {
+            key = options.decoder(part, defaults$3.decoder, charset);
+            val = options.strictNullHandling ? null : '';
+        } else {
+            key = options.decoder(part.slice(0, pos), defaults$3.decoder, charset);
+            val = options.decoder(part.slice(pos + 1), defaults$3.decoder, charset);
+        }
+
+        if (val && options.interpretNumericEntities && charset === 'iso-8859-1') {
+            val = interpretNumericEntities$1(val);
+        }
+
+        if (val && options.comma && val.indexOf(',') > -1) {
+            val = val.split(',');
+        }
+
+        if (has$5.call(obj, key)) {
+            obj[key] = utils$1.combine(obj[key], val);
+        } else {
+            obj[key] = val;
+        }
+    }
+
+    return obj;
+};
+
+var parseObject$1 = function (chain, val, options) {
+    var leaf = val;
+
+    for (var i = chain.length - 1; i >= 0; --i) {
+        var obj;
+        var root = chain[i];
+
+        if (root === '[]' && options.parseArrays) {
+            obj = [].concat(leaf);
+        } else {
+            obj = options.plainObjects ? Object.create(null) : {};
+            var cleanRoot = root.charAt(0) === '[' && root.charAt(root.length - 1) === ']' ? root.slice(1, -1) : root;
+            var index = parseInt(cleanRoot, 10);
+            if (!options.parseArrays && cleanRoot === '') {
+                obj = { 0: leaf };
+            } else if (
+                !isNaN(index)
+                && root !== cleanRoot
+                && String(index) === cleanRoot
+                && index >= 0
+                && (options.parseArrays && index <= options.arrayLimit)
+            ) {
+                obj = [];
+                obj[index] = leaf;
+            } else {
+                obj[cleanRoot] = leaf;
+            }
+        }
+
+        leaf = obj;
+    }
+
+    return leaf;
+};
+
+var parseKeys$1 = function parseQueryStringKeys(givenKey, val, options) {
+    if (!givenKey) {
+        return;
+    }
+
+    // Transform dot notation to bracket notation
+    var key = options.allowDots ? givenKey.replace(/\.([^.[]+)/g, '[$1]') : givenKey;
+
+    // The regex chunks
+
+    var brackets = /(\[[^[\]]*])/;
+    var child = /(\[[^[\]]*])/g;
+
+    // Get the parent
+
+    var segment = brackets.exec(key);
+    var parent = segment ? key.slice(0, segment.index) : key;
+
+    // Stash the parent if it exists
+
+    var keys = [];
+    if (parent) {
+        // If we aren't using plain objects, optionally prefix keys that would overwrite object prototype properties
+        if (!options.plainObjects && has$5.call(Object.prototype, parent)) {
+            if (!options.allowPrototypes) {
+                return;
+            }
+        }
+
+        keys.push(parent);
+    }
+
+    // Loop through children appending to the array until we hit depth
+
+    var i = 0;
+    while ((segment = child.exec(key)) !== null && i < options.depth) {
+        i += 1;
+        if (!options.plainObjects && has$5.call(Object.prototype, segment[1].slice(1, -1))) {
+            if (!options.allowPrototypes) {
+                return;
+            }
+        }
+        keys.push(segment[1]);
+    }
+
+    // If there's a remainder, just add whatever is left
+
+    if (segment) {
+        keys.push('[' + key.slice(segment.index) + ']');
+    }
+
+    return parseObject$1(keys, val, options);
+};
+
+var normalizeParseOptions$1 = function normalizeParseOptions(opts) {
+    if (!opts) {
+        return defaults$3;
+    }
+
+    if (opts.decoder !== null && opts.decoder !== undefined && typeof opts.decoder !== 'function') {
+        throw new TypeError('Decoder has to be a function.');
+    }
+
+    if (typeof opts.charset !== 'undefined' && opts.charset !== 'utf-8' && opts.charset !== 'iso-8859-1') {
+        throw new Error('The charset option must be either utf-8, iso-8859-1, or undefined');
+    }
+    var charset = typeof opts.charset === 'undefined' ? defaults$3.charset : opts.charset;
+
+    return {
+        allowDots: typeof opts.allowDots === 'undefined' ? defaults$3.allowDots : !!opts.allowDots,
+        allowPrototypes: typeof opts.allowPrototypes === 'boolean' ? opts.allowPrototypes : defaults$3.allowPrototypes,
+        arrayLimit: typeof opts.arrayLimit === 'number' ? opts.arrayLimit : defaults$3.arrayLimit,
+        charset: charset,
+        charsetSentinel: typeof opts.charsetSentinel === 'boolean' ? opts.charsetSentinel : defaults$3.charsetSentinel,
+        comma: typeof opts.comma === 'boolean' ? opts.comma : defaults$3.comma,
+        decoder: typeof opts.decoder === 'function' ? opts.decoder : defaults$3.decoder,
+        delimiter: typeof opts.delimiter === 'string' || utils$1.isRegExp(opts.delimiter) ? opts.delimiter : defaults$3.delimiter,
+        depth: typeof opts.depth === 'number' ? opts.depth : defaults$3.depth,
+        ignoreQueryPrefix: opts.ignoreQueryPrefix === true,
+        interpretNumericEntities: typeof opts.interpretNumericEntities === 'boolean' ? opts.interpretNumericEntities : defaults$3.interpretNumericEntities,
+        parameterLimit: typeof opts.parameterLimit === 'number' ? opts.parameterLimit : defaults$3.parameterLimit,
+        parseArrays: opts.parseArrays !== false,
+        plainObjects: typeof opts.plainObjects === 'boolean' ? opts.plainObjects : defaults$3.plainObjects,
+        strictNullHandling: typeof opts.strictNullHandling === 'boolean' ? opts.strictNullHandling : defaults$3.strictNullHandling
+    };
+};
+
+var parse$8 = function (str, opts) {
+    var options = normalizeParseOptions$1(opts);
+
+    if (str === '' || str === null || typeof str === 'undefined') {
+        return options.plainObjects ? Object.create(null) : {};
+    }
+
+    var tempObj = typeof str === 'string' ? parseValues$1(str, options) : str;
+    var obj = options.plainObjects ? Object.create(null) : {};
+
+    // Iterate over the keys and setup the new object
+
+    var keys = Object.keys(tempObj);
+    for (var i = 0; i < keys.length; ++i) {
+        var key = keys[i];
+        var newObj = parseKeys$1(key, tempObj[key], options);
+        obj = utils$1.merge(obj, newObj, options);
+    }
+
+    return utils$1.compact(obj);
+};
+
+var lib$2 = {
+    formats: formats$1,
+    parse: parse$8,
+    stringify: stringify_1$1
+};
+
 /**
  * Module dependencies.
  */
@@ -30348,7 +31411,7 @@ var init = {
 
 var query = function query(options) {
   var opts = utilsMerge({}, options);
-  var queryparse = lib$1.parse;
+  var queryparse = lib$2.parse;
 
   if (typeof options === 'function') {
     queryparse = options;
@@ -30679,7 +31742,7 @@ SafeBuffer.allocUnsafeSlow = function (size) {
  */
 
 var contentDisposition_1 = contentDisposition;
-var parse_1$3 = parse$6;
+var parse_1$3 = parse$9;
 
 /**
  * Module dependencies.
@@ -30978,7 +32041,7 @@ function getlatin1 (val) {
  * @public
  */
 
-function parse$6 (string) {
+function parse$9 (string) {
   if (!string || typeof string !== 'string') {
     throw new TypeError('argument string is required')
   }
@@ -31432,11 +32495,11 @@ function populateConstructorExports (exports, codes, HttpError) {
  * Helpers.
  */
 
-var s$1 = 1000;
-var m$1 = s$1 * 60;
-var h$1 = m$1 * 60;
-var d$1 = h$1 * 24;
-var y$1 = d$1 * 365.25;
+var s$3 = 1000;
+var m$3 = s$3 * 60;
+var h$3 = m$3 * 60;
+var d$3 = h$3 * 24;
+var y$3 = d$3 * 365.25;
 
 /**
  * Parse or format the given `val`.
@@ -31452,13 +32515,13 @@ var y$1 = d$1 * 365.25;
  * @api public
  */
 
-var ms$1 = function(val, options) {
+var ms$3 = function(val, options) {
   options = options || {};
   var type = typeof val;
   if (type === 'string' && val.length > 0) {
-    return parse$7(val);
+    return parse$a(val);
   } else if (type === 'number' && isNaN(val) === false) {
-    return options.long ? fmtLong$1(val) : fmtShort$1(val);
+    return options.long ? fmtLong$3(val) : fmtShort$3(val);
   }
   throw new Error(
     'val is not a non-empty string or a valid number. val=' +
@@ -31474,7 +32537,7 @@ var ms$1 = function(val, options) {
  * @api private
  */
 
-function parse$7(str) {
+function parse$a(str) {
   str = String(str);
   if (str.length > 100) {
     return;
@@ -31493,29 +32556,29 @@ function parse$7(str) {
     case 'yrs':
     case 'yr':
     case 'y':
-      return n * y$1;
+      return n * y$3;
     case 'days':
     case 'day':
     case 'd':
-      return n * d$1;
+      return n * d$3;
     case 'hours':
     case 'hour':
     case 'hrs':
     case 'hr':
     case 'h':
-      return n * h$1;
+      return n * h$3;
     case 'minutes':
     case 'minute':
     case 'mins':
     case 'min':
     case 'm':
-      return n * m$1;
+      return n * m$3;
     case 'seconds':
     case 'second':
     case 'secs':
     case 'sec':
     case 's':
-      return n * s$1;
+      return n * s$3;
     case 'milliseconds':
     case 'millisecond':
     case 'msecs':
@@ -31535,18 +32598,18 @@ function parse$7(str) {
  * @api private
  */
 
-function fmtShort$1(ms) {
-  if (ms >= d$1) {
-    return Math.round(ms / d$1) + 'd';
+function fmtShort$3(ms) {
+  if (ms >= d$3) {
+    return Math.round(ms / d$3) + 'd';
   }
-  if (ms >= h$1) {
-    return Math.round(ms / h$1) + 'h';
+  if (ms >= h$3) {
+    return Math.round(ms / h$3) + 'h';
   }
-  if (ms >= m$1) {
-    return Math.round(ms / m$1) + 'm';
+  if (ms >= m$3) {
+    return Math.round(ms / m$3) + 'm';
   }
-  if (ms >= s$1) {
-    return Math.round(ms / s$1) + 's';
+  if (ms >= s$3) {
+    return Math.round(ms / s$3) + 's';
   }
   return ms + 'ms';
 }
@@ -31559,11 +32622,11 @@ function fmtShort$1(ms) {
  * @api private
  */
 
-function fmtLong$1(ms) {
-  return plural$1(ms, d$1, 'day') ||
-    plural$1(ms, h$1, 'hour') ||
-    plural$1(ms, m$1, 'minute') ||
-    plural$1(ms, s$1, 'second') ||
+function fmtLong$3(ms) {
+  return plural$3(ms, d$3, 'day') ||
+    plural$3(ms, h$3, 'hour') ||
+    plural$3(ms, m$3, 'minute') ||
+    plural$3(ms, s$3, 'second') ||
     ms + ' ms';
 }
 
@@ -31571,7 +32634,7 @@ function fmtLong$1(ms) {
  * Pluralization helper.
  */
 
-function plural$1(ms, n, name) {
+function plural$3(ms, n, name) {
   if (ms < n) {
     return;
   }
@@ -31594,7 +32657,7 @@ exports.coerce = coerce;
 exports.disable = disable;
 exports.enable = enable;
 exports.enabled = enabled;
-exports.humanize = ms$1;
+exports.humanize = ms$3;
 
 /**
  * The currently active debug mode names, and names to skip.
@@ -35442,12 +36505,12 @@ var mime_1 = mime;
  * Helpers.
  */
 
-var s$2 = 1000;
-var m$2 = s$2 * 60;
-var h$2 = m$2 * 60;
-var d$2 = h$2 * 24;
-var w = d$2 * 7;
-var y$2 = d$2 * 365.25;
+var s$4 = 1000;
+var m$4 = s$4 * 60;
+var h$4 = m$4 * 60;
+var d$4 = h$4 * 24;
+var w = d$4 * 7;
+var y$4 = d$4 * 365.25;
 
 /**
  * Parse or format the given `val`.
@@ -35463,13 +36526,13 @@ var y$2 = d$2 * 365.25;
  * @api public
  */
 
-var ms$2 = function(val, options) {
+var ms$4 = function(val, options) {
   options = options || {};
   var type = typeof val;
   if (type === 'string' && val.length > 0) {
-    return parse$8(val);
+    return parse$b(val);
   } else if (type === 'number' && isNaN(val) === false) {
-    return options.long ? fmtLong$2(val) : fmtShort$2(val);
+    return options.long ? fmtLong$4(val) : fmtShort$4(val);
   }
   throw new Error(
     'val is not a non-empty string or a valid number. val=' +
@@ -35485,7 +36548,7 @@ var ms$2 = function(val, options) {
  * @api private
  */
 
-function parse$8(str) {
+function parse$b(str) {
   str = String(str);
   if (str.length > 100) {
     return;
@@ -35504,7 +36567,7 @@ function parse$8(str) {
     case 'yrs':
     case 'yr':
     case 'y':
-      return n * y$2;
+      return n * y$4;
     case 'weeks':
     case 'week':
     case 'w':
@@ -35512,25 +36575,25 @@ function parse$8(str) {
     case 'days':
     case 'day':
     case 'd':
-      return n * d$2;
+      return n * d$4;
     case 'hours':
     case 'hour':
     case 'hrs':
     case 'hr':
     case 'h':
-      return n * h$2;
+      return n * h$4;
     case 'minutes':
     case 'minute':
     case 'mins':
     case 'min':
     case 'm':
-      return n * m$2;
+      return n * m$4;
     case 'seconds':
     case 'second':
     case 'secs':
     case 'sec':
     case 's':
-      return n * s$2;
+      return n * s$4;
     case 'milliseconds':
     case 'millisecond':
     case 'msecs':
@@ -35550,19 +36613,19 @@ function parse$8(str) {
  * @api private
  */
 
-function fmtShort$2(ms) {
+function fmtShort$4(ms) {
   var msAbs = Math.abs(ms);
-  if (msAbs >= d$2) {
-    return Math.round(ms / d$2) + 'd';
+  if (msAbs >= d$4) {
+    return Math.round(ms / d$4) + 'd';
   }
-  if (msAbs >= h$2) {
-    return Math.round(ms / h$2) + 'h';
+  if (msAbs >= h$4) {
+    return Math.round(ms / h$4) + 'h';
   }
-  if (msAbs >= m$2) {
-    return Math.round(ms / m$2) + 'm';
+  if (msAbs >= m$4) {
+    return Math.round(ms / m$4) + 'm';
   }
-  if (msAbs >= s$2) {
-    return Math.round(ms / s$2) + 's';
+  if (msAbs >= s$4) {
+    return Math.round(ms / s$4) + 's';
   }
   return ms + 'ms';
 }
@@ -35575,19 +36638,19 @@ function fmtShort$2(ms) {
  * @api private
  */
 
-function fmtLong$2(ms) {
+function fmtLong$4(ms) {
   var msAbs = Math.abs(ms);
-  if (msAbs >= d$2) {
-    return plural$2(ms, msAbs, d$2, 'day');
+  if (msAbs >= d$4) {
+    return plural$4(ms, msAbs, d$4, 'day');
   }
-  if (msAbs >= h$2) {
-    return plural$2(ms, msAbs, h$2, 'hour');
+  if (msAbs >= h$4) {
+    return plural$4(ms, msAbs, h$4, 'hour');
   }
-  if (msAbs >= m$2) {
-    return plural$2(ms, msAbs, m$2, 'minute');
+  if (msAbs >= m$4) {
+    return plural$4(ms, msAbs, m$4, 'minute');
   }
-  if (msAbs >= s$2) {
-    return plural$2(ms, msAbs, s$2, 'second');
+  if (msAbs >= s$4) {
+    return plural$4(ms, msAbs, s$4, 'second');
   }
   return ms + ' ms';
 }
@@ -35596,7 +36659,7 @@ function fmtLong$2(ms) {
  * Pluralization helper.
  */
 
-function plural$2(ms, msAbs, n, name) {
+function plural$4(ms, msAbs, n, name) {
   var isPlural = msAbs >= n * 1.5;
   return Math.round(ms / n) + ' ' + name + (isPlural ? 's' : '');
 }
@@ -35906,7 +36969,7 @@ function SendStream (req, path, options) {
 
   this._maxage = opts.maxAge || opts.maxage;
   this._maxage = typeof this._maxage === 'string'
-    ? ms$2(this._maxage)
+    ? ms$4(this._maxage)
     : Number(this._maxage);
   this._maxage = !isNaN(this._maxage)
     ? Math.min(Math.max(0, this._maxage), MAX_MAXAGE)
@@ -36002,7 +37065,7 @@ SendStream.prototype.root = deprecate$1.function(SendStream.prototype.root,
 
 SendStream.prototype.maxage = deprecate$1.function(function maxage (maxAge) {
   this._maxage = typeof maxAge === 'string'
-    ? ms$2(maxAge)
+    ? ms$4(maxAge)
     : Number(maxAge);
   this._maxage = !isNaN(this._maxage)
     ? Math.min(Math.max(0, this._maxage), MAX_MAXAGE)
@@ -36270,7 +37333,7 @@ SendStream.prototype.pipe = function pipe (res) {
   this.res = res;
 
   // decode the path
-  var path = decode$1(this.path);
+  var path = decode$2(this.path);
   if (path === -1) {
     this.error(400);
     return res
@@ -36739,7 +37802,7 @@ function createHtmlDocument$1 (title, body) {
  * @api private
  */
 
-function decode$1 (path) {
+function decode$2 (path) {
   try {
     return decodeURIComponent(path)
   } catch (err) {
@@ -36911,7 +37974,7 @@ function forwarded (req) {
   }
 
   // simple header parsing
-  var proxyAddrs = parse$9(req.headers['x-forwarded-for'] || '');
+  var proxyAddrs = parse$c(req.headers['x-forwarded-for'] || '');
   var socketAddr = req.connection.remoteAddress;
   var addrs = [socketAddr].concat(proxyAddrs);
 
@@ -36926,7 +37989,7 @@ function forwarded (req) {
  * @private
  */
 
-function parse$9 (header) {
+function parse$c (header) {
   var end = header.length;
   var list = [];
   var start = header.length;
@@ -37949,7 +39012,7 @@ function trustSingle (subnet) {
 proxyAddr.all = all;
 proxyAddr.compile = compile_1;
 
-var utils$1 = createCommonjsModule(function (module, exports) {
+var utils$2 = createCommonjsModule(function (module, exports) {
 
 /**
  * Module dependencies.
@@ -38233,7 +39296,7 @@ function createETagGenerator (options) {
  */
 
 function parseExtendedQueryString(str) {
-  return lib$1.parse(str, {
+  return lib$2.parse(str, {
     allowPrototypes: true
   });
 }
@@ -38265,9 +39328,9 @@ var application = createCommonjsModule(function (module, exports) {
 var debug = src$2('express:application');
 
 
-var compileETag = utils$1.compileETag;
-var compileQueryParser = utils$1.compileQueryParser;
-var compileTrust = utils$1.compileTrust;
+var compileETag = utils$2.compileETag;
+var compileQueryParser = utils$2.compileQueryParser;
+var compileTrust = utils$2.compileTrust;
 var deprecate = depd_1('express');
 
 
@@ -40640,7 +41703,7 @@ function sha1(str){
  * @public
  */
 
-var parse_1$4 = parse$a;
+var parse_1$4 = parse$d;
 var serialize_1 = serialize;
 
 /**
@@ -40648,8 +41711,8 @@ var serialize_1 = serialize;
  * @private
  */
 
-var decode$2 = decodeURIComponent;
-var encode$1 = encodeURIComponent;
+var decode$3 = decodeURIComponent;
+var encode$2 = encodeURIComponent;
 var pairSplitRegExp = /; */;
 
 /**
@@ -40674,7 +41737,7 @@ var fieldContentRegExp = /^[\u0009\u0020-\u007e\u0080-\u00ff]+$/;
  * @public
  */
 
-function parse$a(str, options) {
+function parse$d(str, options) {
   if (typeof str !== 'string') {
     throw new TypeError('argument str must be a string');
   }
@@ -40682,7 +41745,7 @@ function parse$a(str, options) {
   var obj = {};
   var opt = options || {};
   var pairs = str.split(pairSplitRegExp);
-  var dec = opt.decode || decode$2;
+  var dec = opt.decode || decode$3;
 
   for (var i = 0; i < pairs.length; i++) {
     var pair = pairs[i];
@@ -40728,7 +41791,7 @@ function parse$a(str, options) {
 
 function serialize(name, val, options) {
   var opt = options || {};
-  var enc = opt.encode || encode$1;
+  var enc = opt.encode || encode$2;
 
   if (typeof enc !== 'function') {
     throw new TypeError('option encode is invalid');
@@ -40876,7 +41939,7 @@ function append (header, field) {
 
   // get fields array
   var fields = !Array.isArray(field)
-    ? parse$b(String(field))
+    ? parse$e(String(field))
     : field;
 
   // assert on invalid field names
@@ -40893,7 +41956,7 @@ function append (header, field) {
 
   // enumerate current values
   var val = header;
-  var vals = parse$b(header.toLowerCase());
+  var vals = parse$e(header.toLowerCase());
 
   // unspecified vary
   if (fields.indexOf('*') !== -1 || vals.indexOf('*') !== -1) {
@@ -40923,7 +41986,7 @@ function append (header, field) {
  * @private
  */
 
-function parse$b (header) {
+function parse$e (header) {
   var end = 0;
   var list = [];
   var start = 0;
@@ -40990,15 +42053,15 @@ var deprecate$3 = depd_1('express');
 
 
 
-var isAbsolute = utils$1.isAbsolute;
+var isAbsolute = utils$2.isAbsolute;
 
 
 
 
 var sign = cookieSignature.sign;
-var normalizeType$1 = utils$1.normalizeType;
-var normalizeTypes = utils$1.normalizeTypes;
-var setCharset = utils$1.setCharset;
+var normalizeType$1 = utils$2.normalizeType;
+var normalizeTypes = utils$2.normalizeTypes;
+var setCharset = utils$2.setCharset;
 
 
 var extname$2 = path$2.extname;
@@ -41229,7 +42292,7 @@ res.json = function json(obj) {
   var escape = app.get('json escape');
   var replacer = app.get('json replacer');
   var spaces = app.get('json spaces');
-  var body = stringify$1(val, replacer, spaces, escape);
+  var body = stringify$2(val, replacer, spaces, escape);
 
   // content-type
   if (!this.get('Content-Type')) {
@@ -41272,7 +42335,7 @@ res.jsonp = function jsonp(obj) {
   var escape = app.get('json escape');
   var replacer = app.get('json replacer');
   var spaces = app.get('json spaces');
-  var body = stringify$1(val, replacer, spaces, escape);
+  var body = stringify$2(val, replacer, spaces, escape);
   var callback = this.req.query[app.get('jsonp callback name')];
 
   // content-type
@@ -42087,7 +43150,7 @@ function sendfile(res, file, options, callback) {
  * @private
  */
 
-function stringify$1 (value, replacer, spaces, escape) {
+function stringify$2 (value, replacer, spaces, escape) {
   // v8 checks arguments.length for optimizing simple call
   // https://bugs.chromium.org/p/v8/issues/detail?id=4730
   var json = replacer || spaces

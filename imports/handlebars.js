@@ -1,0 +1,1 @@
+import handlebars from 'handlebars';
