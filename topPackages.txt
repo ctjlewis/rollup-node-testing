@@ -1,0 +1,1 @@
+lodash react chalk request commander moment express react-dom tslib prop-types axios fs-extra debug vue async bluebird uuid classnames core-js inquirer underscore yargs webpack rxjs mkdirp glob body-parser typescript dotenv colors jquery minimist @types/node @babel/runtime aws-sdk babel-runtime 
