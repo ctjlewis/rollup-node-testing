@@ -5,7 +5,9 @@
   "author": "Christian Lewis <hello@trytelework.com>",
   "license": "MIT",
   "scripts": {
-    "test": "ava"
+    "bundle": "rollup -c",
+    "setup": "node setup.js",
+    "test": "ava --serial"
   },
   "dependencies": {
     "@babel/runtime": "^7.11.0",

@@ -23,7 +23,10 @@ const EXPORTS = fs.readdirSync('./imports').map(
         extensions: ['.js', '.cjs'],
       }),
       json(),
-      resolve(),
+      resolve({
+        extensions: ['.js', '.cjs', '.mjs', '.json', '.node'],
+        preferBuiltins: true,
+      }),
     ],
   })
 );
