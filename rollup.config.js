@@ -8,46 +8,53 @@ import cjs from '@rollup/plugin-commonjs';
 
 import fs from 'fs';
 
-const EXPORTS = fs.readdirSync('./imports').map(
-  file => ({
-    // ESM entry
-    input: `./imports/${file}`,
-    // ESM output
-    output: {
-      file: `./bundles/${file}`,
-      format: 'esm'
-    },
-    // plugin suite
-    plugins: [
-      cjs({
-        extensions: ['.js', '.cjs'],
-      }),
-      json(),
-      resolve({
-        extensions: ['.js', '.cjs', '.mjs', '.json', '.node'],
-        preferBuiltins: true,
-      }),
-    ],
-  })
-);
+const excludes = fs.readFileSync(
+    './packages_exclude.txt', 
+    'utf-8'
+  ).split(' ').map(f => `${f}.js`);
 
-export default {
-  // ESM entry
-  input: `./imports/gulp.js`,
-  // ESM output
-  output: {
-    file: `./bundles/gulp.js`,
-    format: 'esm'
-  },
-  // plugin suite
-  plugins: [
-    cjs({
-      extensions: ['.js', '.cjs'],
-    }),
-    json(),
-    resolve({
-      extensions: ['.js', '.cjs', '.mjs', '.json', '.node'],
-      preferBuiltins: true,
-    }),
-  ],
-};
+export default fs.readdirSync('./imports')
+  .filter(f => !excludes.includes(f))
+  .map(
+    file => ({
+      // ESM entry
+      input: `./imports/${file}`,
+      // ESM output
+      output: {
+        file: `./bundles/${file}`,
+        format: 'esm'
+      },
+      // plugin suite
+      plugins: [
+        cjs({
+          extensions: ['.js', '.cjs'],
+        }),
+        json(),
+        resolve({
+          extensions: ['.js', '.cjs', '.mjs', '.json', '.node'],
+          preferBuiltins: true,
+        }),
+      ],
+    })
+  );
+
+// export default {
+//   // ESM entry
+//   input: `./imports/gulp.js`,
+//   // ESM output
+//   output: {
+//     file: `./bundles/gulp.js`,
+//     format: 'esm'
+//   },
+//   // plugin suite
+//   plugins: [
+//     cjs({
+//       extensions: ['.js', '.cjs'],
+//     }),
+//     json(),
+//     resolve({
+//       extensions: ['.js', '.cjs', '.mjs', '.json', '.node'],
+//       preferBuiltins: true,
+//     }),
+//   ],
+// };

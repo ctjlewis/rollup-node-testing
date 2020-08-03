@@ -6,8 +6,9 @@
   "license": "MIT",
   "scripts": {
     "bundle": "rollup -c",
-    "setup": "yarn add $(cat packages.txt) && node setup.js",
-    "test": "ava --serial"
+    "setup": "yarn add $(cat packages_include.txt) && node setup.js",
+    "test": "yarn ava --serial",
+    "cold-start": "yarn setup && yarn test"
   },
   "dependencies": {
     "@angular/animations": "^10.0.7",
@@ -24,7 +25,7 @@
     "@types/node": "^14.0.27",
     "async": "^3.2.0",
     "autoprefixer": "^9.8.6",
-    "aws-sdk": "^2.725.0",
+    "aws-sdk": "^2.726.0",
     "axios": "^0.19.2",
     "babel-core": "^6.26.3",
     "babel-eslint": "^10.1.0",

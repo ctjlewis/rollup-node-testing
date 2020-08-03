@@ -7,6 +7,8 @@
 import fs from 'fs';
 import shell from 'await-shell';
 
+const excludes = fs.readFileSync('./packages_exclude.txt', 'utf-8').split(' ');
+
 const getImportTemplate = (dependency) => {
   const ecmaSafe = /[a-z]+/i.exec(dependency)[0];
   return `import ${ecmaSafe} from '${dependency}';`;
@@ -29,36 +31,36 @@ test('Executing bundle for ${filename} should not throw', async (t) => {
 `;
 
 (async () => {
-  const dependencies = fs.readFileSync('./packages.txt', 'utf-8').split(' ');
+  const dependencies = fs.readFileSync('./packages_include.txt', 'utf-8').split(' ');
+  console.log(excludes);
   await Promise.all(
-    dependencies.map(
-      async (dependency) => {
-        const filename = dependency.replace('/', '-') + '.js';
+    dependencies
+      .filter(dependency => !excludes.includes(dependency))
+      .map(
+        async (dependency) => {
+          const filename = dependency.replace('/', '-') + '.js';
 
-        return Promise.all([
-          /**
-           * Write import files that Rollup will bundle.
-           */
-          fs.promises.writeFile(
-            `./imports/${filename}`,
-            getImportTemplate(dependency)
-          ),
-          /**
-           * Write AVA tests, which will read compiled bundles and verify there
-           * are no errors.
-           */
-          fs.promises.writeFile(
-            `./test/${filename}`,
-            getTestTemplate(filename)
-          )
-        ]);
-      }
-    )
-  );
+          return Promise.all([
+            /**
+             * Write import files that Rollup will bundle.
+             */
+            fs.promises.writeFile(
+              `./imports/${filename}`,
+              getImportTemplate(dependency)
+            ),
+            /**
+             * Write AVA tests, which will read compiled bundles and verify there
+             * are no errors.
+             */
+            fs.promises.writeFile(
+              `./test/${filename}`,
+              getTestTemplate(filename)
+            )
+          ]);
+        }
+      )
+    );
 
-  await shell(
-    'yarn bundle',
-    'yarn test'
-  );
+  await shell('yarn bundle');
 
 })();
