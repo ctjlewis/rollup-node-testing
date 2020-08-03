@@ -49,7 +49,7 @@ test('Executing bundle for ${filename} should not throw', async (t) => {
          * Write AVA tests, which will read compiled bundles and verify there
          * are no errors.
          */
-        return await fs.promises.writeFile(
+        await fs.promises.writeFile(
           `./test/${filename}`,
           getTestTemplate(filename)
         );
