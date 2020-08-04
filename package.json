@@ -10,7 +10,7 @@
     "clean": "rm -rf bundles/* && rm -rf imports/* && rm -rf test/*",
     "cold-start": "yarn setup && yarn test",
     "setup": "node setup.js",
-    "test": "yarn ava --serial"
+    "test": "rm results.txt && yarn ava -st | tee -a results.txt"
   },
   "dependencies": {
     "@angular/animations": "^10.0.7",

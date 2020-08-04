@@ -7,7 +7,6 @@
 import fs from 'fs';
 import glob from 'glob';
 import path from 'path';
-import shell from 'await-shell';
 
 const dirs = glob.sync('./node_modules/*/', {
   ignore: ['./node_modules/@*/'],
@@ -26,7 +25,6 @@ const getTestTemplate = (filename) => `
 import test from 'ava';
 import shell from 'await-shell';
 
-console.log(\`------\n${filename}\n------\`);
 test('Executing bundle for ${filename} should not throw', async (t) => {
   try {
     await shell('node ./bundles/${filename}');
@@ -45,10 +43,9 @@ const humanReadable = (dir) => path.basename(dir).replace(/[^a-z]/ig, '');
       dirs
           .filter((dependency) => !excludes.includes(dependency))
           .map(
-              async (dependency) => {
+              (dependency) => {
                 const filename = humanReadable(dependency);
-
-                return await Promise.all([
+                return Promise.all([
                   /**
                    * Write import files that Rollup will bundle.
                    */

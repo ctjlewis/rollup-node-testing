@@ -15,5 +15,6 @@ same output as the source module.
 | ----------- | ----------- |
 | `yarn add-packages` | Add yarn dependencies from `packages_include.txt`. |
 | `yarn clean` | Remove all built tests and import files. |
-| `yarn setup` | Build test and import files (this will take a while!) |
 | `yarn cold-start` | Add all needed yarn depdendencies, build tests and imports, start the test suite. |
+| `yarn setup` | Build test and import files (this will take a while!) |
+| `yarn test`  | Run tests in `tests/` directory. |
