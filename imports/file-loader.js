@@ -1,1 +1,0 @@
-import file from 'file-loader';

@@ -1,1 +1,0 @@
-import babel from 'babel-runtime';

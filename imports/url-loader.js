@@ -1,1 +1,0 @@
-import url from 'url-loader';

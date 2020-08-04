@@ -1,1 +1,0 @@
-import async from 'async';
