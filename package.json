@@ -5,10 +5,12 @@
   "author": "Christian Lewis <hello@trytelework.com>",
   "license": "MIT",
   "scripts": {
-    "bundle": "rollup -c",
-    "setup": "yarn add $(cat packages_include.txt) && node setup.js",
-    "test": "yarn ava --serial",
-    "cold-start": "yarn setup && yarn test"
+    "add-packages": "yarn add $(cat packages_include.txt)",
+    "bundle": "yarn rollup -c",
+    "clean": "rm -rf bundles/* && rm -rf imports/* && rm -rf test/*",
+    "cold-start": "yarn setup && yarn test",
+    "setup": "node setup.js",
+    "test": "yarn ava --serial"
   },
   "dependencies": {
     "@angular/animations": "^10.0.7",
@@ -127,6 +129,8 @@
     "@rollup/plugin-node-resolve": "^8.4.0",
     "ava": "^3.11.1",
     "await-shell": "^1.26.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-jsdoc": "^30.1.0",
     "rollup": "^2.23.0"
   }
 }

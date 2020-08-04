@@ -5,13 +5,21 @@
  */
 
 import fs from 'fs';
+import glob from 'glob';
+import path from 'path';
 import shell from 'await-shell';
 
-const excludes = fs.readFileSync('./packages_exclude.txt', 'utf-8').split(' ');
+const dirs = glob.sync('./node_modules/*/', {
+  ignore: ['./node_modules/@*/'],
+});
+
+const excludes = fs.readFileSync(
+    './packages_exclude.txt',
+    'utf-8',
+).split(/\s/).map((f) => `./node_modules/${f}/`);
 
 const getImportTemplate = (dependency) => {
-  const ecmaSafe = /[a-z]+/i.exec(dependency)[0];
-  return `import ${ecmaSafe} from '${dependency}';`;
+  return `import ${humanReadable(dependency)} from '${dependency}';`;
 };
 
 const getTestTemplate = (filename) => `
@@ -30,37 +38,35 @@ test('Executing bundle for ${filename} should not throw', async (t) => {
 });
 `;
 
+const humanReadable = (dir) => path.basename(dir).replace(/[^a-z]/ig, '');
+
 (async () => {
-  const dependencies = fs.readFileSync('./packages_include.txt', 'utf-8').split(' ');
-  console.log(excludes);
   await Promise.all(
-    dependencies
-      .filter(dependency => !excludes.includes(dependency))
-      .map(
-        async (dependency) => {
-          const filename = dependency.replace('/', '-') + '.js';
+      dirs
+          .filter((dependency) => !excludes.includes(dependency))
+          .map(
+              async (dependency) => {
+                const filename = humanReadable(dependency);
 
-          return Promise.all([
-            /**
-             * Write import files that Rollup will bundle.
-             */
-            fs.promises.writeFile(
-              `./imports/${filename}`,
-              getImportTemplate(dependency)
-            ),
-            /**
-             * Write AVA tests, which will read compiled bundles and verify there
-             * are no errors.
-             */
-            fs.promises.writeFile(
-              `./test/${filename}`,
-              getTestTemplate(filename)
-            )
-          ]);
-        }
-      )
-    );
-
-  await shell('yarn bundle');
-
+                return await Promise.all([
+                  /**
+                   * Write import files that Rollup will bundle.
+                   */
+                  fs.promises.writeFile(
+                      `./imports/${filename}.js`,
+                      getImportTemplate(path.basename(dependency)),
+                  ),
+                  /**
+                   * Write AVA tests, which will read compiled bundles and
+                   * verify there are no errors.
+                   */
+                  fs.promises.writeFile(
+                      `./test/${filename}.js`,
+                      getTestTemplate(filename),
+                  ),
+                ]);
+              },
+          ),
+  );
+  console.log('Built files at imports/ and test/.');
 })();

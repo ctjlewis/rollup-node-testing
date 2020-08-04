@@ -7,36 +7,49 @@ import resolve from '@rollup/plugin-node-resolve';
 import cjs from '@rollup/plugin-commonjs';
 
 import fs from 'fs';
+import path from 'path';
+import glob from 'glob';
+
+const humanReadable = (dir) => path.basename(dir).replace(/[^a-z]/ig, '');
+
+const IGNORE = glob.sync('./bundles/*').map(
+    (f) => `./imports/${path.basename(f)}`,
+);
+
+const dirs = glob.sync('./imports/*', {
+  ignore: IGNORE,
+});
 
 const excludes = fs.readFileSync(
-    './packages_exclude.txt', 
-    'utf-8'
-  ).split(' ').map(f => `${f}.js`);
+    './packages_exclude.txt',
+    'utf-8',
+).split(/\s/).map((f) => `./imports/${humanReadable(f)}.js`);
 
-export default fs.readdirSync('./imports')
-  .filter(f => !excludes.includes(f))
-  .map(
-    file => ({
-      // ESM entry
-      input: `./imports/${file}`,
-      // ESM output
-      output: {
-        file: `./bundles/${file}`,
-        format: 'esm'
-      },
-      // plugin suite
-      plugins: [
-        cjs({
-          extensions: ['.js', '.cjs'],
+export default dirs
+    .filter((f) => !excludes.includes(f))
+    .map(
+        (dir) => ({
+          // ESM entry
+          input: dir,
+          // ESM output
+          output: {
+            file: `./bundles/${path.basename(dir)}`,
+            format: 'esm',
+          },
+          // plugin suite
+          plugins: [
+            cjs({
+              transformMixedEsModules: true,
+              extensions: ['.js', '.cjs'],
+            }),
+            json(),
+            resolve({
+              extensions: ['.js', '.cjs', '.mjs', '.json', '.node'],
+              preferBuiltins: true,
+            }),
+          ],
         }),
-        json(),
-        resolve({
-          extensions: ['.js', '.cjs', '.mjs', '.json', '.node'],
-          preferBuiltins: true,
-        }),
-      ],
-    })
-  );
+    );
 
 // export default {
 //   // ESM entry
