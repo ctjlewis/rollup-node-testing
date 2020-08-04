@@ -9,6 +9,8 @@ import is generated for each package and then bundled with Rollup. The test
 passes for a module if the bundle is generated without errors and produces the
 same output as the source module.
 
+**Get started with `yarn cold-start`.**
+
 | Command     | Result      |
 | ----------- | ----------- |
 | `yarn add-packages` | Add yarn dependencies from `packages_include.txt`. |
