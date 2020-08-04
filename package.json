@@ -7,10 +7,10 @@
   "scripts": {
     "add-packages": "yarn add $(cat packages_include.txt)",
     "bundle": "yarn rollup -c",
-    "clean": "rm -rf bundles/* && rm -rf imports/* && rm -rf test/*",
-    "cold-start": "yarn setup && yarn test",
+    "clean": "echo '' > results.txt && rm -rf bundles/* && rm -rf imports/* && rm -rf test/*",
+    "cold-start": "yarn clean && yarn setup && yarn bundle && yarn test",
     "setup": "node setup.js",
-    "test": "rm results.txt && yarn ava -st | tee -a results.txt"
+    "test": "yarn ava -st 2>&1 | tee -a results.txt"
   },
   "dependencies": {
     "@angular/animations": "^10.0.7",

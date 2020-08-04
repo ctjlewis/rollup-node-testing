@@ -21,18 +21,34 @@ const getImportTemplate = (dependency) => {
   return `import ${humanReadable(dependency)} from '${dependency}';`;
 };
 
-const getTestTemplate = (filename) => `
+const getTestTemplate = (dependency) => `
 import test from 'ava';
 import shell from 'await-shell';
 
-test('Executing bundle for ${filename} should not throw', async (t) => {
+test('Source and bundle should have similar exit codes', async (t) => {
+  let sourceNonzero, bundleNonzero;
+
   try {
-    await shell('node ./bundles/${filename}');
+    await shell('node ./bundles/${dependency}');
+    bundleNonzero = false;
   } catch (e) {
-    t.log(e);
-    return t.fail();
+    bundleNonzero = true;
   }
-  t.pass();
+
+  try {
+    await shell('node ./node_modules/${dependency}');
+    sourceNonzero = false;
+  } catch (e) {
+    sourceNonzero = true;
+  }
+
+  if (sourceNonzero == bundleNonzero) t.pass();
+  else {
+    t.fail(
+        \`SOURCE nonzero exit: \${sourceNonzero}\\n\`
+      + \`BUNDLE nonzero exit: \${bundleNonzero}\`,
+    );
+  }
 });
 `;
 
@@ -41,25 +57,26 @@ const humanReadable = (dir) => path.basename(dir).replace(/[^a-z]/ig, '');
 (async () => {
   await Promise.all(
       dirs
-          .filter((dependency) => !excludes.includes(dependency))
+          .filter((dir) => !excludes.includes(dir))
           .map(
-              (dependency) => {
-                const filename = humanReadable(dependency);
+              (dir) => {
+                const dependencyName = path.basename(dir);
+                const variableName = humanReadable(dependencyName);
                 return Promise.all([
                   /**
                    * Write import files that Rollup will bundle.
                    */
                   fs.promises.writeFile(
-                      `./imports/${filename}.js`,
-                      getImportTemplate(path.basename(dependency)),
+                      `./imports/${dependencyName}.js`,
+                      getImportTemplate(dependencyName),
                   ),
                   /**
                    * Write AVA tests, which will read compiled bundles and
                    * verify there are no errors.
                    */
                   fs.promises.writeFile(
-                      `./test/${filename}.js`,
-                      getTestTemplate(filename),
+                      `./test/${dependencyName}.js`,
+                      getTestTemplate(dependencyName),
                   ),
                 ]);
               },

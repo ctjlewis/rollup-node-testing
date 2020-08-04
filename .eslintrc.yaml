@@ -17,6 +17,7 @@ parserOptions:
 ignorePatterns:
   - bundles/*
   - imports/*
+  - tests/*
   - node_modules/*
 
 rules:
@@ -30,6 +31,10 @@ rules:
   jsdoc/newline-after-description:
     - error
     - always
+
+  one-var:
+    - error
+    - let: consecutive
 
   operator-linebreak:
     - error
