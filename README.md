@@ -1,5 +1,5 @@
 # Rollup 🤝 Node
-## Stress-testing against the most depended-on npm packages
+### Stress-testing against the most depended-on npm packages
 This is a small project to integrate Rollup with third party NodeJS packages,
 inspired by a bug encountered when rolling up a module that depends on
 `chokidar` (which is manually included for this reason).
