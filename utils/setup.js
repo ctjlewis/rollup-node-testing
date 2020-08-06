@@ -13,7 +13,7 @@ const dirs = glob.sync('./node_modules/*/', {
 });
 
 const excludes = fs.readFileSync(
-    './packages_exclude.txt',
+    './config/exclude.txt',
     'utf-8',
 ).split(/\s/).map((f) => `./node_modules/${f}/`);
 
@@ -44,6 +44,7 @@ test('Source and bundle should have similar exit codes', async (t) => {
 
   if (sourceNonzero == bundleNonzero) t.pass();
   else {
+    await shell('echo ${dependency} >> results/failures');
     t.fail(
         \`SOURCE nonzero exit: \${sourceNonzero}\\n\`
       + \`BUNDLE nonzero exit: \${bundleNonzero}\`,
@@ -61,7 +62,6 @@ const humanReadable = (dir) => path.basename(dir).replace(/[^a-z]/ig, '');
           .map(
               (dir) => {
                 const dependencyName = path.basename(dir);
-                const variableName = humanReadable(dependencyName);
                 return Promise.all([
                   /**
                    * Write import files that Rollup will bundle.

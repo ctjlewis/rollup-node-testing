@@ -1,6 +1,0 @@
-ava ast-types-flow babel-runtime error es5-ext 
-
-d gulp es6-iterator es6-symbol es6-weak-map gulp gulp-cli last-run
-semver-greatest-satisfied-range sver-compat
-
-private tar undertaker
