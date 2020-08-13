@@ -1,5 +1,5 @@
 warning ../../package.json: No license field
-$ /home/christian/Development/rollup-third-party/node_modules/.bin/ava -st
+$ /home/christian/Development/rollup-node-testing/node_modules/.bin/ava -st
 TAP version 13
 # No tests found in bundles/test-exclude.js, make sure to import "ava" at the top of your test file
 not ok 1 - No tests found in bundles/test-exclude.js, make sure to import "ava" at the top of your test file
@@ -53,7 +53,7 @@ ok 24 - test › ansi-styles › Source and bundle should have similar exit code
 ok 25 - test › ansi-wrap › Source and bundle should have similar exit codes
 # test › anymatch › Source and bundle should have similar exit codes
 ok 26 - test › anymatch › Source and bundle should have similar exit codes
-(node:174721) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(node:1740266) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 # test › append-buffer › Source and bundle should have similar exit codes
 ok 27 - test › append-buffer › Source and bundle should have similar exit codes
@@ -67,7 +67,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/are-we-there-yet.js:1191:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/are-we-there-yet.js:1191:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -88,9 +88,9 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/argparse.js:983:6
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/argparse.js:12:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/argparse.js:940:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/argparse.js:983:6
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/argparse.js:12:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/argparse.js:940:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -185,16 +185,16 @@ ok 69 - test › asynckit › Source and bundle should have similar exit codes
 ok 70 - test › at-least-node › Source and bundle should have similar exit codes
 # test › atob › Source and bundle should have similar exit codes
 ok 71 - test › atob › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/autoprefixer.js:11614
+file:///home/christian/Development/rollup-node-testing/bundles/autoprefixer.js:11614
 function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
                                                                                               ^
 
 TypeError: Cannot read property 'prototype' of undefined
-    at _inheritsLoose (file:///home/christian/Development/rollup-third-party/bundles/autoprefixer.js:11614:95)
-    at file:///home/christian/Development/rollup-third-party/bundles/autoprefixer.js:11630:3
-    at file:///home/christian/Development/rollup-third-party/bundles/autoprefixer.js:11711:2
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/autoprefixer.js:12:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/autoprefixer.js:11599:12
+    at _inheritsLoose (file:///home/christian/Development/rollup-node-testing/bundles/autoprefixer.js:11614:95)
+    at file:///home/christian/Development/rollup-node-testing/bundles/autoprefixer.js:11630:3
+    at file:///home/christian/Development/rollup-node-testing/bundles/autoprefixer.js:11711:2
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/autoprefixer.js:12:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/autoprefixer.js:11599:12
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › autoprefixer › Source and bundle should have similar exit codes
@@ -221,12 +221,12 @@ Test files must be run with the AVA CLI:
 ok 73 - test › ava › Source and bundle should have similar exit codes
 # test › await-shell › Source and bundle should have similar exit codes
 ok 74 - test › await-shell › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/aws-sdk.js:384
+file:///home/christian/Development/rollup-node-testing/bundles/aws-sdk.js:384
 var memoizedProperty = util_1.memoizedProperty;
                               ^
 
 TypeError: Cannot read property 'memoizedProperty' of undefined
-    at file:///home/christian/Development/rollup-third-party/bundles/aws-sdk.js:384:31
+    at file:///home/christian/Development/rollup-node-testing/bundles/aws-sdk.js:384:31
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › aws-sdk › Source and bundle should have similar exit codes
@@ -251,14 +251,14 @@ ok 79 - test › axios › Source and bundle should have similar exit codes
 ok 80 - test › axobject-query › Source and bundle should have similar exit codes
 # test › babel-code-frame › Source and bundle should have similar exit codes
 ok 81 - test › babel-code-frame › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/babel-core.js:8187
+file:///home/christian/Development/rollup-node-testing/bundles/babel-core.js:8187
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-core.js:8187:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-core.js:18:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-core.js:8174:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-core.js:8187:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-core.js:18:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-core.js:8174:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-core › Source and bundle should have similar exit codes
@@ -271,12 +271,12 @@ not ok 82 - test › babel-core › Source and bundle should have similar exit c
     assertion: fail
     at: 'file://test/babel-core.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/babel-eslint.js:17674
+file:///home/christian/Development/rollup-node-testing/bundles/babel-eslint.js:17674
 const eslintBase = require.resolve("eslint");
                    ^
 
 ReferenceError: require is not defined
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-eslint.js:17674:20
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-eslint.js:17674:20
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-eslint › Source and bundle should have similar exit codes
@@ -289,14 +289,14 @@ not ok 83 - test › babel-eslint › Source and bundle should have similar exit
     assertion: fail
     at: 'file://test/babel-eslint.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/babel-generator.js:13102
+file:///home/christian/Development/rollup-node-testing/bundles/babel-generator.js:13102
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-generator.js:13102:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-generator.js:12:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-generator.js:13089:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-generator.js:13102:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-generator.js:12:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-generator.js:13089:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-generator › Source and bundle should have similar exit codes
@@ -309,14 +309,14 @@ not ok 84 - test › babel-generator › Source and bundle should have similar e
     assertion: fail
     at: 'file://test/babel-generator.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/babel-helper-call-delegate.js:7323
+file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-call-delegate.js:7323
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-helper-call-delegate.js:7323:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-helper-call-delegate.js:10:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-helper-call-delegate.js:7310:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-call-delegate.js:7323:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-call-delegate.js:10:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-call-delegate.js:7310:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-helper-call-delegate › Source and bundle should have similar exit codes
@@ -329,14 +329,14 @@ not ok 85 - test › babel-helper-call-delegate › Source and bundle should hav
     assertion: fail
     at: 'file://test/babel-helper-call-delegate.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/babel-helper-define-map.js:7328
+file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-define-map.js:7328
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-helper-define-map.js:7328:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-helper-define-map.js:15:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-helper-define-map.js:7315:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-define-map.js:7328:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-define-map.js:15:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-define-map.js:7315:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-helper-define-map › Source and bundle should have similar exit codes
@@ -349,14 +349,14 @@ not ok 86 - test › babel-helper-define-map › Source and bundle should have s
     assertion: fail
     at: 'file://test/babel-helper-define-map.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/babel-helper-function-name.js:7328
+file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-function-name.js:7328
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-helper-function-name.js:7328:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-helper-function-name.js:15:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-helper-function-name.js:7315:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-function-name.js:7328:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-function-name.js:15:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-function-name.js:7315:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-helper-function-name › Source and bundle should have similar exit codes
@@ -369,14 +369,14 @@ not ok 87 - test › babel-helper-function-name › Source and bundle should hav
     assertion: fail
     at: 'file://test/babel-helper-function-name.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/babel-helper-get-function-arity.js:7323
+file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-get-function-arity.js:7323
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-helper-get-function-arity.js:7323:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-helper-get-function-arity.js:10:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-helper-get-function-arity.js:7310:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-get-function-arity.js:7323:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-get-function-arity.js:10:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-get-function-arity.js:7310:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-helper-get-function-arity › Source and bundle should have similar exit codes
@@ -389,14 +389,14 @@ not ok 88 - test › babel-helper-get-function-arity › Source and bundle shoul
     assertion: fail
     at: 'file://test/babel-helper-get-function-arity.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/babel-helper-hoist-variables.js:7323
+file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-hoist-variables.js:7323
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-helper-hoist-variables.js:7323:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-helper-hoist-variables.js:10:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-helper-hoist-variables.js:7310:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-hoist-variables.js:7323:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-hoist-variables.js:10:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-hoist-variables.js:7310:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-helper-hoist-variables › Source and bundle should have similar exit codes
@@ -409,14 +409,14 @@ not ok 89 - test › babel-helper-hoist-variables › Source and bundle should h
     assertion: fail
     at: 'file://test/babel-helper-hoist-variables.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/babel-helper-optimise-call-expression.js:7323
+file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-optimise-call-expression.js:7323
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-helper-optimise-call-expression.js:7323:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-helper-optimise-call-expression.js:10:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-helper-optimise-call-expression.js:7310:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-optimise-call-expression.js:7323:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-optimise-call-expression.js:10:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-optimise-call-expression.js:7310:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-helper-optimise-call-expression › Source and bundle should have similar exit codes
@@ -429,14 +429,14 @@ not ok 90 - test › babel-helper-optimise-call-expression › Source and bundle
     assertion: fail
     at: 'file://test/babel-helper-optimise-call-expression.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/babel-helper-regex.js:7659
+file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-regex.js:7659
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-helper-regex.js:7659:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-helper-regex.js:10:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-helper-regex.js:7646:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-regex.js:7659:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-regex.js:10:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-regex.js:7646:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-helper-regex › Source and bundle should have similar exit codes
@@ -449,14 +449,14 @@ not ok 91 - test › babel-helper-regex › Source and bundle should have simila
     assertion: fail
     at: 'file://test/babel-helper-regex.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/babel-helper-replace-supers.js:7336
+file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-replace-supers.js:7336
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-helper-replace-supers.js:7336:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-helper-replace-supers.js:12:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-helper-replace-supers.js:7323:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-replace-supers.js:7336:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-replace-supers.js:12:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-helper-replace-supers.js:7323:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-helper-replace-supers › Source and bundle should have similar exit codes
@@ -469,14 +469,14 @@ not ok 92 - test › babel-helper-replace-supers › Source and bundle should ha
     assertion: fail
     at: 'file://test/babel-helper-replace-supers.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/babel-helpers.js:8051
+file:///home/christian/Development/rollup-node-testing/bundles/babel-helpers.js:8051
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-helpers.js:8051:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-helpers.js:15:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-helpers.js:8038:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-helpers.js:8051:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-helpers.js:15:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-helpers.js:8038:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-helpers › Source and bundle should have similar exit codes
@@ -489,14 +489,14 @@ not ok 93 - test › babel-helpers › Source and bundle should have similar exi
     assertion: fail
     at: 'file://test/babel-helpers.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/babel-jest.js:71533
+file:///home/christian/Development/rollup-node-testing/bundles/babel-jest.js:71533
 const THIS_FILE = fs().readFileSync(__filename);
                                     ^
 
 ReferenceError: __filename is not defined
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-jest.js:71533:37
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-jest.js:22:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-jest.js:71417:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-jest.js:71533:37
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-jest.js:22:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-jest.js:71417:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-jest › Source and bundle should have similar exit codes
@@ -529,14 +529,14 @@ ok 102 - test › babel-plugin-syntax-jsx › Source and bundle should have simi
 ok 103 - test › babel-plugin-transform-es2015-arrow-functions › Source and bundle should have similar exit codes
 # test › babel-plugin-transform-es2015-block-scoped-functions › Source and bundle should have similar exit codes
 ok 104 - test › babel-plugin-transform-es2015-block-scoped-functions › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-block-scoping.js:7339
+file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-block-scoping.js:7339
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-block-scoping.js:7339:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-block-scoping.js:15:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-block-scoping.js:7326:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-block-scoping.js:7339:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-block-scoping.js:15:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-block-scoping.js:7326:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-plugin-transform-es2015-block-scoping › Source and bundle should have similar exit codes
@@ -549,14 +549,14 @@ not ok 105 - test › babel-plugin-transform-es2015-block-scoping › Source and
     assertion: fail
     at: 'file://test/babel-plugin-transform-es2015-block-scoping.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-classes.js:7429
+file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-classes.js:7429
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-classes.js:7429:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-classes.js:15:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-classes.js:7416:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-classes.js:7429:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-classes.js:15:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-classes.js:7416:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-plugin-transform-es2015-classes › Source and bundle should have similar exit codes
@@ -573,14 +573,14 @@ not ok 106 - test › babel-plugin-transform-es2015-classes › Source and bundl
 ok 107 - test › babel-plugin-transform-es2015-computed-properties › Source and bundle should have similar exit codes
 # test › babel-plugin-transform-es2015-destructuring › Source and bundle should have similar exit codes
 ok 108 - test › babel-plugin-transform-es2015-destructuring › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-duplicate-keys.js:7323
+file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-duplicate-keys.js:7323
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-duplicate-keys.js:7323:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-duplicate-keys.js:10:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-duplicate-keys.js:7310:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-duplicate-keys.js:7323:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-duplicate-keys.js:10:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-duplicate-keys.js:7310:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-plugin-transform-es2015-duplicate-keys › Source and bundle should have similar exit codes
@@ -595,14 +595,14 @@ not ok 109 - test › babel-plugin-transform-es2015-duplicate-keys › Source an
   ...
 # test › babel-plugin-transform-es2015-for-of › Source and bundle should have similar exit codes
 ok 110 - test › babel-plugin-transform-es2015-for-of › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-function-name.js:7328
+file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-function-name.js:7328
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-function-name.js:7328:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-function-name.js:15:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-function-name.js:7315:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-function-name.js:7328:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-function-name.js:15:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-function-name.js:7315:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-plugin-transform-es2015-function-name › Source and bundle should have similar exit codes
@@ -617,14 +617,14 @@ not ok 111 - test › babel-plugin-transform-es2015-function-name › Source and
   ...
 # test › babel-plugin-transform-es2015-literals › Source and bundle should have similar exit codes
 ok 112 - test › babel-plugin-transform-es2015-literals › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-modules-amd.js:8052
+file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-modules-amd.js:8052
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-modules-amd.js:8052:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-modules-amd.js:16:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-modules-amd.js:8039:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-modules-amd.js:8052:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-modules-amd.js:16:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-modules-amd.js:8039:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-plugin-transform-es2015-modules-amd › Source and bundle should have similar exit codes
@@ -637,14 +637,14 @@ not ok 113 - test › babel-plugin-transform-es2015-modules-amd › Source and b
     assertion: fail
     at: 'file://test/babel-plugin-transform-es2015-modules-amd.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-modules-commonjs.js:8052
+file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-modules-commonjs.js:8052
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-modules-commonjs.js:8052:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-modules-commonjs.js:16:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-modules-commonjs.js:8039:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-modules-commonjs.js:8052:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-modules-commonjs.js:16:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-modules-commonjs.js:8039:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-plugin-transform-es2015-modules-commonjs › Source and bundle should have similar exit codes
@@ -657,14 +657,14 @@ not ok 114 - test › babel-plugin-transform-es2015-modules-commonjs › Source 
     assertion: fail
     at: 'file://test/babel-plugin-transform-es2015-modules-commonjs.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-modules-systemjs.js:7328
+file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-modules-systemjs.js:7328
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-modules-systemjs.js:7328:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-modules-systemjs.js:15:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-modules-systemjs.js:7315:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-modules-systemjs.js:7328:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-modules-systemjs.js:15:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-modules-systemjs.js:7315:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-plugin-transform-es2015-modules-systemjs › Source and bundle should have similar exit codes
@@ -677,14 +677,14 @@ not ok 115 - test › babel-plugin-transform-es2015-modules-systemjs › Source 
     assertion: fail
     at: 'file://test/babel-plugin-transform-es2015-modules-systemjs.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-modules-umd.js:8052
+file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-modules-umd.js:8052
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-modules-umd.js:8052:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-modules-umd.js:16:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-modules-umd.js:8039:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-modules-umd.js:8052:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-modules-umd.js:16:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-modules-umd.js:8039:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-plugin-transform-es2015-modules-umd › Source and bundle should have similar exit codes
@@ -697,14 +697,14 @@ not ok 116 - test › babel-plugin-transform-es2015-modules-umd › Source and b
     assertion: fail
     at: 'file://test/babel-plugin-transform-es2015-modules-umd.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-object-super.js:7336
+file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-object-super.js:7336
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-object-super.js:7336:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-object-super.js:12:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-object-super.js:7323:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-object-super.js:7336:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-object-super.js:12:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-object-super.js:7323:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-plugin-transform-es2015-object-super › Source and bundle should have similar exit codes
@@ -717,14 +717,14 @@ not ok 117 - test › babel-plugin-transform-es2015-object-super › Source and 
     assertion: fail
     at: 'file://test/babel-plugin-transform-es2015-object-super.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-parameters.js:7339
+file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-parameters.js:7339
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-parameters.js:7339:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-parameters.js:15:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-parameters.js:7326:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-parameters.js:7339:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-parameters.js:15:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-parameters.js:7326:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-plugin-transform-es2015-parameters › Source and bundle should have similar exit codes
@@ -737,14 +737,14 @@ not ok 118 - test › babel-plugin-transform-es2015-parameters › Source and bu
     assertion: fail
     at: 'file://test/babel-plugin-transform-es2015-parameters.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-shorthand-properties.js:7323
+file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-shorthand-properties.js:7323
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-shorthand-properties.js:7323:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-shorthand-properties.js:10:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-shorthand-properties.js:7310:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-shorthand-properties.js:7323:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-shorthand-properties.js:10:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-shorthand-properties.js:7310:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-plugin-transform-es2015-shorthand-properties › Source and bundle should have similar exit codes
@@ -759,14 +759,14 @@ not ok 119 - test › babel-plugin-transform-es2015-shorthand-properties › Sou
   ...
 # test › babel-plugin-transform-es2015-spread › Source and bundle should have similar exit codes
 ok 120 - test › babel-plugin-transform-es2015-spread › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-sticky-regex.js:7659
+file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-sticky-regex.js:7659
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-sticky-regex.js:7659:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-sticky-regex.js:10:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-sticky-regex.js:7646:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-sticky-regex.js:7659:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-sticky-regex.js:10:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-sticky-regex.js:7646:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-plugin-transform-es2015-sticky-regex › Source and bundle should have similar exit codes
@@ -783,14 +783,14 @@ not ok 121 - test › babel-plugin-transform-es2015-sticky-regex › Source and 
 ok 122 - test › babel-plugin-transform-es2015-template-literals › Source and bundle should have similar exit codes
 # test › babel-plugin-transform-es2015-typeof-symbol › Source and bundle should have similar exit codes
 ok 123 - test › babel-plugin-transform-es2015-typeof-symbol › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-unicode-regex.js:10812
+file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-unicode-regex.js:10812
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-unicode-regex.js:10812:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-unicode-regex.js:10:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-es2015-unicode-regex.js:10799:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-unicode-regex.js:10812:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-unicode-regex.js:10:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-es2015-unicode-regex.js:10799:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-plugin-transform-es2015-unicode-regex › Source and bundle should have similar exit codes
@@ -803,14 +803,14 @@ not ok 124 - test › babel-plugin-transform-es2015-unicode-regex › Source and
     assertion: fail
     at: 'file://test/babel-plugin-transform-es2015-unicode-regex.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-regenerator.js:7326
+file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-regenerator.js:7326
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-regenerator.js:7326:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-regenerator.js:13:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-regenerator.js:7313:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-regenerator.js:7326:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-regenerator.js:13:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-regenerator.js:7313:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-plugin-transform-regenerator › Source and bundle should have similar exit codes
@@ -823,14 +823,14 @@ not ok 125 - test › babel-plugin-transform-regenerator › Source and bundle s
     assertion: fail
     at: 'file://test/babel-plugin-transform-regenerator.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-strict-mode.js:7323
+file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-strict-mode.js:7323
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-strict-mode.js:7323:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-strict-mode.js:10:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-plugin-transform-strict-mode.js:7310:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-strict-mode.js:7323:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-strict-mode.js:10:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-plugin-transform-strict-mode.js:7310:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-plugin-transform-strict-mode › Source and bundle should have similar exit codes
@@ -845,12 +845,12 @@ not ok 126 - test › babel-plugin-transform-strict-mode › Source and bundle s
   ...
 # test › babel-polyfill › Source and bundle should have similar exit codes
 ok 127 - test › babel-polyfill › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/babel-preset-current-node-syntax.js:39
+file:///home/christian/Development/rollup-node-testing/bundles/babel-preset-current-node-syntax.js:39
     plugins.push(require.resolve(`@babel/plugin-syntax-${name}`));
                  ^
 
 ReferenceError: require is not defined
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-preset-current-node-syntax.js:39:18
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-preset-current-node-syntax.js:39:18
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-preset-current-node-syntax › Source and bundle should have similar exit codes
@@ -863,14 +863,14 @@ not ok 128 - test › babel-preset-current-node-syntax › Source and bundle sho
     assertion: fail
     at: 'file://test/babel-preset-current-node-syntax.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/babel-preset-es2015.js:7492
+file:///home/christian/Development/rollup-node-testing/bundles/babel-preset-es2015.js:7492
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-preset-es2015.js:7492:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-preset-es2015.js:17:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-preset-es2015.js:7479:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-preset-es2015.js:7492:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-preset-es2015.js:17:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-preset-es2015.js:7479:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-preset-es2015 › Source and bundle should have similar exit codes
@@ -883,12 +883,12 @@ not ok 129 - test › babel-preset-es2015 › Source and bundle should have simi
     assertion: fail
     at: 'file://test/babel-preset-es2015.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/babel-preset-jest.js:9
+file:///home/christian/Development/rollup-node-testing/bundles/babel-preset-jest.js:9
   plugins: [require.resolve('babel-plugin-jest-hoist')],
             ^
 
 ReferenceError: require is not defined
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-preset-jest.js:9:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-preset-jest.js:9:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-preset-jest › Source and bundle should have similar exit codes
@@ -901,14 +901,14 @@ not ok 130 - test › babel-preset-jest › Source and bundle should have simila
     assertion: fail
     at: 'file://test/babel-preset-jest.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/babel-register.js:12010
+file:///home/christian/Development/rollup-node-testing/bundles/babel-register.js:12010
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-register.js:12010:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-register.js:19:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-register.js:11997:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-register.js:12010:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-register.js:19:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-register.js:11997:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-register › Source and bundle should have similar exit codes
@@ -921,14 +921,14 @@ not ok 131 - test › babel-register › Source and bundle should have similar e
     assertion: fail
     at: 'file://test/babel-register.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/babel-template.js:8051
+file:///home/christian/Development/rollup-node-testing/bundles/babel-template.js:8051
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-template.js:8051:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-template.js:15:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-template.js:8038:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-template.js:8051:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-template.js:15:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-template.js:8038:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-template › Source and bundle should have similar exit codes
@@ -941,14 +941,14 @@ not ok 132 - test › babel-template › Source and bundle should have similar e
     assertion: fail
     at: 'file://test/babel-template.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/babel-traverse.js:7339
+file:///home/christian/Development/rollup-node-testing/bundles/babel-traverse.js:7339
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-traverse.js:7339:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-traverse.js:15:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-traverse.js:7326:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-traverse.js:7339:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-traverse.js:15:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-traverse.js:7326:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-traverse › Source and bundle should have similar exit codes
@@ -961,14 +961,14 @@ not ok 133 - test › babel-traverse › Source and bundle should have similar e
     assertion: fail
     at: 'file://test/babel-traverse.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/babel-types.js:7323
+file:///home/christian/Development/rollup-node-testing/bundles/babel-types.js:7323
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-types.js:7323:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/babel-types.js:10:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/babel-types.js:7310:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-types.js:7323:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/babel-types.js:10:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/babel-types.js:7310:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › babel-types › Source and bundle should have similar exit codes
@@ -1003,7 +1003,7 @@ internal/modules/run_main.js:54
     internalBinding('errors').triggerUncaughtException(
                               ^
 
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'emitter' imported from /home/christian/Development/rollup-third-party/bundles/batch.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'emitter' imported from /home/christian/Development/rollup-node-testing/bundles/batch.js
     at packageResolve (internal/modules/esm/resolve.js:594:9)
     at moduleResolve (internal/modules/esm/resolve.js:633:14)
     at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:726:11)
@@ -1041,7 +1041,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/bl.js:1146:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/bl.js:1146:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -1068,7 +1068,7 @@ ok 155 - test › blueimp-md5 › Source and bundle should have similar exit cod
 ok 156 - test › bn.js › Source and bundle should have similar exit codes
 # test › body-parser › Source and bundle should have similar exit codes
 ok 157 - test › body-parser › Source and bundle should have similar exit codes
-(node:178843) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(node:1744659) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 # test › bonjour › Source and bundle should have similar exit codes
 ok 158 - test › bonjour › Source and bundle should have similar exit codes
@@ -1078,7 +1078,7 @@ internal/modules/run_main.js:54
     internalBinding('errors').triggerUncaughtException(
                               ^
 
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'popper.js' imported from /home/christian/Development/rollup-third-party/bundles/bootstrap.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'popper.js' imported from /home/christian/Development/rollup-node-testing/bundles/bootstrap.js
     at packageResolve (internal/modules/esm/resolve.js:594:9)
     at moduleResolve (internal/modules/esm/resolve.js:633:14)
     at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:726:11)
@@ -1094,20 +1094,20 @@ internal/modules/cjs/loader.js:1033
 
 Error: Cannot find module 'popper.js'
 Require stack:
-- /home/christian/Development/rollup-third-party/node_modules/bootstrap/dist/js/bootstrap.js
+- /home/christian/Development/rollup-node-testing/node_modules/bootstrap/dist/js/bootstrap.js
     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:1030:15)
     at Function.Module._load (internal/modules/cjs/loader.js:899:27)
     at Module.require (internal/modules/cjs/loader.js:1090:19)
     at require (internal/modules/cjs/helpers.js:75:18)
-    at /home/christian/Development/rollup-third-party/node_modules/bootstrap/dist/js/bootstrap.js:7:102
-    at Object.<anonymous> (/home/christian/Development/rollup-third-party/node_modules/bootstrap/dist/js/bootstrap.js:10:2)
+    at /home/christian/Development/rollup-node-testing/node_modules/bootstrap/dist/js/bootstrap.js:7:102
+    at Object.<anonymous> (/home/christian/Development/rollup-node-testing/node_modules/bootstrap/dist/js/bootstrap.js:10:2)
     at Module._compile (internal/modules/cjs/loader.js:1201:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
     at Module.load (internal/modules/cjs/loader.js:1050:32)
     at Function.Module._load (internal/modules/cjs/loader.js:938:14) {
   code: 'MODULE_NOT_FOUND',
   requireStack: [
-    '/home/christian/Development/rollup-third-party/node_modules/bootstrap/dist/js/bootstrap.js'
+    '/home/christian/Development/rollup-node-testing/node_modules/bootstrap/dist/js/bootstrap.js'
   ]
 }
 # test › bootstrap › Source and bundle should have similar exit codes
@@ -1166,7 +1166,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/cacache.js:9318:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/cacache.js:9318:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -1227,7 +1227,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/cheerio.js:17567:1
+    at file:///home/christian/Development/rollup-node-testing/bundles/cheerio.js:17567:1
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -1246,7 +1246,7 @@ internal/modules/run_main.js:54
     internalBinding('errors').triggerUncaughtException(
                               ^
 
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'fsevents' imported from /home/christian/Development/rollup-third-party/bundles/chokidar.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'fsevents' imported from /home/christian/Development/rollup-node-testing/bundles/chokidar.js
     at packageResolve (internal/modules/esm/resolve.js:594:9)
     at moduleResolve (internal/modules/esm/resolve.js:633:14)
     at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:726:11)
@@ -1318,7 +1318,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/cloneable-readable.js:1146:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/cloneable-readable.js:1146:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -1389,7 +1389,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/concat-stream.js:1146:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/concat-stream.js:1146:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -1438,7 +1438,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/copy-concurrently.js:2086:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/copy-concurrently.js:2086:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -1479,12 +1479,12 @@ ok 283 - test › create-hash › Source and bundle should have similar exit cod
 ok 284 - test › create-hmac › Source and bundle should have similar exit codes
 # test › cross-spawn › Source and bundle should have similar exit codes
 ok 285 - test › cross-spawn › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/crypto-browserify.js:9725
+file:///home/christian/Development/rollup-node-testing/bundles/crypto-browserify.js:9725
 var Reporter$1 = base_1.Reporter;
                         ^
 
 TypeError: Cannot read property 'Reporter' of undefined
-    at file:///home/christian/Development/rollup-third-party/bundles/crypto-browserify.js:9725:25
+    at file:///home/christian/Development/rollup-node-testing/bundles/crypto-browserify.js:9725:25
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › crypto-browserify › Source and bundle should have similar exit codes
@@ -1501,16 +1501,16 @@ not ok 286 - test › crypto-browserify › Source and bundle should have simila
 ok 287 - test › crypto-random-string › Source and bundle should have similar exit codes
 # test › css-color-keywords › Source and bundle should have similar exit codes
 ok 288 - test › css-color-keywords › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/css-loader.js:14188
+file:///home/christian/Development/rollup-node-testing/bundles/css-loader.js:14188
 function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
                                                                                               ^
 
 TypeError: Cannot read property 'prototype' of undefined
-    at _inheritsLoose (file:///home/christian/Development/rollup-third-party/bundles/css-loader.js:14188:95)
-    at file:///home/christian/Development/rollup-third-party/bundles/css-loader.js:14204:3
-    at file:///home/christian/Development/rollup-third-party/bundles/css-loader.js:14285:2
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/css-loader.js:17:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/css-loader.js:14173:12
+    at _inheritsLoose (file:///home/christian/Development/rollup-node-testing/bundles/css-loader.js:14188:95)
+    at file:///home/christian/Development/rollup-node-testing/bundles/css-loader.js:14204:3
+    at file:///home/christian/Development/rollup-node-testing/bundles/css-loader.js:14285:2
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/css-loader.js:17:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/css-loader.js:14173:12
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › css-loader › Source and bundle should have similar exit codes
@@ -1531,12 +1531,12 @@ ok 291 - test › css-to-react-native › Source and bundle should have similar 
 ok 292 - test › css-what › Source and bundle should have similar exit codes
 # test › cssesc › Source and bundle should have similar exit codes
 ok 293 - test › cssesc › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/cssom.js:73
+file:///home/christian/Development/rollup-node-testing/bundles/cssom.js:73
 	CSSStyleDeclaration: CSSStyleDeclaration.CSSStyleDeclaration,
 	                                         ^
 
 TypeError: Cannot read property 'CSSStyleDeclaration' of undefined
-    at file:///home/christian/Development/rollup-third-party/bundles/cssom.js:73:43
+    at file:///home/christian/Development/rollup-node-testing/bundles/cssom.js:73:43
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › cssom › Source and bundle should have similar exit codes
@@ -1549,12 +1549,12 @@ not ok 294 - test › cssom › Source and bundle should have similar exit codes
     assertion: fail
     at: 'file://test/cssom.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/cssstyle.js:73
+file:///home/christian/Development/rollup-node-testing/bundles/cssstyle.js:73
 	CSSStyleDeclaration: CSSStyleDeclaration.CSSStyleDeclaration,
 	                                         ^
 
 TypeError: Cannot read property 'CSSStyleDeclaration' of undefined
-    at file:///home/christian/Development/rollup-third-party/bundles/cssstyle.js:73:43
+    at file:///home/christian/Development/rollup-node-testing/bundles/cssstyle.js:73:43
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › cssstyle › Source and bundle should have similar exit codes
@@ -1575,12 +1575,12 @@ ok 297 - test › cyclist › Source and bundle should have similar exit codes
 ok 298 - test › damerau-levenshtein › Source and bundle should have similar exit codes
 # test › dargs › Source and bundle should have similar exit codes
 ok 299 - test › dargs › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/dashdash.js:232
+file:///home/christian/Development/rollup-node-testing/bundles/dashdash.js:232
     __dirname, '../etc/dashdash.bash_completion.in');
     ^
 
 ReferenceError: __dirname is not defined
-    at file:///home/christian/Development/rollup-third-party/bundles/dashdash.js:232:5
+    at file:///home/christian/Development/rollup-node-testing/bundles/dashdash.js:232:5
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › dashdash › Source and bundle should have similar exit codes
@@ -1623,15 +1623,15 @@ ok 313 - test › deep-is › Source and bundle should have similar exit codes
 ok 314 - test › deepmerge › Source and bundle should have similar exit codes
 # test › default-compare › Source and bundle should have similar exit codes
 ok 315 - test › default-compare › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/default-gateway.js:14
+file:///home/christian/Development/rollup-node-testing/bundles/default-gateway.js:14
 	throw new Error('Dynamic requires are not currently supported by @rollup/plugin-commonjs');
 	      ^
 
 Error: Dynamic requires are not currently supported by @rollup/plugin-commonjs
-    at commonjsRequire (file:///home/christian/Development/rollup-third-party/bundles/default-gateway.js:14:8)
-    at file:///home/christian/Development/rollup-third-party/bundles/default-gateway.js:40:13
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/default-gateway.js:10:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/default-gateway.js:17:22
+    at commonjsRequire (file:///home/christian/Development/rollup-node-testing/bundles/default-gateway.js:14:8)
+    at file:///home/christian/Development/rollup-node-testing/bundles/default-gateway.js:40:13
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/default-gateway.js:10:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/default-gateway.js:17:22
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › default-gateway › Source and bundle should have similar exit codes
@@ -1688,7 +1688,7 @@ ok 336 - test › dir-glob › Source and bundle should have similar exit codes
 ok 337 - test › dns-equal › Source and bundle should have similar exit codes
 # test › dns-packet › Source and bundle should have similar exit codes
 ok 338 - test › dns-packet › Source and bundle should have similar exit codes
-(node:184485) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(node:1750594) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 # test › dns-txt › Source and bundle should have similar exit codes
 ok 339 - test › dns-txt › Source and bundle should have similar exit codes
@@ -1722,7 +1722,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/duplexer2.js:715:6
+    at file:///home/christian/Development/rollup-node-testing/bundles/duplexer2.js:715:6
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -1745,7 +1745,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/duplexify.js:1146:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/duplexify.js:1146:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -1792,7 +1792,7 @@ internal/modules/run_main.js:54
     internalBinding('errors').triggerUncaughtException(
                               ^
 
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'bufferutil' imported from /home/christian/Development/rollup-third-party/bundles/engine.io-client.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'bufferutil' imported from /home/christian/Development/rollup-node-testing/bundles/engine.io-client.js
     at packageResolve (internal/modules/esm/resolve.js:594:9)
     at moduleResolve (internal/modules/esm/resolve.js:633:14)
     at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:726:11)
@@ -1818,7 +1818,7 @@ internal/modules/run_main.js:54
     internalBinding('errors').triggerUncaughtException(
                               ^
 
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'bufferutil' imported from /home/christian/Development/rollup-third-party/bundles/engine.io.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'bufferutil' imported from /home/christian/Development/rollup-node-testing/bundles/engine.io.js
     at packageResolve (internal/modules/esm/resolve.js:594:9)
     at moduleResolve (internal/modules/esm/resolve.js:633:14)
     at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:726:11)
@@ -1891,7 +1891,7 @@ internal/modules/cjs/loader.js:1033
   throw err;
   ^
 
-Error: Cannot find module '/home/christian/Development/rollup-third-party/node_modules/eslint-module-utils'
+Error: Cannot find module '/home/christian/Development/rollup-node-testing/node_modules/eslint-module-utils'
     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:1030:15)
     at Function.Module._load (internal/modules/cjs/loader.js:899:27)
     at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)
@@ -1905,7 +1905,7 @@ internal/modules/run_main.js:54
     internalBinding('errors').triggerUncaughtException(
                               ^
 
-Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/home/christian/Development/rollup-third-party/node_modules/eslint/lib/util/glob-utils' imported from /home/christian/Development/rollup-third-party/bundles/eslint-plugin-import.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/home/christian/Development/rollup-node-testing/node_modules/eslint/lib/util/glob-utils' imported from /home/christian/Development/rollup-node-testing/bundles/eslint-plugin-import.js
     at finalizeResolution (internal/modules/esm/resolve.js:259:11)
     at packageResolve (internal/modules/esm/resolve.js:587:12)
     at moduleResolve (internal/modules/esm/resolve.js:633:14)
@@ -1926,12 +1926,12 @@ not ok 391 - test › eslint-plugin-import › Source and bundle should have sim
     assertion: fail
     at: 'file://test/eslint-plugin-import.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/eslint-plugin-jsdoc.js:119190
+file:///home/christian/Development/rollup-node-testing/bundles/eslint-plugin-jsdoc.js:119190
 const eslintRecommendedPath = path$1.resolve(__dirname, "../../conf/eslint-recommended.js");
                                              ^
 
 ReferenceError: __dirname is not defined
-    at file:///home/christian/Development/rollup-third-party/bundles/eslint-plugin-jsdoc.js:119190:46
+    at file:///home/christian/Development/rollup-node-testing/bundles/eslint-plugin-jsdoc.js:119190:46
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › eslint-plugin-jsdoc › Source and bundle should have similar exit codes
@@ -1954,12 +1954,12 @@ ok 395 - test › eslint-scope › Source and bundle should have similar exit co
 ok 396 - test › eslint-utils › Source and bundle should have similar exit codes
 # test › eslint-visitor-keys › Source and bundle should have similar exit codes
 ok 397 - test › eslint-visitor-keys › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/eslint.js:116374
+file:///home/christian/Development/rollup-node-testing/bundles/eslint.js:116374
 const eslintRecommendedPath = path$1.resolve(__dirname, "../../conf/eslint-recommended.js");
                                              ^
 
 ReferenceError: __dirname is not defined
-    at file:///home/christian/Development/rollup-third-party/bundles/eslint.js:116374:46
+    at file:///home/christian/Development/rollup-node-testing/bundles/eslint.js:116374:46
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › eslint › Source and bundle should have similar exit codes
@@ -2000,7 +2000,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/evp_bytestokey.js:1280:1
+    at file:///home/christian/Development/rollup-node-testing/bundles/evp_bytestokey.js:1280:1
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -2046,7 +2046,7 @@ internal/modules/cjs/loader.js:1033
   throw err;
   ^
 
-Error: Cannot find module '/home/christian/Development/rollup-third-party/node_modules/ext'
+Error: Cannot find module '/home/christian/Development/rollup-node-testing/node_modules/ext'
     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:1030:15)
     at Function.Module._load (internal/modules/cjs/loader.js:899:27)
     at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)
@@ -2116,7 +2116,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/first-chunk-stream.js:1146:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/first-chunk-stream.js:1146:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -2145,7 +2145,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/flush-write-stream.js:1146:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/flush-write-stream.js:1146:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -2186,7 +2186,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/from2.js:1146:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/from2.js:1146:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -2209,7 +2209,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/fs-mkdirp-stream.js:1150:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/fs-mkdirp-stream.js:1150:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -2230,7 +2230,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/fs-write-stream-atomic.js:1978:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/fs-write-stream-atomic.js:1978:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -2253,7 +2253,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/fstream.js:1027:1
+    at file:///home/christian/Development/rollup-node-testing/bundles/fstream.js:1027:1
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -2304,7 +2304,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/glob-stream.js:1150:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/glob-stream.js:1150:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -2325,7 +2325,7 @@ internal/modules/run_main.js:54
     internalBinding('errors').triggerUncaughtException(
                               ^
 
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'fsevents' imported from /home/christian/Development/rollup-third-party/bundles/glob-watcher.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'fsevents' imported from /home/christian/Development/rollup-node-testing/bundles/glob-watcher.js
     at packageResolve (internal/modules/esm/resolve.js:594:9)
     at moduleResolve (internal/modules/esm/resolve.js:633:14)
     at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:726:11)
@@ -2379,7 +2379,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/gulp-util.js:3047:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/gulp-util.js:3047:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -2432,7 +2432,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/hash-base.js:1280:1
+    at file:///home/christian/Development/rollup-node-testing/bundles/hash-base.js:1280:1
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -2463,12 +2463,12 @@ ok 523 - test › home-or-tmp › Source and bundle should have similar exit cod
 ok 524 - test › homedir-polyfill › Source and bundle should have similar exit codes
 # test › hosted-git-info › Source and bundle should have similar exit codes
 ok 525 - test › hosted-git-info › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/hpack.js.js:916
+file:///home/christian/Development/rollup-node-testing/bundles/hpack.js.js:916
 var utils$1 = hpack_1.utils;
                       ^
 
 TypeError: Cannot read property 'utils' of undefined
-    at file:///home/christian/Development/rollup-third-party/bundles/hpack.js.js:916:23
+    at file:///home/christian/Development/rollup-node-testing/bundles/hpack.js.js:916:23
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › hpack.js › Source and bundle should have similar exit codes
@@ -2495,7 +2495,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/html-webpack-plugin.js:51943:1
+    at file:///home/christian/Development/rollup-node-testing/bundles/html-webpack-plugin.js:51943:1
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -2516,7 +2516,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/htmlparser2.js:17567:1
+    at file:///home/christian/Development/rollup-node-testing/bundles/htmlparser2.js:17567:1
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -2549,7 +2549,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/http-signature.js:9825:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/http-signature.js:9825:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -2570,16 +2570,16 @@ ok 540 - test › https-browserify › Source and bundle should have similar exi
 ok 541 - test › human-signals › Source and bundle should have similar exit codes
 # test › iconv-lite › Source and bundle should have similar exit codes
 ok 542 - test › iconv-lite › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/icss-utils.js:8365
+file:///home/christian/Development/rollup-node-testing/bundles/icss-utils.js:8365
 function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
                                                                                               ^
 
 TypeError: Cannot read property 'prototype' of undefined
-    at _inheritsLoose (file:///home/christian/Development/rollup-third-party/bundles/icss-utils.js:8365:95)
-    at file:///home/christian/Development/rollup-third-party/bundles/icss-utils.js:8381:3
-    at file:///home/christian/Development/rollup-third-party/bundles/icss-utils.js:8462:2
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/icss-utils.js:12:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/icss-utils.js:8350:12
+    at _inheritsLoose (file:///home/christian/Development/rollup-node-testing/bundles/icss-utils.js:8365:95)
+    at file:///home/christian/Development/rollup-node-testing/bundles/icss-utils.js:8381:3
+    at file:///home/christian/Development/rollup-node-testing/bundles/icss-utils.js:8462:2
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/icss-utils.js:12:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/icss-utils.js:8350:12
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › icss-utils › Source and bundle should have similar exit codes
@@ -2632,15 +2632,15 @@ ok 561 - test › inherits › Source and bundle should have similar exit codes
 ok 562 - test › ini › Source and bundle should have similar exit codes
 # test › inquirer › Source and bundle should have similar exit codes
 ok 563 - test › inquirer › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/internal-ip.js:16
+file:///home/christian/Development/rollup-node-testing/bundles/internal-ip.js:16
 	throw new Error('Dynamic requires are not currently supported by @rollup/plugin-commonjs');
 	      ^
 
 Error: Dynamic requires are not currently supported by @rollup/plugin-commonjs
-    at commonjsRequire (file:///home/christian/Development/rollup-third-party/bundles/internal-ip.js:16:8)
-    at file:///home/christian/Development/rollup-third-party/bundles/internal-ip.js:42:13
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/internal-ip.js:12:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/internal-ip.js:19:22
+    at commonjsRequire (file:///home/christian/Development/rollup-node-testing/bundles/internal-ip.js:16:8)
+    at file:///home/christian/Development/rollup-node-testing/bundles/internal-ip.js:42:13
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/internal-ip.js:12:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/internal-ip.js:19:22
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › internal-ip › Source and bundle should have similar exit codes
@@ -2655,14 +2655,14 @@ not ok 564 - test › internal-ip › Source and bundle should have similar exit
   ...
 # test › internal-slot › Source and bundle should have similar exit codes
 ok 565 - test › internal-slot › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/interpret.js:18
+file:///home/christian/Development/rollup-node-testing/bundles/interpret.js:18
 var mjsStub = path.join(__dirname, 'mjs-stub');
                         ^
 
 ReferenceError: __dirname is not defined
-    at file:///home/christian/Development/rollup-third-party/bundles/interpret.js:18:25
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/interpret.js:10:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/interpret.js:17:17
+    at file:///home/christian/Development/rollup-node-testing/bundles/interpret.js:18:25
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/interpret.js:10:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/interpret.js:17:17
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › interpret › Source and bundle should have similar exit codes
@@ -2813,12 +2813,12 @@ ok 633 - test › istanbul-lib-report › Source and bundle should have similar 
 ok 634 - test › istanbul-lib-source-maps › Source and bundle should have similar exit codes
 # test › istanbul-reports › Source and bundle should have similar exit codes
 ok 635 - test › istanbul-reports › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/istextorbinary.js:2030
+file:///home/christian/Development/rollup-node-testing/bundles/istextorbinary.js:2030
 var istextorbinary = editionEs5.requirePackage(__dirname, commonjsRequire);
                                                ^
 
 ReferenceError: __dirname is not defined
-    at file:///home/christian/Development/rollup-third-party/bundles/istextorbinary.js:2030:48
+    at file:///home/christian/Development/rollup-node-testing/bundles/istextorbinary.js:2030:48
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › istextorbinary › Source and bundle should have similar exit codes
@@ -2839,7 +2839,7 @@ internal/modules/run_main.js:54
     internalBinding('errors').triggerUncaughtException(
                               ^
 
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'coffeescript' imported from /home/christian/Development/rollup-third-party/bundles/jake.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'coffeescript' imported from /home/christian/Development/rollup-node-testing/bundles/jake.js
     at packageResolve (internal/modules/esm/resolve.js:594:9)
     at moduleResolve (internal/modules/esm/resolve.js:633:14)
     at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:726:11)
@@ -2865,7 +2865,7 @@ internal/modules/run_main.js:54
     internalBinding('errors').triggerUncaughtException(
                               ^
 
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'pnpapi' imported from /home/christian/Development/rollup-third-party/bundles/jest-cli.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'pnpapi' imported from /home/christian/Development/rollup-node-testing/bundles/jest-cli.js
     at packageResolve (internal/modules/esm/resolve.js:594:9)
     at moduleResolve (internal/modules/esm/resolve.js:633:14)
     at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:726:11)
@@ -2889,7 +2889,7 @@ internal/modules/run_main.js:54
     internalBinding('errors').triggerUncaughtException(
                               ^
 
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'pnpapi' imported from /home/christian/Development/rollup-third-party/bundles/jest-config.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'pnpapi' imported from /home/christian/Development/rollup-node-testing/bundles/jest-config.js
     at packageResolve (internal/modules/esm/resolve.js:594:9)
     at moduleResolve (internal/modules/esm/resolve.js:633:14)
     at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:726:11)
@@ -2919,7 +2919,7 @@ internal/modules/run_main.js:54
     internalBinding('errors').triggerUncaughtException(
                               ^
 
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'canvas' imported from /home/christian/Development/rollup-third-party/bundles/jest-environment-jsdom.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'canvas' imported from /home/christian/Development/rollup-node-testing/bundles/jest-environment-jsdom.js
     at packageResolve (internal/modules/esm/resolve.js:594:9)
     at moduleResolve (internal/modules/esm/resolve.js:633:14)
     at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:726:11)
@@ -2947,7 +2947,7 @@ internal/modules/run_main.js:54
     internalBinding('errors').triggerUncaughtException(
                               ^
 
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'fsevents' imported from /home/christian/Development/rollup-third-party/bundles/jest-haste-map.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'fsevents' imported from /home/christian/Development/rollup-node-testing/bundles/jest-haste-map.js
     at packageResolve (internal/modules/esm/resolve.js:594:9)
     at moduleResolve (internal/modules/esm/resolve.js:633:14)
     at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:726:11)
@@ -2967,14 +2967,14 @@ not ok 649 - test › jest-haste-map › Source and bundle should have similar e
     assertion: fail
     at: 'file://test/jest-haste-map.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/jest-jasmine2.js:18738
+file:///home/christian/Development/rollup-node-testing/bundles/jest-jasmine2.js:18738
 const JASMINE = require.resolve('./jasmine/jasmineLight');
                 ^
 
 ReferenceError: require is not defined
-    at file:///home/christian/Development/rollup-third-party/bundles/jest-jasmine2.js:18738:17
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/jest-jasmine2.js:21:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/jest-jasmine2.js:18670:15
+    at file:///home/christian/Development/rollup-node-testing/bundles/jest-jasmine2.js:18738:17
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/jest-jasmine2.js:21:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/jest-jasmine2.js:18670:15
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › jest-jasmine2 › Source and bundle should have similar exit codes
@@ -2991,7 +2991,7 @@ internal/modules/run_main.js:54
     internalBinding('errors').triggerUncaughtException(
                               ^
 
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'weak-napi' imported from /home/christian/Development/rollup-third-party/bundles/jest-leak-detector.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'weak-napi' imported from /home/christian/Development/rollup-node-testing/bundles/jest-leak-detector.js
     at packageResolve (internal/modules/esm/resolve.js:594:9)
     at moduleResolve (internal/modules/esm/resolve.js:633:14)
     at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:726:11)
@@ -3021,7 +3021,7 @@ internal/modules/run_main.js:54
     internalBinding('errors').triggerUncaughtException(
                               ^
 
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'pnpapi' imported from /home/christian/Development/rollup-third-party/bundles/jest-pnp-resolver.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'pnpapi' imported from /home/christian/Development/rollup-node-testing/bundles/jest-pnp-resolver.js
     at packageResolve (internal/modules/esm/resolve.js:594:9)
     at moduleResolve (internal/modules/esm/resolve.js:633:14)
     at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:726:11)
@@ -3049,7 +3049,7 @@ internal/modules/run_main.js:54
     internalBinding('errors').triggerUncaughtException(
                               ^
 
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'pnpapi' imported from /home/christian/Development/rollup-third-party/bundles/jest-resolve.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'pnpapi' imported from /home/christian/Development/rollup-node-testing/bundles/jest-resolve.js
     at packageResolve (internal/modules/esm/resolve.js:594:9)
     at moduleResolve (internal/modules/esm/resolve.js:633:14)
     at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:726:11)
@@ -3073,7 +3073,7 @@ internal/modules/run_main.js:54
     internalBinding('errors').triggerUncaughtException(
                               ^
 
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'fsevents' imported from /home/christian/Development/rollup-third-party/bundles/jest-runner.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'fsevents' imported from /home/christian/Development/rollup-node-testing/bundles/jest-runner.js
     at packageResolve (internal/modules/esm/resolve.js:594:9)
     at moduleResolve (internal/modules/esm/resolve.js:633:14)
     at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:726:11)
@@ -3097,7 +3097,7 @@ internal/modules/run_main.js:54
     internalBinding('errors').triggerUncaughtException(
                               ^
 
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'fsevents' imported from /home/christian/Development/rollup-third-party/bundles/jest-runtime.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'fsevents' imported from /home/christian/Development/rollup-node-testing/bundles/jest-runtime.js
     at packageResolve (internal/modules/esm/resolve.js:594:9)
     at moduleResolve (internal/modules/esm/resolve.js:633:14)
     at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:726:11)
@@ -3133,7 +3133,7 @@ internal/modules/run_main.js:54
     internalBinding('errors').triggerUncaughtException(
                               ^
 
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'pnpapi' imported from /home/christian/Development/rollup-third-party/bundles/jest.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'pnpapi' imported from /home/christian/Development/rollup-node-testing/bundles/jest.js
     at packageResolve (internal/modules/esm/resolve.js:594:9)
     at moduleResolve (internal/modules/esm/resolve.js:633:14)
     at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:726:11)
@@ -3173,7 +3173,7 @@ internal/modules/run_main.js:54
     internalBinding('errors').triggerUncaughtException(
                               ^
 
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'canvas' imported from /home/christian/Development/rollup-third-party/bundles/jsdom.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'canvas' imported from /home/christian/Development/rollup-node-testing/bundles/jsdom.js
     at packageResolve (internal/modules/esm/resolve.js:594:9)
     at moduleResolve (internal/modules/esm/resolve.js:633:14)
     at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:726:11)
@@ -3258,7 +3258,7 @@ internal/modules/cjs/loader.js:1033
   throw err;
   ^
 
-Error: Cannot find module '/home/christian/Development/rollup-third-party/node_modules/language-subtag-registry'
+Error: Cannot find module '/home/christian/Development/rollup-node-testing/node_modules/language-subtag-registry'
     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:1030:15)
     at Function.Module._load (internal/modules/cjs/loader.js:899:27)
     at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)
@@ -3280,7 +3280,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/lazystream.js:1146:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/lazystream.js:1146:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -3303,7 +3303,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/lead.js:1146:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/lead.js:1146:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -3430,7 +3430,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/md5.js.js:1280:1
+    at file:///home/christian/Development/rollup-node-testing/bundles/md5.js.js:1280:1
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -3453,7 +3453,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/mem-fs-editor.js:28510:1
+    at file:///home/christian/Development/rollup-node-testing/bundles/mem-fs-editor.js:28510:1
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -3474,7 +3474,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/mem-fs.js:2056:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/mem-fs.js:2056:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -3497,7 +3497,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/memory-fs.js:1584:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/memory-fs.js:1584:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -3514,22 +3514,22 @@ not ok 766 - test › memory-fs › Source and bundle should have similar exit c
   ...
 # test › memory-pager › Source and bundle should have similar exit codes
 ok 767 - test › memory-pager › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/meow.js:8020
+file:///home/christian/Development/rollup-node-testing/bundles/meow.js:8020
 delete require.cache[__filename];
 ^
 
 ReferenceError: require is not defined
-    at file:///home/christian/Development/rollup-third-party/bundles/meow.js:8020:1
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/meow.js:19:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/meow.js:8006:12
+    at file:///home/christian/Development/rollup-node-testing/bundles/meow.js:8020:1
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/meow.js:19:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/meow.js:8006:12
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
-/home/christian/Development/rollup-third-party/node_modules/meow/index.js:16
+/home/christian/Development/rollup-node-testing/node_modules/meow/index.js:16
 var parentDir = path.dirname(module.parent.filename);
                                            ^
 
 TypeError: Cannot read property 'filename' of null
-    at Object.<anonymous> (/home/christian/Development/rollup-third-party/node_modules/meow/index.js:16:44)
+    at Object.<anonymous> (/home/christian/Development/rollup-node-testing/node_modules/meow/index.js:16:44)
     at Module._compile (internal/modules/cjs/loader.js:1201:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
     at Module.load (internal/modules/cjs/loader.js:1050:32)
@@ -3576,7 +3576,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/mississippi.js:1421:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/mississippi.js:1421:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -3600,10 +3600,10 @@ typeof require !== 'undefined' ? require : function (module) { throw new Error('
                                                                      ^
 
 Error: Module " + module + " not found.
-    at eval (eval at <anonymous> (file:///home/christian/Development/rollup-third-party/bundles/mocha.js:13860:26), <anonymous>:1:70)
-    at file:///home/christian/Development/rollup-third-party/bundles/mocha.js:13894:5
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/mocha.js:20:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/mocha.js:13868:19
+    at eval (eval at <anonymous> (file:///home/christian/Development/rollup-node-testing/bundles/mocha.js:13860:26), <anonymous>:1:70)
+    at file:///home/christian/Development/rollup-node-testing/bundles/mocha.js:13894:5
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/mocha.js:20:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/mocha.js:13868:19
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › mocha › Source and bundle should have similar exit codes
@@ -3622,7 +3622,7 @@ internal/modules/run_main.js:54
     internalBinding('errors').triggerUncaughtException(
                               ^
 
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongodb-client-encryption' imported from /home/christian/Development/rollup-third-party/bundles/mongodb.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongodb-client-encryption' imported from /home/christian/Development/rollup-node-testing/bundles/mongodb.js
     at packageResolve (internal/modules/esm/resolve.js:594:9)
     at moduleResolve (internal/modules/esm/resolve.js:633:14)
     at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:726:11)
@@ -3648,7 +3648,7 @@ internal/modules/run_main.js:54
     internalBinding('errors').triggerUncaughtException(
                               ^
 
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongodb-client-encryption' imported from /home/christian/Development/rollup-third-party/bundles/mongoose.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'mongodb-client-encryption' imported from /home/christian/Development/rollup-node-testing/bundles/mongoose.js
     at packageResolve (internal/modules/esm/resolve.js:594:9)
     at moduleResolve (internal/modules/esm/resolve.js:633:14)
     at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:726:11)
@@ -3668,12 +3668,12 @@ not ok 792 - test › mongoose › Source and bundle should have similar exit co
     assertion: fail
     at: 'file://test/mongoose.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/morgan.js:2113
+file:///home/christian/Development/rollup-node-testing/bundles/morgan.js:2113
 morgan.format('combined', ':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] ":referrer" ":user-agent"');
        ^
 
 TypeError: morgan.format is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/morgan.js:2113:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/morgan.js:2113:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › morgan › Source and bundle should have similar exit codes
@@ -3692,7 +3692,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/move-concurrently.js:5311:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/move-concurrently.js:5311:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -3725,7 +3725,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/multipipe.js:715:6
+    at file:///home/christian/Development/rollup-node-testing/bundles/multipipe.js:715:6
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -3744,12 +3744,12 @@ not ok 801 - test › multipipe › Source and bundle should have similar exit c
 ok 802 - test › mute-stdout › Source and bundle should have similar exit codes
 # test › mute-stream › Source and bundle should have similar exit codes
 ok 803 - test › mute-stream › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/nan.js:3
+file:///home/christian/Development/rollup-node-testing/bundles/nan.js:3
 console.log(path.relative('.', __dirname));
                                ^
 
 ReferenceError: __dirname is not defined
-    at file:///home/christian/Development/rollup-third-party/bundles/nan.js:3:32
+    at file:///home/christian/Development/rollup-node-testing/bundles/nan.js:3:32
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 node_modules/nan
@@ -3787,7 +3787,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/node-gyp.js:2507:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/node-gyp.js:2507:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -3804,12 +3804,12 @@ not ok 814 - test › node-gyp › Source and bundle should have similar exit co
   ...
 # test › node-int64 › Source and bundle should have similar exit codes
 ok 815 - test › node-int64 › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/node-libs-browser.js:1
+file:///home/christian/Development/rollup-node-testing/bundles/node-libs-browser.js:1
 var assert						= require.resolve('assert/');
           						  ^
 
 ReferenceError: require is not defined
-    at file:///home/christian/Development/rollup-third-party/bundles/node-libs-browser.js:1:19
+    at file:///home/christian/Development/rollup-node-testing/bundles/node-libs-browser.js:1:19
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › node-libs-browser › Source and bundle should have similar exit codes
@@ -3824,12 +3824,12 @@ not ok 816 - test › node-libs-browser › Source and bundle should have simila
   ...
 # test › node-modules-regexp › Source and bundle should have similar exit codes
 ok 817 - test › node-modules-regexp › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/node-notifier.js:3426
+file:///home/christian/Development/rollup-node-testing/bundles/node-notifier.js:3426
   __dirname,
   ^
 
 ReferenceError: __dirname is not defined
-    at file:///home/christian/Development/rollup-third-party/bundles/node-notifier.js:3426:3
+    at file:///home/christian/Development/rollup-node-testing/bundles/node-notifier.js:3426:3
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › node-notifier › Source and bundle should have similar exit codes
@@ -3859,7 +3859,7 @@ internal/modules/cjs/loader.js:1033
   throw err;
   ^
 
-Error: Cannot find module '/home/christian/Development/rollup-third-party/node_modules/node-releases'
+Error: Cannot find module '/home/christian/Development/rollup-node-testing/node_modules/node-releases'
     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:1030:15)
     at Function.Module._load (internal/modules/cjs/loader.js:899:27)
     at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)
@@ -3869,12 +3869,12 @@ Error: Cannot find module '/home/christian/Development/rollup-third-party/node_m
 }
 # test › node-releases › Source and bundle should have similar exit codes
 ok 819 - test › node-releases › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/node-sass.js:6334
+file:///home/christian/Development/rollup-node-testing/bundles/node-sass.js:6334
   defaultBinaryDir = path$1.join(__dirname, '..', 'vendor');
                                  ^
 
 ReferenceError: __dirname is not defined
-    at file:///home/christian/Development/rollup-third-party/bundles/node-sass.js:6334:34
+    at file:///home/christian/Development/rollup-node-testing/bundles/node-sass.js:6334:34
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › node-sass › Source and bundle should have similar exit codes
@@ -3905,7 +3905,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/npm-api.js:31353:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/npm-api.js:31353:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -3928,7 +3928,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/npmlog.js:1193:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/npmlog.js:1193:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -4009,7 +4009,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/ordered-read-streams.js:1146:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/ordered-read-streams.js:1146:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -4066,7 +4066,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/parallel-transform.js:1146:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/parallel-transform.js:1146:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -4085,12 +4085,12 @@ not ok 879 - test › parallel-transform › Source and bundle should have simil
 ok 880 - test › param-case › Source and bundle should have similar exit codes
 # test › parent-module › Source and bundle should have similar exit codes
 ok 881 - test › parent-module › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/parse-asn1.js:3686
+file:///home/christian/Development/rollup-node-testing/bundles/parse-asn1.js:3686
 var Reporter$1 = base_1.Reporter;
                         ^
 
 TypeError: Cannot read property 'Reporter' of undefined
-    at file:///home/christian/Development/rollup-third-party/bundles/parse-asn1.js:3686:25
+    at file:///home/christian/Development/rollup-node-testing/bundles/parse-asn1.js:3686:25
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › parse-asn1 › Source and bundle should have similar exit codes
@@ -4177,16 +4177,16 @@ ok 917 - test › portfinder › Source and bundle should have similar exit code
 ok 918 - test › posix-character-classes › Source and bundle should have similar exit codes
 # test › postcss-load-config › Source and bundle should have similar exit codes
 ok 919 - test › postcss-load-config › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/postcss-loader.js:20973
+file:///home/christian/Development/rollup-node-testing/bundles/postcss-loader.js:20973
 function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
                                                                                               ^
 
 TypeError: Cannot read property 'prototype' of undefined
-    at _inheritsLoose (file:///home/christian/Development/rollup-third-party/bundles/postcss-loader.js:20973:95)
-    at file:///home/christian/Development/rollup-third-party/bundles/postcss-loader.js:20989:3
-    at file:///home/christian/Development/rollup-third-party/bundles/postcss-loader.js:21070:2
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/postcss-loader.js:17:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/postcss-loader.js:20958:12
+    at _inheritsLoose (file:///home/christian/Development/rollup-node-testing/bundles/postcss-loader.js:20973:95)
+    at file:///home/christian/Development/rollup-node-testing/bundles/postcss-loader.js:20989:3
+    at file:///home/christian/Development/rollup-node-testing/bundles/postcss-loader.js:21070:2
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/postcss-loader.js:17:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/postcss-loader.js:20958:12
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › postcss-loader › Source and bundle should have similar exit codes
@@ -4199,16 +4199,16 @@ not ok 920 - test › postcss-loader › Source and bundle should have similar e
     assertion: fail
     at: 'file://test/postcss-loader.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/postcss-modules-extract-imports.js:8257
+file:///home/christian/Development/rollup-node-testing/bundles/postcss-modules-extract-imports.js:8257
 function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
                                                                                               ^
 
 TypeError: Cannot read property 'prototype' of undefined
-    at _inheritsLoose (file:///home/christian/Development/rollup-third-party/bundles/postcss-modules-extract-imports.js:8257:95)
-    at file:///home/christian/Development/rollup-third-party/bundles/postcss-modules-extract-imports.js:8273:3
-    at file:///home/christian/Development/rollup-third-party/bundles/postcss-modules-extract-imports.js:8354:2
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/postcss-modules-extract-imports.js:12:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/postcss-modules-extract-imports.js:8242:12
+    at _inheritsLoose (file:///home/christian/Development/rollup-node-testing/bundles/postcss-modules-extract-imports.js:8257:95)
+    at file:///home/christian/Development/rollup-node-testing/bundles/postcss-modules-extract-imports.js:8273:3
+    at file:///home/christian/Development/rollup-node-testing/bundles/postcss-modules-extract-imports.js:8354:2
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/postcss-modules-extract-imports.js:12:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/postcss-modules-extract-imports.js:8242:12
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › postcss-modules-extract-imports › Source and bundle should have similar exit codes
@@ -4221,16 +4221,16 @@ not ok 921 - test › postcss-modules-extract-imports › Source and bundle shou
     assertion: fail
     at: 'file://test/postcss-modules-extract-imports.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/postcss-modules-local-by-default.js:8258
+file:///home/christian/Development/rollup-node-testing/bundles/postcss-modules-local-by-default.js:8258
 function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
                                                                                               ^
 
 TypeError: Cannot read property 'prototype' of undefined
-    at _inheritsLoose (file:///home/christian/Development/rollup-third-party/bundles/postcss-modules-local-by-default.js:8258:95)
-    at file:///home/christian/Development/rollup-third-party/bundles/postcss-modules-local-by-default.js:8274:3
-    at file:///home/christian/Development/rollup-third-party/bundles/postcss-modules-local-by-default.js:8355:2
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/postcss-modules-local-by-default.js:13:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/postcss-modules-local-by-default.js:8243:12
+    at _inheritsLoose (file:///home/christian/Development/rollup-node-testing/bundles/postcss-modules-local-by-default.js:8258:95)
+    at file:///home/christian/Development/rollup-node-testing/bundles/postcss-modules-local-by-default.js:8274:3
+    at file:///home/christian/Development/rollup-node-testing/bundles/postcss-modules-local-by-default.js:8355:2
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/postcss-modules-local-by-default.js:13:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/postcss-modules-local-by-default.js:8243:12
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › postcss-modules-local-by-default › Source and bundle should have similar exit codes
@@ -4243,16 +4243,16 @@ not ok 922 - test › postcss-modules-local-by-default › Source and bundle sho
     assertion: fail
     at: 'file://test/postcss-modules-local-by-default.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/postcss-modules-scope.js:8258
+file:///home/christian/Development/rollup-node-testing/bundles/postcss-modules-scope.js:8258
 function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
                                                                                               ^
 
 TypeError: Cannot read property 'prototype' of undefined
-    at _inheritsLoose (file:///home/christian/Development/rollup-third-party/bundles/postcss-modules-scope.js:8258:95)
-    at file:///home/christian/Development/rollup-third-party/bundles/postcss-modules-scope.js:8274:3
-    at file:///home/christian/Development/rollup-third-party/bundles/postcss-modules-scope.js:8355:2
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/postcss-modules-scope.js:13:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/postcss-modules-scope.js:8243:12
+    at _inheritsLoose (file:///home/christian/Development/rollup-node-testing/bundles/postcss-modules-scope.js:8258:95)
+    at file:///home/christian/Development/rollup-node-testing/bundles/postcss-modules-scope.js:8274:3
+    at file:///home/christian/Development/rollup-node-testing/bundles/postcss-modules-scope.js:8355:2
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/postcss-modules-scope.js:13:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/postcss-modules-scope.js:8243:12
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › postcss-modules-scope › Source and bundle should have similar exit codes
@@ -4265,16 +4265,16 @@ not ok 923 - test › postcss-modules-scope › Source and bundle should have si
     assertion: fail
     at: 'file://test/postcss-modules-scope.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/postcss-modules-values.js:8257
+file:///home/christian/Development/rollup-node-testing/bundles/postcss-modules-values.js:8257
 function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
                                                                                               ^
 
 TypeError: Cannot read property 'prototype' of undefined
-    at _inheritsLoose (file:///home/christian/Development/rollup-third-party/bundles/postcss-modules-values.js:8257:95)
-    at file:///home/christian/Development/rollup-third-party/bundles/postcss-modules-values.js:8273:3
-    at file:///home/christian/Development/rollup-third-party/bundles/postcss-modules-values.js:8354:2
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/postcss-modules-values.js:12:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/postcss-modules-values.js:8242:12
+    at _inheritsLoose (file:///home/christian/Development/rollup-node-testing/bundles/postcss-modules-values.js:8257:95)
+    at file:///home/christian/Development/rollup-node-testing/bundles/postcss-modules-values.js:8273:3
+    at file:///home/christian/Development/rollup-node-testing/bundles/postcss-modules-values.js:8354:2
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/postcss-modules-values.js:12:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/postcss-modules-values.js:8242:12
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › postcss-modules-values › Source and bundle should have similar exit codes
@@ -4291,16 +4291,16 @@ not ok 924 - test › postcss-modules-values › Source and bundle should have s
 ok 925 - test › postcss-selector-parser › Source and bundle should have similar exit codes
 # test › postcss-value-parser › Source and bundle should have similar exit codes
 ok 926 - test › postcss-value-parser › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/postcss.js:8257
+file:///home/christian/Development/rollup-node-testing/bundles/postcss.js:8257
 function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
                                                                                               ^
 
 TypeError: Cannot read property 'prototype' of undefined
-    at _inheritsLoose (file:///home/christian/Development/rollup-third-party/bundles/postcss.js:8257:95)
-    at file:///home/christian/Development/rollup-third-party/bundles/postcss.js:8273:3
-    at file:///home/christian/Development/rollup-third-party/bundles/postcss.js:8354:2
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/postcss.js:12:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/postcss.js:8242:12
+    at _inheritsLoose (file:///home/christian/Development/rollup-node-testing/bundles/postcss.js:8257:95)
+    at file:///home/christian/Development/rollup-node-testing/bundles/postcss.js:8273:3
+    at file:///home/christian/Development/rollup-node-testing/bundles/postcss.js:8354:2
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/postcss.js:12:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/postcss.js:8242:12
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › postcss › Source and bundle should have similar exit codes
@@ -4325,7 +4325,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/pretty-error.js:18570:1
+    at file:///home/christian/Development/rollup-node-testing/bundles/pretty-error.js:18570:1
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -4368,12 +4368,12 @@ ok 943 - test › prr › Source and bundle should have similar exit codes
 ok 944 - test › pseudomap › Source and bundle should have similar exit codes
 # test › psl › Source and bundle should have similar exit codes
 ok 945 - test › psl › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/public-encrypt.js:3686
+file:///home/christian/Development/rollup-node-testing/bundles/public-encrypt.js:3686
 var Reporter$1 = base_1.Reporter;
                         ^
 
 TypeError: Cannot read property 'Reporter' of undefined
-    at file:///home/christian/Development/rollup-third-party/bundles/public-encrypt.js:3686:25
+    at file:///home/christian/Development/rollup-node-testing/bundles/public-encrypt.js:3686:25
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › public-encrypt › Source and bundle should have similar exit codes
@@ -4394,7 +4394,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/pumpify.js:1398:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/pumpify.js:1398:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -4459,7 +4459,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/readable-stream.js:1146:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/readable-stream.js:1146:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -4486,12 +4486,12 @@ ok 975 - test › redis-commands › Source and bundle should have similar exit 
 ok 976 - test › redis-errors › Source and bundle should have similar exit codes
 # test › redis-parser › Source and bundle should have similar exit codes
 ok 977 - test › redis-parser › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/redis.js:4392
+file:///home/christian/Development/rollup-node-testing/bundles/redis.js:4392
 var RedisClient = redis.RedisClient;
                         ^
 
 TypeError: Cannot read property 'RedisClient' of undefined
-    at file:///home/christian/Development/rollup-third-party/bundles/redis.js:4392:25
+    at file:///home/christian/Development/rollup-node-testing/bundles/redis.js:4392:25
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › redis › Source and bundle should have similar exit codes
@@ -4514,14 +4514,14 @@ ok 981 - test › regenerate-unicode-properties › Source and bundle should hav
 ok 982 - test › regenerate › Source and bundle should have similar exit codes
 # test › regenerator-runtime › Source and bundle should have similar exit codes
 ok 983 - test › regenerator-runtime › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/regenerator-transform.js:7326
+file:///home/christian/Development/rollup-node-testing/bundles/regenerator-transform.js:7326
 var isReactComponent = exports.isReactComponent = t.buildMatchMemberExpression("React.Component");
                                                     ^
 
 TypeError: t.buildMatchMemberExpression is not a function
-    at file:///home/christian/Development/rollup-third-party/bundles/regenerator-transform.js:7326:53
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/regenerator-transform.js:13:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/regenerator-transform.js:7313:13
+    at file:///home/christian/Development/rollup-node-testing/bundles/regenerator-transform.js:7326:53
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/regenerator-transform.js:13:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/regenerator-transform.js:7313:13
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › regenerator-transform › Source and bundle should have similar exit codes
@@ -4544,24 +4544,24 @@ ok 987 - test › regexp.prototype.flags › Source and bundle should have simil
 ok 988 - test › regexpp › Source and bundle should have similar exit codes
 # test › regexpu-core › Source and bundle should have similar exit codes
 ok 989 - test › regexpu-core › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/regextras.js:352
+file:///home/christian/Development/rollup-node-testing/bundles/regextras.js:352
   RegExtras.prototype.entries = /*#__PURE__*/regeneratorRuntime.mark(function _callee(str) {
                                              ^
 
 ReferenceError: regeneratorRuntime is not defined
-    at addPrototypeMethods (file:///home/christian/Development/rollup-third-party/bundles/regextras.js:352:46)
-    at file:///home/christian/Development/rollup-third-party/bundles/regextras.js:440:1
+    at addPrototypeMethods (file:///home/christian/Development/rollup-node-testing/bundles/regextras.js:352:46)
+    at file:///home/christian/Development/rollup-node-testing/bundles/regextras.js:440:1
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
-/home/christian/Development/rollup-third-party/node_modules/regextras/dist/index-umd.js:358
+/home/christian/Development/rollup-node-testing/node_modules/regextras/dist/index-umd.js:358
     RegExtras.prototype.entries = /*#__PURE__*/regeneratorRuntime.mark(function _callee(str) {
                                                ^
 
 ReferenceError: regeneratorRuntime is not defined
-    at addPrototypeMethods (/home/christian/Development/rollup-third-party/node_modules/regextras/dist/index-umd.js:358:48)
-    at /home/christian/Development/rollup-third-party/node_modules/regextras/dist/index-umd.js:446:3
-    at /home/christian/Development/rollup-third-party/node_modules/regextras/dist/index-umd.js:2:66
-    at Object.<anonymous> (/home/christian/Development/rollup-third-party/node_modules/regextras/dist/index-umd.js:5:2)
+    at addPrototypeMethods (/home/christian/Development/rollup-node-testing/node_modules/regextras/dist/index-umd.js:358:48)
+    at /home/christian/Development/rollup-node-testing/node_modules/regextras/dist/index-umd.js:446:3
+    at /home/christian/Development/rollup-node-testing/node_modules/regextras/dist/index-umd.js:2:66
+    at Object.<anonymous> (/home/christian/Development/rollup-node-testing/node_modules/regextras/dist/index-umd.js:5:2)
     at Module._compile (internal/modules/cjs/loader.js:1201:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
     at Module.load (internal/modules/cjs/loader.js:1050:32)
@@ -4588,7 +4588,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/remove-bom-stream.js:1146:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/remove-bom-stream.js:1146:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -4611,7 +4611,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/renderkid.js:17568:1
+    at file:///home/christian/Development/rollup-node-testing/bundles/renderkid.js:17568:1
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -4644,7 +4644,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/request-promise-native.js:22413:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/request-promise-native.js:22413:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -4665,7 +4665,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/request-promise.js:28067:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/request-promise.js:28067:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -4686,7 +4686,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/request.js:21762:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/request.js:21762:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -4741,7 +4741,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/ripemd160.js:1280:1
+    at file:///home/christian/Development/rollup-node-testing/bundles/ripemd160.js:1280:1
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -4776,12 +4776,12 @@ ok 1034 - test › safe-regex › Source and bundle should have similar exit cod
 ok 1035 - test › safer-buffer › Source and bundle should have similar exit codes
 # test › sane › Source and bundle should have similar exit codes
 ok 1036 - test › sane › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/saslprep.js:260
+file:///home/christian/Development/rollup-node-testing/bundles/saslprep.js:260
 const memory = fs.readFileSync(path.resolve(__dirname, '../code-points.mem'));
                                             ^
 
 ReferenceError: __dirname is not defined
-    at file:///home/christian/Development/rollup-third-party/bundles/saslprep.js:260:45
+    at file:///home/christian/Development/rollup-node-testing/bundles/saslprep.js:260:45
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › saslprep › Source and bundle should have similar exit codes
@@ -4794,20 +4794,20 @@ not ok 1037 - test › saslprep › Source and bundle should have similar exit c
     assertion: fail
     at: 'file://test/saslprep.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/sass-graph.js:20
+file:///home/christian/Development/rollup-node-testing/bundles/sass-graph.js:20
 	throw new Error('Dynamic requires are not currently supported by @rollup/plugin-commonjs');
 	      ^
 
 Error: Dynamic requires are not currently supported by @rollup/plugin-commonjs
-    at commonjsRequire (file:///home/christian/Development/rollup-third-party/bundles/sass-graph.js:20:8)
-    at stringRequire (file:///home/christian/Development/rollup-third-party/bundles/sass-graph.js:20806:28)
-    at amdRequire (file:///home/christian/Development/rollup-third-party/bundles/sass-graph.js:20699:24)
-    at Object.<anonymous> (file:///home/christian/Development/rollup-third-party/bundles/sass-graph.js:20901:19)
-    at runFactory (file:///home/christian/Development/rollup-third-party/bundles/sass-graph.js:20769:30)
-    at define (file:///home/christian/Development/rollup-third-party/bundles/sass-graph.js:20863:13)
-    at file:///home/christian/Development/rollup-third-party/bundles/sass-graph.js:20899:1
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/sass-graph.js:16:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/sass-graph.js:20889:26
+    at commonjsRequire (file:///home/christian/Development/rollup-node-testing/bundles/sass-graph.js:20:8)
+    at stringRequire (file:///home/christian/Development/rollup-node-testing/bundles/sass-graph.js:20806:28)
+    at amdRequire (file:///home/christian/Development/rollup-node-testing/bundles/sass-graph.js:20699:24)
+    at Object.<anonymous> (file:///home/christian/Development/rollup-node-testing/bundles/sass-graph.js:20901:19)
+    at runFactory (file:///home/christian/Development/rollup-node-testing/bundles/sass-graph.js:20769:30)
+    at define (file:///home/christian/Development/rollup-node-testing/bundles/sass-graph.js:20863:13)
+    at file:///home/christian/Development/rollup-node-testing/bundles/sass-graph.js:20899:1
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/sass-graph.js:16:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/sass-graph.js:20889:26
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
 # test › sass-graph › Source and bundle should have similar exit codes
 not ok 1038 - test › sass-graph › Source and bundle should have similar exit codes
@@ -4831,20 +4831,20 @@ ok 1042 - test › scheduler › Source and bundle should have similar exit code
 ok 1043 - test › schema-utils › Source and bundle should have similar exit codes
 # test › scoped-regex › Source and bundle should have similar exit codes
 ok 1044 - test › scoped-regex › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/scss-tokenizer.js:17
+file:///home/christian/Development/rollup-node-testing/bundles/scss-tokenizer.js:17
 	throw new Error('Dynamic requires are not currently supported by @rollup/plugin-commonjs');
 	      ^
 
 Error: Dynamic requires are not currently supported by @rollup/plugin-commonjs
-    at commonjsRequire (file:///home/christian/Development/rollup-third-party/bundles/scss-tokenizer.js:17:8)
-    at stringRequire (file:///home/christian/Development/rollup-third-party/bundles/scss-tokenizer.js:445:28)
-    at amdRequire (file:///home/christian/Development/rollup-third-party/bundles/scss-tokenizer.js:338:24)
-    at Object.<anonymous> (file:///home/christian/Development/rollup-third-party/bundles/scss-tokenizer.js:540:19)
-    at runFactory (file:///home/christian/Development/rollup-third-party/bundles/scss-tokenizer.js:408:30)
-    at define (file:///home/christian/Development/rollup-third-party/bundles/scss-tokenizer.js:502:13)
-    at file:///home/christian/Development/rollup-third-party/bundles/scss-tokenizer.js:538:1
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/scss-tokenizer.js:13:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/scss-tokenizer.js:528:26
+    at commonjsRequire (file:///home/christian/Development/rollup-node-testing/bundles/scss-tokenizer.js:17:8)
+    at stringRequire (file:///home/christian/Development/rollup-node-testing/bundles/scss-tokenizer.js:445:28)
+    at amdRequire (file:///home/christian/Development/rollup-node-testing/bundles/scss-tokenizer.js:338:24)
+    at Object.<anonymous> (file:///home/christian/Development/rollup-node-testing/bundles/scss-tokenizer.js:540:19)
+    at runFactory (file:///home/christian/Development/rollup-node-testing/bundles/scss-tokenizer.js:408:30)
+    at define (file:///home/christian/Development/rollup-node-testing/bundles/scss-tokenizer.js:502:13)
+    at file:///home/christian/Development/rollup-node-testing/bundles/scss-tokenizer.js:538:1
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/scss-tokenizer.js:13:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/scss-tokenizer.js:528:26
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
 # test › scss-tokenizer › Source and bundle should have similar exit codes
 not ok 1045 - test › scss-tokenizer › Source and bundle should have similar exit codes
@@ -4874,7 +4874,7 @@ internal/modules/run_main.js:54
     internalBinding('errors').triggerUncaughtException(
                               ^
 
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'emitter' imported from /home/christian/Development/rollup-third-party/bundles/serve-index.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'emitter' imported from /home/christian/Development/rollup-node-testing/bundles/serve-index.js
     at packageResolve (internal/modules/esm/resolve.js:594:9)
     at moduleResolve (internal/modules/esm/resolve.js:633:14)
     at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:726:11)
@@ -4916,15 +4916,15 @@ ok 1062 - test › shallowequal › Source and bundle should have similar exit c
 ok 1063 - test › shebang-command › Source and bundle should have similar exit codes
 # test › shebang-regex › Source and bundle should have similar exit codes
 ok 1064 - test › shebang-regex › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/shelljs.js:19
+file:///home/christian/Development/rollup-node-testing/bundles/shelljs.js:19
 	throw new Error('Dynamic requires are not currently supported by @rollup/plugin-commonjs');
 	      ^
 
 Error: Dynamic requires are not currently supported by @rollup/plugin-commonjs
-    at commonjsRequire (file:///home/christian/Development/rollup-third-party/bundles/shelljs.js:19:8)
-    at file:///home/christian/Development/rollup-third-party/bundles/shelljs.js:3334:3
+    at commonjsRequire (file:///home/christian/Development/rollup-node-testing/bundles/shelljs.js:19:8)
+    at file:///home/christian/Development/rollup-node-testing/bundles/shelljs.js:3334:3
     at Array.forEach (<anonymous>)
-    at file:///home/christian/Development/rollup-third-party/bundles/shelljs.js:3333:10
+    at file:///home/christian/Development/rollup-node-testing/bundles/shelljs.js:3333:10
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › shelljs › Source and bundle should have similar exit codes
@@ -4967,7 +4967,7 @@ internal/modules/run_main.js:54
     internalBinding('errors').triggerUncaughtException(
                               ^
 
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'bufferutil' imported from /home/christian/Development/rollup-third-party/bundles/socket.io-client.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'bufferutil' imported from /home/christian/Development/rollup-node-testing/bundles/socket.io-client.js
     at packageResolve (internal/modules/esm/resolve.js:594:9)
     at moduleResolve (internal/modules/esm/resolve.js:633:14)
     at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:726:11)
@@ -4993,7 +4993,7 @@ internal/modules/run_main.js:54
     internalBinding('errors').triggerUncaughtException(
                               ^
 
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'bufferutil' imported from /home/christian/Development/rollup-third-party/bundles/socket.io.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'bufferutil' imported from /home/christian/Development/rollup-node-testing/bundles/socket.io.js
     at packageResolve (internal/modules/esm/resolve.js:594:9)
     at moduleResolve (internal/modules/esm/resolve.js:633:14)
     at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:726:11)
@@ -5047,7 +5047,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/spdy-transport.js:2640:1
+    at file:///home/christian/Development/rollup-node-testing/bundles/spdy-transport.js:2640:1
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -5068,7 +5068,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/spdy.js:3620:1
+    at file:///home/christian/Development/rollup-node-testing/bundles/spdy.js:3620:1
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -5093,7 +5093,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/sshpk.js:9824:6
+    at file:///home/christian/Development/rollup-node-testing/bundles/sshpk.js:9824:6
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -5118,12 +5118,12 @@ ok 1103 - test › stack-utils › Source and bundle should have similar exit co
 ok 1104 - test › static-extend › Source and bundle should have similar exit codes
 # test › statuses › Source and bundle should have similar exit codes
 ok 1105 - test › statuses › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/stdout-stream.js:1772
+file:///home/christian/Development/rollup-node-testing/bundles/stdout-stream.js:1772
   var keys = objectKeys(_stream_writable.prototype);
                                          ^
 
 TypeError: Cannot read property 'prototype' of undefined
-    at file:///home/christian/Development/rollup-third-party/bundles/stdout-stream.js:1772:42
+    at file:///home/christian/Development/rollup-node-testing/bundles/stdout-stream.js:1772:42
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › stdout-stream › Source and bundle should have similar exit codes
@@ -5144,7 +5144,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/stream-browserify.js:1146:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/stream-browserify.js:1146:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -5169,7 +5169,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/stream-http.js:1224:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/stream-http.js:1224:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -5210,7 +5210,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/strip-bom-stream.js:1146:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/strip-bom-stream.js:1146:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -5267,7 +5267,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/terser-webpack-plugin.js:23999:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/terser-webpack-plugin.js:23999:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -5300,7 +5300,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/through2-filter.js:1146:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/through2-filter.js:1146:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -5321,7 +5321,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/through2.js:1212:1
+    at file:///home/christian/Development/rollup-node-testing/bundles/through2.js:1212:1
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -5376,7 +5376,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/to-through.js:1146:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/to-through.js:1146:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -5438,7 +5438,7 @@ internal/modules/cjs/loader.js:1033
   throw err;
   ^
 
-Error: Cannot find module '/home/christian/Development/rollup-third-party/node_modules/type-fest'
+Error: Cannot find module '/home/christian/Development/rollup-node-testing/node_modules/type-fest'
     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:1030:15)
     at Function.Module._load (internal/modules/cjs/loader.js:899:27)
     at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)
@@ -5467,7 +5467,7 @@ internal/modules/cjs/loader.js:1033
   throw err;
   ^
 
-Error: Cannot find module '/home/christian/Development/rollup-third-party/node_modules/type'
+Error: Cannot find module '/home/christian/Development/rollup-node-testing/node_modules/type'
     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:1030:15)
     at Function.Module._load (internal/modules/cjs/loader.js:899:27)
     at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)
@@ -5481,18 +5481,18 @@ ok 1185 - test › type › Source and bundle should have similar exit codes
 ok 1186 - test › typedarray-to-buffer › Source and bundle should have similar exit codes
 # test › typedarray › Source and bundle should have similar exit codes
 ok 1187 - test › typedarray › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/typescript.js:9664
+file:///home/christian/Development/rollup-node-testing/bundles/typescript.js:9664
                 return !fileExists(swapCase(__filename));
                                             ^
 
 ReferenceError: __filename is not defined
-    at isFileSystemCaseSensitive (file:///home/christian/Development/rollup-third-party/bundles/typescript.js:9664:45)
-    at getNodeSystem (file:///home/christian/Development/rollup-third-party/bundles/typescript.js:9445:45)
-    at file:///home/christian/Development/rollup-third-party/bundles/typescript.js:9965:19
-    at file:///home/christian/Development/rollup-third-party/bundles/typescript.js:9972:7
-    at file:///home/christian/Development/rollup-third-party/bundles/typescript.js:9982:3
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/typescript.js:17:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/typescript.js:3868:18
+    at isFileSystemCaseSensitive (file:///home/christian/Development/rollup-node-testing/bundles/typescript.js:9664:45)
+    at getNodeSystem (file:///home/christian/Development/rollup-node-testing/bundles/typescript.js:9445:45)
+    at file:///home/christian/Development/rollup-node-testing/bundles/typescript.js:9965:19
+    at file:///home/christian/Development/rollup-node-testing/bundles/typescript.js:9972:7
+    at file:///home/christian/Development/rollup-node-testing/bundles/typescript.js:9982:3
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/typescript.js:17:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/typescript.js:3868:18
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › typescript › Source and bundle should have similar exit codes
@@ -5505,14 +5505,14 @@ not ok 1188 - test › typescript › Source and bundle should have similar exit
     assertion: fail
     at: 'file://test/typescript.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/uglify-js.js:19
+file:///home/christian/Development/rollup-node-testing/bundles/uglify-js.js:19
     require.resolve("../lib/utils.js"),
     ^
 
 ReferenceError: require is not defined
-    at file:///home/christian/Development/rollup-third-party/bundles/uglify-js.js:19:5
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/uglify-js.js:10:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/uglify-js.js:17:12
+    at file:///home/christian/Development/rollup-node-testing/bundles/uglify-js.js:19:5
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/uglify-js.js:10:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/uglify-js.js:17:12
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › uglify-js › Source and bundle should have similar exit codes
@@ -5553,7 +5553,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/unique-stream.js:1146:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/unique-stream.js:1146:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -5610,15 +5610,15 @@ ok 1220 - test › utila › Source and bundle should have similar exit codes
 ok 1221 - test › utils-merge › Source and bundle should have similar exit codes
 # test › uuid › Source and bundle should have similar exit codes
 ok 1222 - test › uuid › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/v8-compile-cache.js:178
+file:///home/christian/Development/rollup-node-testing/bundles/v8-compile-cache.js:178
     const hasRequireResolvePaths = typeof require.resolve.paths === 'function';
                                    ^
 
 ReferenceError: require is not defined
-    at NativeCompileCache.install (file:///home/christian/Development/rollup-third-party/bundles/v8-compile-cache.js:178:36)
-    at file:///home/christian/Development/rollup-third-party/bundles/v8-compile-cache.js:372:22
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/v8-compile-cache.js:17:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/v8-compile-cache.js:24:22
+    at NativeCompileCache.install (file:///home/christian/Development/rollup-node-testing/bundles/v8-compile-cache.js:178:36)
+    at file:///home/christian/Development/rollup-node-testing/bundles/v8-compile-cache.js:372:22
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/v8-compile-cache.js:17:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/v8-compile-cache.js:24:22
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › v8-compile-cache › Source and bundle should have similar exit codes
@@ -5651,7 +5651,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/vinyl-file.js:2056:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/vinyl-file.js:2056:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -5672,7 +5672,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/vinyl-fs.js:1151:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/vinyl-fs.js:1151:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -5693,7 +5693,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/vinyl-sourcemap.js:1410:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/vinyl-sourcemap.js:1410:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -5714,7 +5714,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/vinyl.js:1407:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/vinyl.js:1407:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -5745,7 +5745,7 @@ internal/modules/run_main.js:54
     internalBinding('errors').triggerUncaughtException(
                               ^
 
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'fsevents' imported from /home/christian/Development/rollup-third-party/bundles/watchpack-chokidar2.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'fsevents' imported from /home/christian/Development/rollup-node-testing/bundles/watchpack-chokidar2.js
     at packageResolve (internal/modules/esm/resolve.js:594:9)
     at moduleResolve (internal/modules/esm/resolve.js:633:14)
     at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:726:11)
@@ -5769,7 +5769,7 @@ internal/modules/run_main.js:54
     internalBinding('errors').triggerUncaughtException(
                               ^
 
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'fsevents' imported from /home/christian/Development/rollup-third-party/bundles/watchpack.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'fsevents' imported from /home/christian/Development/rollup-node-testing/bundles/watchpack.js
     at packageResolve (internal/modules/esm/resolve.js:594:9)
     at moduleResolve (internal/modules/esm/resolve.js:633:14)
     at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:726:11)
@@ -5801,7 +5801,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/webpack-dev-middleware.js:2271:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/webpack-dev-middleware.js:2271:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -5820,7 +5820,7 @@ internal/modules/run_main.js:54
     internalBinding('errors').triggerUncaughtException(
                               ^
 
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'fsevents' imported from /home/christian/Development/rollup-third-party/bundles/webpack-dev-server.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'fsevents' imported from /home/christian/Development/rollup-node-testing/bundles/webpack-dev-server.js
     at packageResolve (internal/modules/esm/resolve.js:594:9)
     at moduleResolve (internal/modules/esm/resolve.js:633:14)
     at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:726:11)
@@ -5848,7 +5848,7 @@ internal/modules/run_main.js:54
     internalBinding('errors').triggerUncaughtException(
                               ^
 
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'fsevents' imported from /home/christian/Development/rollup-third-party/bundles/webpack.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'fsevents' imported from /home/christian/Development/rollup-node-testing/bundles/webpack.js
     at packageResolve (internal/modules/esm/resolve.js:594:9)
     at moduleResolve (internal/modules/esm/resolve.js:633:14)
     at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:726:11)
@@ -5888,12 +5888,12 @@ ok 1258 - test › which › Source and bundle should have similar exit codes
 ok 1259 - test › wide-align › Source and bundle should have similar exit codes
 # test › widest-line › Source and bundle should have similar exit codes
 ok 1260 - test › widest-line › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/winston-transport.js:1771
+file:///home/christian/Development/rollup-node-testing/bundles/winston-transport.js:1771
   var keys = objectKeys(_stream_writable.prototype);
                                          ^
 
 TypeError: Cannot read property 'prototype' of undefined
-    at file:///home/christian/Development/rollup-third-party/bundles/winston-transport.js:1771:42
+    at file:///home/christian/Development/rollup-node-testing/bundles/winston-transport.js:1771:42
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › winston-transport › Source and bundle should have similar exit codes
@@ -5906,12 +5906,12 @@ not ok 1261 - test › winston-transport › Source and bundle should have simil
     assertion: fail
     at: 'file://test/winston-transport.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/winston.js:3082
+file:///home/christian/Development/rollup-node-testing/bundles/winston.js:3082
   var keys = objectKeys(_stream_writable.prototype);
                                          ^
 
 TypeError: Cannot read property 'prototype' of undefined
-    at file:///home/christian/Development/rollup-third-party/bundles/winston.js:3082:42
+    at file:///home/christian/Development/rollup-node-testing/bundles/winston.js:3082:42
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › winston › Source and bundle should have similar exit codes
@@ -5930,12 +5930,12 @@ ok 1263 - test › with-open-file › Source and bundle should have similar exit
 ok 1264 - test › word-wrap › Source and bundle should have similar exit codes
 # test › wordwrap › Source and bundle should have similar exit codes
 ok 1265 - test › wordwrap › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/worker-farm.js:4
+file:///home/christian/Development/rollup-node-testing/bundles/worker-farm.js:4
 const childModule  = require.resolve('./child/index');
                      ^
 
 ReferenceError: require is not defined
-    at file:///home/christian/Development/rollup-third-party/bundles/worker-farm.js:4:22
+    at file:///home/christian/Development/rollup-node-testing/bundles/worker-farm.js:4:22
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › worker-farm › Source and bundle should have similar exit codes
@@ -5953,10 +5953,10 @@ typeof require !== 'undefined' ? require : function (module) { throw new Error('
                                                                      ^
 
 Error: Module " + module + " not found.
-    at eval (eval at <anonymous> (file:///home/christian/Development/rollup-third-party/bundles/workerpool.js:16:26), <anonymous>:1:70)
-    at file:///home/christian/Development/rollup-third-party/bundles/workerpool.js:50:5
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/workerpool.js:8:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/workerpool.js:24:19
+    at eval (eval at <anonymous> (file:///home/christian/Development/rollup-node-testing/bundles/workerpool.js:16:26), <anonymous>:1:70)
+    at file:///home/christian/Development/rollup-node-testing/bundles/workerpool.js:50:5
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/workerpool.js:8:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/workerpool.js:24:19
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › workerpool › Source and bundle should have similar exit codes
@@ -5981,7 +5981,7 @@ internal/modules/run_main.js:54
     internalBinding('errors').triggerUncaughtException(
                               ^
 
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'bufferutil' imported from /home/christian/Development/rollup-third-party/bundles/ws.js
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'bufferutil' imported from /home/christian/Development/rollup-node-testing/bundles/ws.js
     at packageResolve (internal/modules/esm/resolve.js:594:9)
     at moduleResolve (internal/modules/esm/resolve.js:633:14)
     at Loader.defaultResolve [as _resolve] (internal/modules/esm/resolve.js:726:11)
@@ -6005,17 +6005,17 @@ not ok 1272 - test › ws › Source and bundle should have similar exit codes
 ok 1273 - test › xdg-basedir › Source and bundle should have similar exit codes
 # test › xml-name-validator › Source and bundle should have similar exit codes
 ok 1274 - test › xml-name-validator › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/xml2js.js:535
+file:///home/christian/Development/rollup-node-testing/bundles/xml2js.js:535
     extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
                                                                                                                                                                                                   ^
 
 TypeError: Cannot read property 'prototype' of undefined
-    at extend (file:///home/christian/Development/rollup-third-party/bundles/xml2js.js:535:195)
-    at file:///home/christian/Development/rollup-third-party/bundles/xml2js.js:549:5
-    at file:///home/christian/Development/rollup-third-party/bundles/xml2js.js:827:5
-    at file:///home/christian/Development/rollup-third-party/bundles/xml2js.js:829:4
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/xml2js.js:15:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/xml2js.js:531:18
+    at extend (file:///home/christian/Development/rollup-node-testing/bundles/xml2js.js:535:195)
+    at file:///home/christian/Development/rollup-node-testing/bundles/xml2js.js:549:5
+    at file:///home/christian/Development/rollup-node-testing/bundles/xml2js.js:827:5
+    at file:///home/christian/Development/rollup-node-testing/bundles/xml2js.js:829:4
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/xml2js.js:15:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/xml2js.js:531:18
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › xml2js › Source and bundle should have similar exit codes
@@ -6028,17 +6028,17 @@ not ok 1275 - test › xml2js › Source and bundle should have similar exit cod
     assertion: fail
     at: 'file://test/xml2js.js:25:7'
   ...
-file:///home/christian/Development/rollup-third-party/bundles/xmlbuilder.js:455
+file:///home/christian/Development/rollup-node-testing/bundles/xmlbuilder.js:455
     extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
                                                                                                                                                                                                   ^
 
 TypeError: Cannot read property 'prototype' of undefined
-    at extend (file:///home/christian/Development/rollup-third-party/bundles/xmlbuilder.js:455:195)
-    at file:///home/christian/Development/rollup-third-party/bundles/xmlbuilder.js:469:5
-    at file:///home/christian/Development/rollup-third-party/bundles/xmlbuilder.js:747:5
-    at file:///home/christian/Development/rollup-third-party/bundles/xmlbuilder.js:749:4
-    at createCommonjsModule (file:///home/christian/Development/rollup-third-party/bundles/xmlbuilder.js:10:5)
-    at file:///home/christian/Development/rollup-third-party/bundles/xmlbuilder.js:451:18
+    at extend (file:///home/christian/Development/rollup-node-testing/bundles/xmlbuilder.js:455:195)
+    at file:///home/christian/Development/rollup-node-testing/bundles/xmlbuilder.js:469:5
+    at file:///home/christian/Development/rollup-node-testing/bundles/xmlbuilder.js:747:5
+    at file:///home/christian/Development/rollup-node-testing/bundles/xmlbuilder.js:749:4
+    at createCommonjsModule (file:///home/christian/Development/rollup-node-testing/bundles/xmlbuilder.js:10:5)
+    at file:///home/christian/Development/rollup-node-testing/bundles/xmlbuilder.js:451:18
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › xmlbuilder › Source and bundle should have similar exit codes
@@ -6067,14 +6067,14 @@ ok 1281 - test › yallist › Source and bundle should have similar exit codes
 ok 1282 - test › yargs-parser › Source and bundle should have similar exit codes
 # test › yargs-unparser › Source and bundle should have similar exit codes
 ok 1283 - test › yargs-unparser › Source and bundle should have similar exit codes
-file:///home/christian/Development/rollup-third-party/bundles/yargs.js:5671
+file:///home/christian/Development/rollup-node-testing/bundles/yargs.js:5671
         directory: path.resolve(__dirname, '../../locales'),
                                 ^
 
 ReferenceError: __dirname is not defined
-    at Yargs (file:///home/christian/Development/rollup-third-party/bundles/yargs.js:5671:33)
-    at Argv (file:///home/christian/Development/rollup-third-party/bundles/yargs.js:6850:16)
-    at file:///home/christian/Development/rollup-third-party/bundles/yargs.js:6847:1
+    at Yargs (file:///home/christian/Development/rollup-node-testing/bundles/yargs.js:5671:33)
+    at Argv (file:///home/christian/Development/rollup-node-testing/bundles/yargs.js:6850:16)
+    at file:///home/christian/Development/rollup-node-testing/bundles/yargs.js:6847:1
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24)
 # test › yargs › Source and bundle should have similar exit codes
@@ -6095,7 +6095,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at Object.inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/yeoman-environment.js:21270:8
+    at file:///home/christian/Development/rollup-node-testing/bundles/yeoman-environment.js:21270:8
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'
@@ -6116,7 +6116,7 @@ internal/modules/run_main.js:54
 
 TypeError [ERR_INVALID_ARG_TYPE]: The "superCtor" argument must be of type function. Received undefined
     at inherits (util.js:157:11)
-    at file:///home/christian/Development/rollup-third-party/bundles/yeoman-generator.js:30451:1
+    at file:///home/christian/Development/rollup-node-testing/bundles/yeoman-generator.js:30451:1
     at ModuleJob.run (internal/modules/esm/module_job.js:140:23)
     at async Loader.import (internal/modules/esm/loader.js:162:24) {
   code: 'ERR_INVALID_ARG_TYPE'

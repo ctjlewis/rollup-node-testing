@@ -1,0 +1,1 @@
+var equalSign = new Buffer('=');
