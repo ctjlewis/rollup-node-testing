@@ -1,0 +1,1 @@
+import supportshyperlinks from 'supports-hyperlinks';

@@ -1,0 +1,1 @@
+import babelplugintransformesforof from 'babel-plugin-transform-es2015-for-of';

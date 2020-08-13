@@ -1,0 +1,1 @@
+import jestenvironmentjsdom from 'jest-environment-jsdom';

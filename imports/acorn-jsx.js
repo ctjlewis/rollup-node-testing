@@ -1,0 +1,1 @@
+import acornjsx from 'acorn-jsx';

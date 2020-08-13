@@ -1,0 +1,1 @@
+import numberisnan from 'number-is-nan';

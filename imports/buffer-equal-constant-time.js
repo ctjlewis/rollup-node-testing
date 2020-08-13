@@ -1,0 +1,1 @@
+import bufferequalconstanttime from 'buffer-equal-constant-time';

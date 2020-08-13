@@ -1,0 +1,1 @@
+import babelhelperdefinemap from 'babel-helper-define-map';

@@ -1,0 +1,1 @@
+import jestjasmine from 'jest-jasmine2';

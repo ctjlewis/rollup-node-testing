@@ -1,0 +1,1 @@
+import mdhex from 'md5-hex';

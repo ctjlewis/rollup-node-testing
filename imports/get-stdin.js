@@ -1,0 +1,1 @@
+import getstdin from 'get-stdin';

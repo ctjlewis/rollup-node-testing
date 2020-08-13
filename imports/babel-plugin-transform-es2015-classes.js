@@ -1,0 +1,1 @@
+import babelplugintransformesclasses from 'babel-plugin-transform-es2015-classes';

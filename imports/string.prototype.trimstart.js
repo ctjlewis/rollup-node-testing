@@ -1,0 +1,1 @@
+import stringprototypetrimstart from 'string.prototype.trimstart';

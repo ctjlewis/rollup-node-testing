@@ -1,0 +1,1 @@
+import makeiterator from 'make-iterator';

@@ -1,0 +1,1 @@
+import downloadstats from 'download-stats';

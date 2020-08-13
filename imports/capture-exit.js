@@ -1,0 +1,1 @@
+import captureexit from 'capture-exit';

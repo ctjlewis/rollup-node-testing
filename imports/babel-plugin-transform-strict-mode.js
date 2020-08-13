@@ -1,0 +1,1 @@
+import babelplugintransformstrictmode from 'babel-plugin-transform-strict-mode';

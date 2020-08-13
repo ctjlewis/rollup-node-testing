@@ -1,0 +1,1 @@
+import babelplugindynamicimportnode from 'babel-plugin-dynamic-import-node';

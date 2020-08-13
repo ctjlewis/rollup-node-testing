@@ -1,0 +1,1 @@
+import postcssmodulesextractimports from 'postcss-modules-extract-imports';

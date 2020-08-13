@@ -1,0 +1,1 @@
+import iserror from 'is-error';

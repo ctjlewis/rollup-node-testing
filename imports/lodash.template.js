@@ -1,0 +1,1 @@
+import lodashtemplate from 'lodash.template';

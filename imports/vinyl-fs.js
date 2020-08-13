@@ -1,0 +1,1 @@
+import vinylfs from 'vinyl-fs';

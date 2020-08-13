@@ -1,0 +1,1 @@
+import getfuncname from 'get-func-name';

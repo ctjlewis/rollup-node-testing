@@ -1,0 +1,1 @@
+import istanbulreports from 'istanbul-reports';

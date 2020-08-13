@@ -1,0 +1,1 @@
+import babelpluginistanbul from 'babel-plugin-istanbul';

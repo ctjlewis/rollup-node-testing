@@ -1,0 +1,1 @@
+import yeomanenvironment from 'yeoman-environment';

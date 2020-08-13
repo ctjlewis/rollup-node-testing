@@ -1,0 +1,1 @@
+import deepis from 'deep-is';

@@ -1,0 +1,1 @@
+import stringtemplate from 'string-template';

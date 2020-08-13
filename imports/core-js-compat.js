@@ -1,0 +1,1 @@
+import corejscompat from 'core-js-compat';

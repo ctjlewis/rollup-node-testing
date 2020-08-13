@@ -1,0 +1,1 @@
+import domelementtype from 'domelementtype';

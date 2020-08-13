@@ -1,0 +1,1 @@
+import stripfinalnewline from 'strip-final-newline';

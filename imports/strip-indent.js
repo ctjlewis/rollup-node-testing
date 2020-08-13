@@ -1,0 +1,1 @@
+import stripindent from 'strip-indent';

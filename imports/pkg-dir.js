@@ -1,0 +1,1 @@
+import pkgdir from 'pkg-dir';

@@ -1,0 +1,1 @@
+import inherits from 'inherits';

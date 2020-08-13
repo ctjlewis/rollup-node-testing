@@ -1,0 +1,1 @@
+import browserifysign from 'browserify-sign';

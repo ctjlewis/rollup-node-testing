@@ -1,0 +1,1 @@
+import locatepath from 'locate-path';

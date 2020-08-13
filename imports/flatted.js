@@ -1,0 +1,1 @@
+import flatted from 'flatted';

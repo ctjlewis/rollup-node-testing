@@ -1,0 +1,1 @@
+import isdocker from 'is-docker';

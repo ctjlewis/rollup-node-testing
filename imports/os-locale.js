@@ -1,0 +1,1 @@
+import oslocale from 'os-locale';

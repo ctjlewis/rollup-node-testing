@@ -1,0 +1,1 @@
+import isabsoluteurl from 'is-absolute-url';

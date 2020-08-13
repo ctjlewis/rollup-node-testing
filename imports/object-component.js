@@ -1,0 +1,1 @@
+import objectcomponent from 'object-component';

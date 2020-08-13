@@ -1,0 +1,1 @@
+import multipipe from 'multipipe';

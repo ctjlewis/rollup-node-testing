@@ -1,0 +1,1 @@
+import hoistnonreactstatics from 'hoist-non-react-statics';

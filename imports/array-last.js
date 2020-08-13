@@ -1,0 +1,1 @@
+import arraylast from 'array-last';

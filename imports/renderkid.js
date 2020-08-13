@@ -1,0 +1,1 @@
+import renderkid from 'renderkid';

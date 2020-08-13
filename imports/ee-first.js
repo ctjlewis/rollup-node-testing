@@ -1,0 +1,1 @@
+import eefirst from 'ee-first';

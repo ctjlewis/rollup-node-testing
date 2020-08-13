@@ -1,0 +1,1 @@
+import emojiregex from 'emoji-regex';

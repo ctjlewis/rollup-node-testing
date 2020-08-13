@@ -1,0 +1,1 @@
+import objectfromentries from 'object.fromentries';

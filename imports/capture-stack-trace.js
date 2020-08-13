@@ -1,0 +1,1 @@
+import capturestacktrace from 'capture-stack-trace';

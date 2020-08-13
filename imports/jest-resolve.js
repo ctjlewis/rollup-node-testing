@@ -1,0 +1,1 @@
+import jestresolve from 'jest-resolve';

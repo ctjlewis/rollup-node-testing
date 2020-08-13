@@ -1,0 +1,1 @@
+import whatwgurl from 'whatwg-url';

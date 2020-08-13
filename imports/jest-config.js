@@ -1,0 +1,1 @@
+import jestconfig from 'jest-config';

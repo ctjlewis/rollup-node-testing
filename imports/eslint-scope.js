@@ -1,0 +1,1 @@
+import eslintscope from 'eslint-scope';

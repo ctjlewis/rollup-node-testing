@@ -1,0 +1,1 @@
+import acornglobals from 'acorn-globals';

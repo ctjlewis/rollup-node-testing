@@ -1,0 +1,1 @@
+import isbinaryfile from 'isbinaryfile';

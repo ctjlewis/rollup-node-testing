@@ -1,0 +1,1 @@
+import dotprop from 'dot-prop';

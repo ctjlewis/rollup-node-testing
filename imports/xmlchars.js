@@ -1,0 +1,1 @@
+import xmlchars from 'xmlchars';

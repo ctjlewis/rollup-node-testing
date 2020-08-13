@@ -1,0 +1,1 @@
+import typecheck from 'type-check';

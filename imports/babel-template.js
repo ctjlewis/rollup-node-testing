@@ -1,0 +1,1 @@
+import babeltemplate from 'babel-template';

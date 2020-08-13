@@ -1,0 +1,1 @@
+import objectis from 'object-is';

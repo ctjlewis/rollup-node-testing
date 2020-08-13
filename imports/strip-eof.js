@@ -1,0 +1,1 @@
+import stripeof from 'strip-eof';

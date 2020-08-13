@@ -1,0 +1,1 @@
+import typedarray from 'typedarray';

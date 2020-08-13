@@ -1,0 +1,1 @@
+import stripansi from 'strip-ansi';

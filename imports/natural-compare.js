@@ -1,0 +1,1 @@
+import naturalcompare from 'natural-compare';

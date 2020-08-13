@@ -1,0 +1,1 @@
+import lodashisinteger from 'lodash.isinteger';

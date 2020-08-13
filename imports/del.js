@@ -1,0 +1,1 @@
+import del from 'del';

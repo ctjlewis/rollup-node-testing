@@ -1,0 +1,1 @@
+import flatcache from 'flat-cache';

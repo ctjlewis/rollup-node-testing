@@ -1,0 +1,1 @@
+import memorypager from 'memory-pager';

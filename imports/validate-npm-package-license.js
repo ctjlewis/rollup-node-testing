@@ -1,0 +1,1 @@
+import validatenpmpackagelicense from 'validate-npm-package-license';

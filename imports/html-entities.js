@@ -1,0 +1,1 @@
+import htmlentities from 'html-entities';

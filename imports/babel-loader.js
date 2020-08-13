@@ -1,0 +1,1 @@
+import babelloader from 'babel-loader';

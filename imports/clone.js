@@ -1,0 +1,1 @@
+import clone from 'clone';

@@ -1,0 +1,1 @@
+import fastdiff from 'fast-diff';

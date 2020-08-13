@@ -1,0 +1,1 @@
+import hasansi from 'has-ansi';

@@ -1,0 +1,1 @@
+import arrayslice from 'array-slice';

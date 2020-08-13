@@ -1,0 +1,1 @@
+import babelhelperfunctionname from 'babel-helper-function-name';

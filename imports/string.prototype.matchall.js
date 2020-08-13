@@ -1,0 +1,1 @@
+import stringprototypematchall from 'string.prototype.matchall';

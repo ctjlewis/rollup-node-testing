@@ -1,0 +1,1 @@
+import registryauthtoken from 'registry-auth-token';

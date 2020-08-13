@@ -1,0 +1,1 @@
+import arrayinitial from 'array-initial';

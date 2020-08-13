@@ -1,0 +1,1 @@
+import jestruntime from 'jest-runtime';

@@ -1,0 +1,1 @@
+import styleloader from 'style-loader';

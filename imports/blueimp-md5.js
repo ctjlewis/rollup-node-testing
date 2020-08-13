@@ -1,0 +1,1 @@
+import blueimpmd from 'blueimp-md5';

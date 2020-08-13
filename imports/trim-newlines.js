@@ -1,0 +1,1 @@
+import trimnewlines from 'trim-newlines';

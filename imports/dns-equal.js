@@ -1,0 +1,1 @@
+import dnsequal from 'dns-equal';

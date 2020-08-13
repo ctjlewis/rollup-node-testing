@@ -1,0 +1,1 @@
+import resolvedir from 'resolve-dir';

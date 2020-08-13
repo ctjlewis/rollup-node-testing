@@ -1,0 +1,1 @@
+import defineproperties from 'define-properties';

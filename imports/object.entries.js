@@ -1,0 +1,1 @@
+import objectentries from 'object.entries';

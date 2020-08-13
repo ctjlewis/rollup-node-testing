@@ -1,0 +1,1 @@
+import getpackagetype from 'get-package-type';

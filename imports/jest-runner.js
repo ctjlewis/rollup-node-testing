@@ -1,0 +1,1 @@
+import jestrunner from 'jest-runner';

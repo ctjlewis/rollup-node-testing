@@ -1,0 +1,1 @@
+import commonpathprefix from 'common-path-prefix';

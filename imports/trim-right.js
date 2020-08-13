@@ -1,0 +1,1 @@
+import trimright from 'trim-right';

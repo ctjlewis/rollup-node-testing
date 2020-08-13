@@ -1,0 +1,1 @@
+import assignsymbols from 'assign-symbols';

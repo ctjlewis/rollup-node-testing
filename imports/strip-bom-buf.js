@@ -1,0 +1,1 @@
+import stripbombuf from 'strip-bom-buf';

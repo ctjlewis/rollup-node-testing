@@ -1,0 +1,1 @@
+import stringprototypetrimend from 'string.prototype.trimend';

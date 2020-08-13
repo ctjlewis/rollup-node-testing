@@ -1,0 +1,1 @@
+import flaggedrespawn from 'flagged-respawn';

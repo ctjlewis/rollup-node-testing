@@ -1,0 +1,1 @@
+import regeneratorruntime from 'regenerator-runtime';

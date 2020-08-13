@@ -1,0 +1,1 @@
+import babelpluginjesthoist from 'babel-plugin-jest-hoist';

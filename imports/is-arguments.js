@@ -1,0 +1,1 @@
+import isarguments from 'is-arguments';

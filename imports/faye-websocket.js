@@ -1,0 +1,1 @@
+import fayewebsocket from 'faye-websocket';

@@ -1,0 +1,1 @@
+import mediatyper from 'media-typer';

@@ -1,0 +1,1 @@
+import utildeprecate from 'util-deprecate';

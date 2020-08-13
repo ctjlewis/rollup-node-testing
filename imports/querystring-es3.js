@@ -1,0 +1,1 @@
+import querystringes from 'querystring-es3';

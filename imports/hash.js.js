@@ -1,0 +1,1 @@
+import hashjs from 'hash.js';

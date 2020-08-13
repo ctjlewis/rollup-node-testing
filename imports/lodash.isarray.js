@@ -1,0 +1,1 @@
+import lodashisarray from 'lodash.isarray';

@@ -1,0 +1,1 @@
+import isaccessordescriptor from 'is-accessor-descriptor';

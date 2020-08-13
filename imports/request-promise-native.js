@@ -1,0 +1,1 @@
+import requestpromisenative from 'request-promise-native';

@@ -1,0 +1,1 @@
+import classutils from 'class-utils';

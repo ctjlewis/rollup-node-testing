@@ -1,0 +1,1 @@
+import regexpucore from 'regexpu-core';

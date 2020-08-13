@@ -1,0 +1,1 @@
+import babelpresetjest from 'babel-preset-jest';

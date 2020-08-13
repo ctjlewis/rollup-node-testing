@@ -1,0 +1,1 @@
+import istanbullibcoverage from 'istanbul-lib-coverage';

@@ -1,0 +1,1 @@
+import isstring from 'is-string';

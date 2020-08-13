@@ -1,0 +1,1 @@
+import babelregister from 'babel-register';

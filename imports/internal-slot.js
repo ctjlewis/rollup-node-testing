@@ -1,0 +1,1 @@
+import internalslot from 'internal-slot';

@@ -1,0 +1,1 @@
+import replaceext from 'replace-ext';

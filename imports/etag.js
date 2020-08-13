@@ -1,0 +1,1 @@
+import etag from 'etag';

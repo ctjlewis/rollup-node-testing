@@ -1,0 +1,1 @@
+import nodemodulesregexp from 'node-modules-regexp';

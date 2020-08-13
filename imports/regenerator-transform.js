@@ -1,0 +1,1 @@
+import regeneratortransform from 'regenerator-transform';

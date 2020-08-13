@@ -1,0 +1,1 @@
+import cors from 'cors';

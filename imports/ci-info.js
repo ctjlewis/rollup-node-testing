@@ -1,0 +1,1 @@
+import ciinfo from 'ci-info';

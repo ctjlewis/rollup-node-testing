@@ -1,0 +1,1 @@
+import unicodepropertyaliasesecmascript from 'unicode-property-aliases-ecmascript';

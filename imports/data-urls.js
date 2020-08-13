@@ -1,0 +1,1 @@
+import dataurls from 'data-urls';

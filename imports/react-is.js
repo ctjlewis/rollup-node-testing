@@ -1,0 +1,1 @@
+import reactis from 'react-is';

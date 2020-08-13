@@ -1,0 +1,1 @@
+import lodashisboolean from 'lodash.isboolean';

@@ -1,0 +1,1 @@
+import yn from 'y18n';

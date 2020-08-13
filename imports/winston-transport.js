@@ -1,0 +1,1 @@
+import winstontransport from 'winston-transport';

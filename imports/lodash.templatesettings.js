@@ -1,0 +1,1 @@
+import lodashtemplatesettings from 'lodash.templatesettings';

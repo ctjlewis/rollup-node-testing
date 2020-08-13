@@ -1,0 +1,1 @@
+import forown from 'for-own';

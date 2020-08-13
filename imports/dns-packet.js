@@ -1,0 +1,1 @@
+import dnspacket from 'dns-packet';

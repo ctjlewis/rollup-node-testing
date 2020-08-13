@@ -1,0 +1,1 @@
+import pathtype from 'path-type';

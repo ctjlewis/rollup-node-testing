@@ -1,0 +1,1 @@
+import deepfreeze from 'deep-freeze';

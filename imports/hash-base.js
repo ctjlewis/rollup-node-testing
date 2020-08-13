@@ -1,0 +1,1 @@
+import hashbase from 'hash-base';

@@ -1,0 +1,1 @@
+import browserslist from 'browserslist';

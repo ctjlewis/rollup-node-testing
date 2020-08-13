@@ -1,0 +1,1 @@
+import postcssmodulesscope from 'postcss-modules-scope';

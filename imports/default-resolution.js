@@ -1,0 +1,1 @@
+import defaultresolution from 'default-resolution';

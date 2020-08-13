@@ -1,0 +1,1 @@
+import paralleltransform from 'parallel-transform';

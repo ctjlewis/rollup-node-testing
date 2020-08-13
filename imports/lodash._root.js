@@ -1,0 +1,1 @@
+import lodashroot from 'lodash._root';

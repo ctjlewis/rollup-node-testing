@@ -1,0 +1,1 @@
+import hasflag from 'has-flag';

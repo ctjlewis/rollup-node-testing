@@ -1,0 +1,1 @@
+import babelplugintransformregenerator from 'babel-plugin-transform-regenerator';

@@ -1,0 +1,1 @@
+import constantsbrowserify from 'constants-browserify';

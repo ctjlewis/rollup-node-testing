@@ -1,0 +1,1 @@
+import pseudomap from 'pseudomap';

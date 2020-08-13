@@ -1,0 +1,1 @@
+import magicstring from 'magic-string';

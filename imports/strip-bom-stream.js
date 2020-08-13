@@ -1,0 +1,1 @@
+import stripbomstream from 'strip-bom-stream';

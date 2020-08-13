@@ -1,0 +1,1 @@
+import regexpprototypeflags from 'regexp.prototype.flags';

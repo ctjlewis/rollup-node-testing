@@ -1,0 +1,1 @@
+import isdatadescriptor from 'is-data-descriptor';

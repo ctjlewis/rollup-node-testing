@@ -1,0 +1,1 @@
+import tinyinvariant from 'tiny-invariant';

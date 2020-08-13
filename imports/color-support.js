@@ -1,0 +1,1 @@
+import colorsupport from 'color-support';

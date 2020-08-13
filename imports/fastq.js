@@ -1,0 +1,1 @@
+import fastq from 'fastq';

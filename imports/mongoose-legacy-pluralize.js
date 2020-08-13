@@ -1,0 +1,1 @@
+import mongooselegacypluralize from 'mongoose-legacy-pluralize';

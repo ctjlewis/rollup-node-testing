@@ -1,0 +1,1 @@
+import undertakerregistry from 'undertaker-registry';

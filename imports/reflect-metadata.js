@@ -1,0 +1,1 @@
+import reflectmetadata from 'reflect-metadata';

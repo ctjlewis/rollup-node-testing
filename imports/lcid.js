@@ -1,0 +1,1 @@
+import lcid from 'lcid';

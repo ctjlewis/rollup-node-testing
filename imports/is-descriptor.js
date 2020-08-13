@@ -1,0 +1,1 @@
+import isdescriptor from 'is-descriptor';

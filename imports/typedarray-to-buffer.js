@@ -1,0 +1,1 @@
+import typedarraytobuffer from 'typedarray-to-buffer';

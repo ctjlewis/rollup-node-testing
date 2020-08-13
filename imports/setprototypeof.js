@@ -1,0 +1,1 @@
+import setprototypeof from 'setprototypeof';

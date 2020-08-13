@@ -1,0 +1,1 @@
+import extendshallow from 'extend-shallow';

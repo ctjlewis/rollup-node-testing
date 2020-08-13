@@ -1,0 +1,1 @@
+import ismap from 'is-map';

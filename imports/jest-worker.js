@@ -1,0 +1,1 @@
+import jestworker from 'jest-worker';

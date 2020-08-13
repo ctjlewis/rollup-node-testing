@@ -1,0 +1,1 @@
+import cryptobrowserify from 'crypto-browserify';

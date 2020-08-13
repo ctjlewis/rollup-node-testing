@@ -1,0 +1,1 @@
+import isplainobj from 'is-plain-obj';

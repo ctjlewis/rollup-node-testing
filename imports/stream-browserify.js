@@ -1,0 +1,1 @@
+import streambrowserify from 'stream-browserify';

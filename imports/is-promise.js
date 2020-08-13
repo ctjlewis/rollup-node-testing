@@ -1,0 +1,1 @@
+import ispromise from 'is-promise';

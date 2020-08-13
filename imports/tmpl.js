@@ -1,0 +1,1 @@
+import tmpl from 'tmpl';

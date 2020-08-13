@@ -1,0 +1,1 @@
+import saferegex from 'safe-regex';

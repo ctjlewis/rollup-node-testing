@@ -1,0 +1,1 @@
+import mergedescriptors from 'merge-descriptors';

@@ -1,0 +1,1 @@
+import httpsbrowserify from 'https-browserify';

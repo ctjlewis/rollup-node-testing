@@ -1,0 +1,1 @@
+import hasbinary from 'has-binary2';

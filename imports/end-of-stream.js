@@ -1,0 +1,1 @@
+import endofstream from 'end-of-stream';

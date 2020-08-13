@@ -1,0 +1,1 @@
+import lodashgetnative from 'lodash._getnative';

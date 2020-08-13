@@ -1,0 +1,1 @@
+import isnpm from 'is-npm';

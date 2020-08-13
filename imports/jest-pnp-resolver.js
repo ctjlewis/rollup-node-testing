@@ -1,0 +1,1 @@
+import jestpnpresolver from 'jest-pnp-resolver';

@@ -1,0 +1,1 @@
+import uglifyjs from 'uglify-js';

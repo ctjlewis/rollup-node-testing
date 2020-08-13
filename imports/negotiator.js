@@ -1,0 +1,1 @@
+import negotiator from 'negotiator';

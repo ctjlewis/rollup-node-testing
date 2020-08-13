@@ -1,0 +1,1 @@
+import babeljest from 'babel-jest';

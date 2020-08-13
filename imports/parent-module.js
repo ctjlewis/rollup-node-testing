@@ -1,0 +1,1 @@
+import parentmodule from 'parent-module';

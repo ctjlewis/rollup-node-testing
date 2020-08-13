@@ -1,0 +1,1 @@
+import pathrootregex from 'path-root-regex';

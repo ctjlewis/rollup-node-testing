@@ -1,0 +1,1 @@
+import hostedgitinfo from 'hosted-git-info';

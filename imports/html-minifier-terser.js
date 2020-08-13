@@ -1,0 +1,1 @@
+import htmlminifierterser from 'html-minifier-terser';

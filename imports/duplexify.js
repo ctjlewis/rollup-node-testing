@@ -1,0 +1,1 @@
+import duplexify from 'duplexify';

@@ -1,0 +1,1 @@
+import babelplugintransformesmodulessystemjs from 'babel-plugin-transform-es2015-modules-systemjs';

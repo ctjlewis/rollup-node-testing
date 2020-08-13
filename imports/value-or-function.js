@@ -1,0 +1,1 @@
+import valueorfunction from 'value-or-function';

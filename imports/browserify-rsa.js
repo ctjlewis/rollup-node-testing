@@ -1,0 +1,1 @@
+import browserifyrsa from 'browserify-rsa';

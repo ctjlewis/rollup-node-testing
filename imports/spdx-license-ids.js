@@ -1,0 +1,1 @@
+import spdxlicenseids from 'spdx-license-ids';

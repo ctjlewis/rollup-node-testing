@@ -1,0 +1,1 @@
+import hassymbols from 'has-symbols';

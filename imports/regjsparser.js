@@ -1,0 +1,1 @@
+import regjsparser from 'regjsparser';

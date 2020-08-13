@@ -1,0 +1,1 @@
+import pathisabsolute from 'path-is-absolute';

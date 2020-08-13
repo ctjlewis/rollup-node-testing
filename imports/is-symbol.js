@@ -1,0 +1,1 @@
+import issymbol from 'is-symbol';

@@ -1,0 +1,1 @@
+import mimedb from 'mime-db';

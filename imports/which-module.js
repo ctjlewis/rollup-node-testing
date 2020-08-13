@@ -1,0 +1,1 @@
+import whichmodule from 'which-module';

@@ -1,0 +1,1 @@
+import vinylsourcemap from 'vinyl-sourcemap';

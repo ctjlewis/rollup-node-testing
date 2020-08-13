@@ -1,0 +1,1 @@
+import bufferindexof from 'buffer-indexof';

@@ -1,0 +1,1 @@
+import paramcase from 'param-case';

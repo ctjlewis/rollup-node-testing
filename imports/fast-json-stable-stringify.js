@@ -1,0 +1,1 @@
+import fastjsonstablestringify from 'fast-json-stable-stringify';

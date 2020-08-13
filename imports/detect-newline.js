@@ -1,0 +1,1 @@
+import detectnewline from 'detect-newline';

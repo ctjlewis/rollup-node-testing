@@ -1,0 +1,1 @@
+import mimicfn from 'mimic-fn';

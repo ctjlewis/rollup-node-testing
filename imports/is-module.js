@@ -1,0 +1,1 @@
+import ismodule from 'is-module';

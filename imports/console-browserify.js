@@ -1,0 +1,1 @@
+import consolebrowserify from 'console-browserify';

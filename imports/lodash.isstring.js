@@ -1,0 +1,1 @@
+import lodashisstring from 'lodash.isstring';

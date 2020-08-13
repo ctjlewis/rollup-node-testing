@@ -1,0 +1,1 @@
+import isutf from 'is-utf8';

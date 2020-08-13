@@ -1,0 +1,1 @@
+import regexpclone from 'regexp-clone';

@@ -1,0 +1,1 @@
+import objectassign from 'object.assign';

@@ -1,0 +1,1 @@
+import lodashisplainobject from 'lodash.isplainobject';

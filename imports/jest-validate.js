@@ -1,0 +1,1 @@
+import jestvalidate from 'jest-validate';

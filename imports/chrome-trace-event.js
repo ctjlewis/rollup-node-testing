@@ -1,0 +1,1 @@
+import chrometraceevent from 'chrome-trace-event';

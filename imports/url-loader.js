@@ -1,0 +1,1 @@
+import urlloader from 'url-loader';

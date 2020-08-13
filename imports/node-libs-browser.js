@@ -1,0 +1,1 @@
+import nodelibsbrowser from 'node-libs-browser';

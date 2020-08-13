@@ -1,0 +1,1 @@
+import jestgettype from 'jest-get-type';

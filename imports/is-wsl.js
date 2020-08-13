@@ -1,0 +1,1 @@
+import iswsl from 'is-wsl';

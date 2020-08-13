@@ -1,0 +1,1 @@
+import xmlnamevalidator from 'xml-name-validator';

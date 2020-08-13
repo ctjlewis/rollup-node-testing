@@ -1,0 +1,1 @@
+import detectfile from 'detect-file';

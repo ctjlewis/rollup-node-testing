@@ -1,0 +1,1 @@
+import globaldirs from 'global-dirs';

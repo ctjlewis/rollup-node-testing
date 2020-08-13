@@ -1,0 +1,1 @@
+import mutestdout from 'mute-stdout';

@@ -1,0 +1,1 @@
+import findupsync from 'findup-sync';

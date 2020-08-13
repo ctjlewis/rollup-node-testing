@@ -1,0 +1,1 @@
+import ispotentialcustomelementname from 'is-potential-custom-element-name';

@@ -1,0 +1,1 @@
+import functionbind from 'function-bind';

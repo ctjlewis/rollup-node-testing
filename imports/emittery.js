@@ -1,0 +1,1 @@
+import emittery from 'emittery';

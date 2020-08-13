@@ -1,0 +1,1 @@
+import isredirect from 'is-redirect';

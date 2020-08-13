@@ -1,0 +1,1 @@
+import babelpresetcurrentnodesyntax from 'babel-preset-current-node-syntax';

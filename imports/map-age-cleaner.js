@@ -1,0 +1,1 @@
+import mapagecleaner from 'map-age-cleaner';

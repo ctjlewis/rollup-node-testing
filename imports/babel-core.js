@@ -1,0 +1,1 @@
+import babelcore from 'babel-core';

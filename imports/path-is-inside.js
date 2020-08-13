@@ -1,0 +1,1 @@
+import pathisinside from 'path-is-inside';

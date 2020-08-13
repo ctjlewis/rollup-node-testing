@@ -1,0 +1,1 @@
+import defertoconnect from 'defer-to-connect';

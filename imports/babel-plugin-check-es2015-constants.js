@@ -1,0 +1,1 @@
+import babelplugincheckesconstants from 'babel-plugin-check-es2015-constants';

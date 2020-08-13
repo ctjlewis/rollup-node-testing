@@ -1,0 +1,1 @@
+import babelplugintransformesblockscopedfunctions from 'babel-plugin-transform-es2015-block-scoped-functions';

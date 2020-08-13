@@ -1,0 +1,1 @@
+import collectionmap from 'collection-map';

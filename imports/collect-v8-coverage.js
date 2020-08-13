@@ -1,0 +1,1 @@
+import collectvcoverage from 'collect-v8-coverage';

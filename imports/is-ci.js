@@ -1,0 +1,1 @@
+import isci from 'is-ci';

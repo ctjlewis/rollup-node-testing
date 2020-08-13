@@ -1,0 +1,1 @@
+import registryurl from 'registry-url';

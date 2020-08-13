@@ -1,0 +1,1 @@
+import packagejson from 'package-json';

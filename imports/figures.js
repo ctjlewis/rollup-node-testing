@@ -1,0 +1,1 @@
+import figures from 'figures';

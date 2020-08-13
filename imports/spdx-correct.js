@@ -1,0 +1,1 @@
+import spdxcorrect from 'spdx-correct';

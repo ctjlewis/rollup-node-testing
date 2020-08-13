@@ -1,0 +1,1 @@
+import pathbrowserify from 'path-browserify';

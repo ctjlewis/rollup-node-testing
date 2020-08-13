@@ -1,0 +1,1 @@
+import eslintconfiggoogle from 'eslint-config-google';

@@ -1,0 +1,1 @@
+import browserstdout from 'browser-stdout';

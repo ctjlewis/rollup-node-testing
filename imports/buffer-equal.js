@@ -1,0 +1,1 @@
+import bufferequal from 'buffer-equal';

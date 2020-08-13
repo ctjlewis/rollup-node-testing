@@ -1,0 +1,1 @@
+import urlparse from 'url-parse';

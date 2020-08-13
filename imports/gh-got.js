@@ -1,0 +1,1 @@
+import ghgot from 'gh-got';

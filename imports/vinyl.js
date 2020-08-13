@@ -1,0 +1,1 @@
+import vinyl from 'vinyl';

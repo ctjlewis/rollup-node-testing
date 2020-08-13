@@ -1,0 +1,1 @@
+import languagesubtagregistry from 'language-subtag-registry';

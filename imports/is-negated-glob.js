@@ -1,0 +1,1 @@
+import isnegatedglob from 'is-negated-glob';

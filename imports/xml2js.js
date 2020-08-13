@@ -1,0 +1,1 @@
+import xmljs from 'xml2js';

@@ -1,0 +1,1 @@
+import arrayprototypemap from 'array.prototype.map';

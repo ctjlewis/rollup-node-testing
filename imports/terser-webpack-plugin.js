@@ -1,0 +1,1 @@
+import terserwebpackplugin from 'terser-webpack-plugin';

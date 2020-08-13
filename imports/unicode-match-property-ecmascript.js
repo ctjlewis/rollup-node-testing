@@ -1,0 +1,1 @@
+import unicodematchpropertyecmascript from 'unicode-match-property-ecmascript';

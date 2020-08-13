@@ -1,0 +1,1 @@
+import iswindows from 'is-windows';

@@ -1,0 +1,1 @@
+import lazystream from 'lazystream';

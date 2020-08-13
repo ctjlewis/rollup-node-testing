@@ -1,0 +1,1 @@
+import jestleakdetector from 'jest-leak-detector';

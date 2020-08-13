@@ -1,0 +1,1 @@
+import defaultcompare from 'default-compare';

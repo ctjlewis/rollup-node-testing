@@ -1,0 +1,1 @@
+import nan from 'nan';

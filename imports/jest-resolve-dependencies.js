@@ -1,0 +1,1 @@
+import jestresolvedependencies from 'jest-resolve-dependencies';

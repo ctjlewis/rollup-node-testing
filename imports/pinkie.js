@@ -1,0 +1,1 @@
+import pinkie from 'pinkie';

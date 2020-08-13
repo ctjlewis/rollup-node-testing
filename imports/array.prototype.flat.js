@@ -1,0 +1,1 @@
+import arrayprototypeflat from 'array.prototype.flat';

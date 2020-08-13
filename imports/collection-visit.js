@@ -1,0 +1,1 @@
+import collectionvisit from 'collection-visit';

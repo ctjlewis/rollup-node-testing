@@ -1,0 +1,1 @@
+import isreference from 'is-reference';

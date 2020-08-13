@@ -1,0 +1,1 @@
+import postcssmoduleslocalbydefault from 'postcss-modules-local-by-default';

@@ -1,0 +1,1 @@
+import staticextend from 'static-extend';

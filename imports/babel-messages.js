@@ -1,0 +1,1 @@
+import babelmessages from 'babel-messages';

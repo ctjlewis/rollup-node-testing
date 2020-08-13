@@ -1,0 +1,1 @@
+import triplebeam from 'triple-beam';

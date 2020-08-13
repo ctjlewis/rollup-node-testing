@@ -1,0 +1,1 @@
+import babelplugintransformesliterals from 'babel-plugin-transform-es2015-literals';

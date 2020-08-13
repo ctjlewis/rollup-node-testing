@@ -1,0 +1,1 @@
+import contenttype from 'content-type';

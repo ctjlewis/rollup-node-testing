@@ -1,0 +1,1 @@
+import escapestringregexp from 'escape-string-regexp';

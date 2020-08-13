@@ -1,0 +1,1 @@
+import parseurl from 'parseurl';

@@ -1,0 +1,1 @@
+import tinywarning from 'tiny-warning';

@@ -1,0 +1,1 @@
+import babelplugintransformestypeofsymbol from 'babel-plugin-transform-es2015-typeof-symbol';

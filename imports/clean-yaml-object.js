@@ -1,0 +1,1 @@
+import cleanyamlobject from 'clean-yaml-object';

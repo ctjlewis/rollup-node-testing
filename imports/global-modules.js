@@ -1,0 +1,1 @@
+import globalmodules from 'global-modules';

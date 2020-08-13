@@ -1,0 +1,1 @@
+import pathtoregexp from 'path-to-regexp';

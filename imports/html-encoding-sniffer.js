@@ -1,0 +1,1 @@
+import htmlencodingsniffer from 'html-encoding-sniffer';

@@ -1,0 +1,1 @@
+import shajs from 'sha.js';

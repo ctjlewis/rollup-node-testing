@@ -1,0 +1,1 @@
+import fswritestreamatomic from 'fs-write-stream-atomic';

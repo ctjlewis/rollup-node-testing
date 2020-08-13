@@ -1,0 +1,1 @@
+import createerrorclass from 'create-error-class';

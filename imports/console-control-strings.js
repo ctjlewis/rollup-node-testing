@@ -1,0 +1,1 @@
+import consolecontrolstrings from 'console-control-strings';

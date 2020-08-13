@@ -1,0 +1,1 @@
+import vtoistanbul from 'v8-to-istanbul';

@@ -1,0 +1,1 @@
+import isabsolute from 'is-absolute';

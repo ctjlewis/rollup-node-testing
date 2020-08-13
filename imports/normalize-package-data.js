@@ -1,0 +1,1 @@
+import normalizepackagedata from 'normalize-package-data';

@@ -1,0 +1,1 @@
+import forin from 'for-in';

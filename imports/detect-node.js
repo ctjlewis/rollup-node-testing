@@ -1,0 +1,1 @@
+import detectnode from 'detect-node';

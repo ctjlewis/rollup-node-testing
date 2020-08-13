@@ -1,0 +1,1 @@
+import babelplugintransformesblockscoping from 'babel-plugin-transform-es2015-block-scoping';

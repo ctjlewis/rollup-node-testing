@@ -1,0 +1,1 @@
+import vinylfile from 'vinyl-file';

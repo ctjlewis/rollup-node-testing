@@ -1,0 +1,1 @@
+import concordance from 'concordance';

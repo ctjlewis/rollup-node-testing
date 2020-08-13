@@ -1,0 +1,1 @@
+import babelplugintransformesstickyregex from 'babel-plugin-transform-es2015-sticky-regex';

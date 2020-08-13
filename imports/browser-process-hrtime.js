@@ -1,0 +1,1 @@
+import browserprocesshrtime from 'browser-process-hrtime';

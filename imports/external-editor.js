@@ -1,0 +1,1 @@
+import externaleditor from 'external-editor';

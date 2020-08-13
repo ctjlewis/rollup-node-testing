@@ -1,0 +1,1 @@
+import babelplugintransformesobjectsuper from 'babel-plugin-transform-es2015-object-super';

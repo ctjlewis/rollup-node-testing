@@ -1,0 +1,1 @@
+import kindof from 'kind-of';

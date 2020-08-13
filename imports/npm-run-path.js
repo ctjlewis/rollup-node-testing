@@ -1,0 +1,1 @@
+import npmrunpath from 'npm-run-path';

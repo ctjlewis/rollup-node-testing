@@ -1,0 +1,1 @@
+import requiremainfilename from 'require-main-filename';

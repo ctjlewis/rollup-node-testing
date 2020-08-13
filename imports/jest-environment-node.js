@@ -1,0 +1,1 @@
+import jestenvironmentnode from 'jest-environment-node';

@@ -1,0 +1,1 @@
+import uncpathregex from 'unc-path-regex';

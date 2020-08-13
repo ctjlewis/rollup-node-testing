@@ -1,0 +1,1 @@
+import importfrom from 'import-from';

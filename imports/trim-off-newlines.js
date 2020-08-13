@@ -1,0 +1,1 @@
+import trimoffnewlines from 'trim-off-newlines';

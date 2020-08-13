@@ -1,0 +1,1 @@
+import babelplugintransformesduplicatekeys from 'babel-plugin-transform-es2015-duplicate-keys';

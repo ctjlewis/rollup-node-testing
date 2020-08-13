@@ -1,0 +1,1 @@
+import shebangcommand from 'shebang-command';

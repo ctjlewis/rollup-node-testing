@@ -1,0 +1,1 @@
+import checkerror from 'check-error';

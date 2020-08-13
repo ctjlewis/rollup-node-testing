@@ -1,0 +1,1 @@
+import corejspure from 'core-js-pure';

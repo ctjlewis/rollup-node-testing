@@ -1,0 +1,1 @@
+import objectmap from 'object.map';

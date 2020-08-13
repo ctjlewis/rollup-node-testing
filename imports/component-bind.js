@@ -1,0 +1,1 @@
+import componentbind from 'component-bind';

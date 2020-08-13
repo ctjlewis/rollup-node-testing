@@ -1,0 +1,1 @@
+import sprintfjs from 'sprintf-js';

@@ -1,0 +1,1 @@
+import hasunicode from 'has-unicode';

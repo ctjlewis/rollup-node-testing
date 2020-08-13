@@ -1,0 +1,1 @@
+import shallowequal from 'shallowequal';

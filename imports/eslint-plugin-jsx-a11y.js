@@ -1,0 +1,1 @@
+import eslintpluginjsxay from 'eslint-plugin-jsx-a11y';

@@ -1,0 +1,1 @@
+import removetrailingseparator from 'remove-trailing-separator';

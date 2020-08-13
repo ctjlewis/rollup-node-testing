@@ -1,0 +1,1 @@
+import objectgetownpropertydescriptors from 'object.getownpropertydescriptors';

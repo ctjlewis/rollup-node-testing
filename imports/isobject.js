@@ -1,0 +1,1 @@
+import isobject from 'isobject';

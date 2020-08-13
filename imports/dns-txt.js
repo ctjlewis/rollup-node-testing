@@ -1,0 +1,1 @@
+import dnstxt from 'dns-txt';

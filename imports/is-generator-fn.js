@@ -1,0 +1,1 @@
+import isgeneratorfn from 'is-generator-fn';

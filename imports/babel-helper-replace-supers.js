@@ -1,0 +1,1 @@
+import babelhelperreplacesupers from 'babel-helper-replace-supers';

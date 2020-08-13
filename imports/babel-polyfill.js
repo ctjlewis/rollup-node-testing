@@ -1,0 +1,1 @@
+import babelpolyfill from 'babel-polyfill';

@@ -1,0 +1,1 @@
+import eslintimportresolvernode from 'eslint-import-resolver-node';

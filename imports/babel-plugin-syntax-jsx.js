@@ -1,0 +1,1 @@
+import babelpluginsyntaxjsx from 'babel-plugin-syntax-jsx';

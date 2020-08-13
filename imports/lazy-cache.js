@@ -1,0 +1,1 @@
+import lazycache from 'lazy-cache';

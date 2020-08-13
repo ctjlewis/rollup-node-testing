@@ -1,0 +1,1 @@
+import proptypes from 'prop-types';

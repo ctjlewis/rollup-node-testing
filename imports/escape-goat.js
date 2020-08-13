@@ -1,0 +1,1 @@
+import escapegoat from 'escape-goat';

@@ -1,0 +1,1 @@
+import yeomangenerator from 'yeoman-generator';

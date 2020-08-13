@@ -1,0 +1,1 @@
+import plur from 'plur';

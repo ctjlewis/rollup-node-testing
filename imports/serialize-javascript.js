@@ -1,0 +1,1 @@
+import serializejavascript from 'serialize-javascript';

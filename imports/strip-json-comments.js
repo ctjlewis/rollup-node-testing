@@ -1,0 +1,1 @@
+import stripjsoncomments from 'strip-json-comments';

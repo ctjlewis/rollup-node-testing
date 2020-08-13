@@ -1,0 +1,1 @@
+import browserifydes from 'browserify-des';

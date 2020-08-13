@@ -1,0 +1,1 @@
+import jesthastemap from 'jest-haste-map';

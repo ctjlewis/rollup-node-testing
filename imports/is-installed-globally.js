@@ -1,0 +1,1 @@
+import isinstalledglobally from 'is-installed-globally';

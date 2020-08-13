@@ -1,0 +1,1 @@
+import istanbullibreport from 'istanbul-lib-report';

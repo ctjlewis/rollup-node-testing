@@ -1,0 +1,1 @@
+import vmbrowserify from 'vm-browserify';

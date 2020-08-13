@@ -1,0 +1,1 @@
+import rimraf from 'rimraf';

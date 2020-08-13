@@ -1,0 +1,1 @@
+import shebangregex from 'shebang-regex';

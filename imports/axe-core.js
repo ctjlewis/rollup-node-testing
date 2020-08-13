@@ -1,0 +1,1 @@
+import axecore from 'axe-core';

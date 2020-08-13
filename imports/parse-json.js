@@ -1,0 +1,1 @@
+import parsejson from 'parse-json';

@@ -1,0 +1,1 @@
+import isfinite from 'is-finite';

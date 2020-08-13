@@ -1,0 +1,1 @@
+import babelplugintransformesarrowfunctions from 'babel-plugin-transform-es2015-arrow-functions';

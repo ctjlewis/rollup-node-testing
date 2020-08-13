@@ -1,0 +1,1 @@
+import pinkiepromise from 'pinkie-promise';

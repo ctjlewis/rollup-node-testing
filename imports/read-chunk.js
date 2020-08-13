@@ -1,0 +1,1 @@
+import readchunk from 'read-chunk';
