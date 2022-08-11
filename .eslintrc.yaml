@@ -1,0 +1,53 @@
+parser: babel-eslint
+
+env:
+  browser: true
+  commonjs: true
+  es2020: true
+  node: true
+
+extends:
+  - google
+  - plugin:jsdoc/recommended
+
+parserOptions:
+  ecmaVersion: 11
+  sourceType: module
+
+ignorePatterns:
+  - bundles/*
+  - imports/*
+  - tests/*
+  - node_modules/*
+
+rules:
+  
+  jsdoc/check-tag-names:
+    - error
+    # Anyone can add needed Closure @annotations for ESLint here.
+    - definedTags:
+      - exportSymbol
+
+  jsdoc/newline-after-description:
+    - error
+    - always
+
+  one-var:
+    - error
+    - let: consecutive
+
+  operator-linebreak:
+    - error
+    - before
+
+  object-curly-spacing:
+    - error
+    - always
+
+  eol-last:
+    - error
+    - always
+
+settings:
+  jsdoc:
+    mode: closure
